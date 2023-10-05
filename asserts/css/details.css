@@ -1,0 +1,82 @@
+
+.div-container section{
+    width: 100vw;
+    background-image: url("../img/banner-5\ 2.png");
+
+}
+
+h2{
+    padding-top: 30px;
+    padding-left: 40%;
+}
+
+.inner-item p{
+    padding-left: 40%;
+    font-size:larger;
+}
+.row{
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+   
+}
+.hero {
+    font-weight: 50px;
+    justify-content: center;
+    gap: 10px;
+}
+input,button{
+    margin-top: 50px;
+}
+input{
+    width: 500px;
+    height: 30px;
+    border-radius: 50px;
+    border: 1px solid hotpink;
+    padding-left: 20px;
+}
+input::placeholder{
+    padding-left: 1px;
+}
+button{
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid hotpink;
+    color: white;
+    background-color: rgb(38, 183, 223);
+    cursor: pointer;
+}
+/* .list-container{
+    background-color: rgb(232, 150, 191);
+} */
+.list-details{
+    display: flex;
+    border: 1px solid;
+    margin-top: 10px;
+    background-color: rgb(181, 114, 165);
+}
+.list-details img{
+    margin-left: 50px;
+    margin-top: 40px;
+    height: 200px;
+    width: 250px;
+    border-radius: 20px;
+}
+.list-button{
+    margin-top: 80px;
+    padding-left: 300px;
+}
+.list-button button{
+    background-color: brown;
+    margin-left: 20px;
+}
+.button a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+.div-service{
+    margin-top: 50px;
+}
+

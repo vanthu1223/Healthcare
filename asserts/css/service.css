@@ -1,0 +1,101 @@
+
+.inner-page section{
+    width: 100vw;
+    background-image: url("../img/gift-cards-page\ 2\ \(1\).png");
+
+}
+.inner-item h2,p{
+    justify-content: center;
+    align-items: center;
+    padding-left: 40%;
+    color: hotpink;
+}
+h2{
+    padding-top: 30px;
+}
+.inner-item p{
+    padding-left: 40%;
+    font-size:larger;
+    margin-top: 20px;
+    gap: 20px;
+}
+.row{
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+   
+}
+.hero {
+    font-weight: 50px;
+    justify-content: center;
+    gap: 10px;
+}
+input,button{
+    margin-top: 50px;
+}
+input{
+    width: 500px;
+    height: 30px;
+    border-radius: 50px;
+    border: 1px solid hotpink;
+    padding-left: 20px;
+}
+input::placeholder{
+    padding-left: 1px;
+}
+button{
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid hotpink;
+    background-color: rgb(69, 222, 222);
+
+}
+.container2{
+    display: flex;
+    justify-content:space-around;
+}
+.container2 a{
+    display: flex;
+    text-decoration: none;
+    margin-top: 18px;
+    color: black;
+}
+.list-service{
+    margin-top: 10px;
+}
+.list-service a:hover{
+    color: hotpink;
+}
+.container3-service h6{
+    padding-left: 400px;
+    margin-top: 80px;
+    font-size: larger;
+}
+.service-item{
+    display: flex;
+    justify-content: center;
+}
+.div-serviceItem img{
+    display: flex;
+    border-radius: 5px;
+    height: 160px;
+    width: 200px;
+}
+.div-serviceItem a{
+    text-decoration: none;
+    display: block;
+    justify-content: center;
+    color: #070707;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 55px;
+}
+#price{
+    color: #F60606;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
