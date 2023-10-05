@@ -2,6 +2,8 @@
 *{
     font-family: 'Crimson Text', serif;
     font-size: medium;
+    padding: 0;
+    margin: 0;
 }
 
 body{
@@ -13,33 +15,46 @@ body{
    
 }
 
-.combo-khuyen-mai{
+.card{
+    flex-wrap: wrap;
     text-align: center;
-    /* border: 1px solid; */
-    border-radius: 5%;
-    margin-bottom: 20px;
-    background-color: #ffffff;
-    
-}
-
-.combo-khuyen-mai h3{
-    text-align: center;
-}
-
-.combo-khuyen-mai img{
-    max-width: 378px;
-    max-height: 238px;
-}
-
-.combo-khuyen-mai button{
+    height: 500px;
+    line-height: 1.5em ;
+    transition: 0.5s;
+    box-shadow: 1px 0px 1px #e0ffff ;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .card:hover{
+  border: 2px solid #FF6A88;
+  
+  }
+  .card-body{
+    background-size: cover;
+  
+  }
+  .card img {
+    border-radius: 50%;
+  }
+  /* .card img:hover{
+    font-size: 30px;
+  } */
+  .card h3{
+    margin-top: 10px;
+    font-size: 25px;
     color: #FF6A88;
-    border:1px solid #FF6A88;
-    /* margin-left: 30%; */
-    margin-bottom: 20px;
-}
+    font-weight: bold;
+    font-family:sans-serif;
+  }
+  .card-p a{
+  color: black;
+  text-decoration: none;
+  transition: 0.5s;
+  }
+  .card-p a:hover{
+    color: #FF6A88;
+  }
 
 .button{
-    
     margin-left: 20%;
 }
 
@@ -48,7 +63,6 @@ body{
 }
 
 .three-col{
-    
     margin-left: 10%;
     gap: 30px;
     
