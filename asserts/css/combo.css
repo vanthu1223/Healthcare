@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+*{
+    font-family: 'Crimson Text', serif;
+    font-size: medium;
+}
+
+body{
+    background-color: #FFD7E8;
+}
+
+.row1{
+    /* margin-left: 10%; */
+   
+}
+
+.combo-khuyen-mai{
+    text-align: center;
+    /* border: 1px solid; */
+    border-radius: 5%;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    
+}
+
+.combo-khuyen-mai h3{
+    text-align: center;
+}
+
+.combo-khuyen-mai img{
+    max-width: 378px;
+    max-height: 238px;
+}
+
+.combo-khuyen-mai button{
+    color: #FF6A88;
+    border:1px solid #FF6A88;
+    /* margin-left: 30%; */
+    margin-bottom: 20px;
+}
+
+.button{
+    
+    margin-left: 20%;
+}
+
+.button button{
+    width: 10%;
+}
+
+.three-col{
+    
+    margin-left: 10%;
+    gap: 30px;
+    
+}
+
+.introduce-combo {
+    margin-top: 15px;
+    /* background-color: blueviolet; */
+    text-align: center;
+}
+
+.three-combo{
+
+    width: max-content;
+    border: 1px solid;
+    border-radius: 20px;
+}
+
+.three-combo h3{
+    padding: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.cost {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+.booknow{
+    margin-bottom: 20px;
+    text-align: center;
+
+}
