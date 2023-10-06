@@ -6,9 +6,7 @@
     margin: 0;
 }
 
-body{
-    background-color: #FFD7E8;
-}
+
 
 .header li{
     list-style: none;
@@ -108,15 +106,13 @@ body{
       left: 0;
     }
   }
-  .header{
+  
+
+  .content {
     background-image: url(../img/gift-cards-page.jpg); 
     background-repeat:  no-repeat;
     background-size: cover ;
     height: calc(100vh - 80px);
-  }
-
-  .content {
-    
     text-align: center;
   }
 
@@ -268,4 +264,39 @@ body{
     margin-bottom: 20px;
     text-align: center;
 
+}
+
+/* banner */
+.banner{
+ 
+    background-image: url(../img/banner-5.jpg); 
+    background-repeat:  no-repeat;
+    background-size: cover ;
+    height: calc(100vh - 80px);
+    text-align: center;
+  
+}
+
+/* Footer */
+.footer {
+  background-color: #e3e0e0;
+  width: 100%;
+  padding-top: 20px;
+}
+.footer h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.footer h4, p {
+  padding-top: 20px;
+}
+.footer p {
+  color: #686161;
+  font-size: 15px;
+}
+.icon-footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  gap:10px
 }

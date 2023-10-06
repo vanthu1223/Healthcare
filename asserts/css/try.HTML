@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .fade-in {
+  opacity: 0;
+  animation: text-fade-in-animation 1s ease-in forwards;
+}
+
+/* @keyframes text-fade-in-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.2;
+  }
+} */
+.box1{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: relative;
+    opacity: 0.2;
+}
+.box2{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    top: 20px;
+}
+body{
+    display: flex;
+    justify-content: center;
+  
+}
+    </style>
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    
+</body>
+</html>
