@@ -4,7 +4,7 @@
     background-image: url("../img/gift-cards-page\ 2\ \(1\).png");
 
 }
-.inner-item h2,p{
+.inner-item h2{
     justify-content: center;
     align-items: center;
     padding-left: 40%;
@@ -12,12 +12,6 @@
 }
 h2{
     padding-top: 30px;
-}
-.inner-item p{
-    padding-left: 40%;
-    font-size:larger;
-    margin-top: 20px;
-    gap: 20px;
 }
 .row{
     text-align: center;
@@ -45,12 +39,14 @@ input::placeholder{
     padding-left: 1px;
 }
 button{
+  width: 80px;
     height: 35px;
     border-radius: 20px;
     border: 1px solid hotpink;
     background-color: rgb(69, 222, 222);
 
 }
+
 .container2{
     display: flex;
     justify-content:space-around;
@@ -67,6 +63,14 @@ button{
 .list-service a:hover{
     color: hotpink;
 }
+.container3-service{
+  border-top: 
+  1px solid #999;
+  border-top-width: 2px;
+ border-top-style: solid;
+ border-top-color: rgb(153, 153, 153);
+}
+
 .container3-service h6{
     padding-left: 400px;
     margin-top: 80px;
@@ -75,12 +79,35 @@ button{
 .service-item{
     display: flex;
     justify-content: center;
+    gap: 50px;
+    margin-top: 60px;
+}
+.serviceItem{
+  display: flex;
+  /* gap: 50px; */
+  padding-right: 100px;
 }
 .div-serviceItem img{
     display: flex;
     border-radius: 5px;
-    height: 160px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
+}
+.div-ListserviceItem img{
+  height:200px ;
+  width: 250px;
+  border-radius: 10px;
+
+  /* margin-right: 50px; */
+
+}
+.div-ListserviceItem a{
+  text-decoration: none;
+  display: block;
+  justify-content: center;
+  color: #070707;
+  font-size: 14px;
+  font-weight: 400;
 }
 .div-serviceItem a{
     text-decoration: none;
@@ -89,7 +116,7 @@ button{
     color: #070707;
     font-size: 14px;
     font-weight: 400;
-    margin-left: 55px;
+  
 }
 #price{
     color: #F60606;
@@ -99,3 +126,111 @@ button{
     font-weight: 400;
     line-height: normal;
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');  
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header li{
+  list-style: none;
+}
+.header a{
+  list-style: none;
+  text-decoration: none;
+}
+nav{
+  background-color: white;
+  height: 80px;
+  width: 100%;
+}
+nav ul{
+  float:right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+.navbar {
+  background-color: white;
+  height: 80px;
+  width: 100%;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: black;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+nav ul li a:hover{
+  font-size: 17px;
+  color: #FF6A88;
+}
+
+
+.logo {
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #e3e0e0;
+  width: 100%;
+  padding-top: 20px;
+}
+.footer h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.footer h4, p {
+  padding-top: 20px;
+}
+.footer p {
+  color: #686161;
+  font-size: 15px;
+}
+.icon-footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  gap:10px
+}
+
