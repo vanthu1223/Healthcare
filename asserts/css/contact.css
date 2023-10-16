@@ -42,7 +42,11 @@
     line-height: 80px;
     margin: 0 5px;
   }
-  
+   nav ul li button {
+    border: none;
+    background-color: transparent;
+   }
+
   nav ul li a {
     color: black;
     text-transform: uppercase;
@@ -117,25 +121,7 @@
     justify-content: center;
   }
   /* Login Register */
-  .button-header{
-    border: none;
-  }
-  .button-header button{
-    background-color: transparent;
-    padding: 10px;
-    
-  }
-  .button-header a{
-    color: white;
-    padding: 20px;
-    transition: 0.5s;
-    font-size: 19px;
-  }
-  .button-header a:hover{
-    font-size: 20px;
-    background-color: transparent;
-    color: #FF6A88;
-  }
+
 
 /* CHỮ CHẠY TRONG PHẦN HEADING */
 .animate-charcter
@@ -169,13 +155,6 @@
     background-position: 200% center;
   }
 }
-/*  chạy chuyển dông */
-
-
-
-
-
-
 .heading{
   justify-content: center;
   align-items: center;
@@ -195,6 +174,14 @@
   margin-left: auto;
   margin-right: auto;
 }
+/*  chạy chuyển dông */
+
+
+
+
+
+
+
 
 /* contact */
 .contact h3{
@@ -275,7 +262,18 @@
   height: 100px;
 }
 
-
+nav ul li i{
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid gray;
+  padding: 10px;
+  transition: 0.5s;
+}
+nav ul li i:hover {
+  background-color: #faa292;
+  border: none;
+  cursor: pointer;
+}
 
 
 /* Modal */
@@ -292,6 +290,9 @@
 }
 .popup-content {
   background-color: white;
+  border-radius: 3px;
+  /* height: 300px; */
+  width: max-content;
   margin: 10% auto;
   padding: 20px;
   border: 1px solid #888888;
@@ -301,12 +302,27 @@
 .popup-content button {
   display: block;
   margin: 0 auto;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: transparent;
+  transition: 0.5s;
+}
+.popup-content button:hover{
+  color: #FF9A8B;
+  font-size: 20px;
 }
 .show {
   display: block;
 }
-h1 {
-  color: green;
+.popup-content h1 {
+  color: #FF9A8B;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.popup-content p {
+  text-transform:inherit;color: #888888;
+  text-align: center;
 }
 .icon i {
   padding: 2%;
@@ -315,25 +331,37 @@ h1 {
   margin: 10px;
 }
 
-
-
-
-
-/* .button {
-  padding: 10px;
-  text-align: center;
-  align-items: center;
+#myButton{
   border-radius: 3px;
-  width: 10%;
-  border: ghostwhite;
+  background-color: transparent;
   transition: 0.5s;
 }
-.button:hover{
-  background: #FF9A8B;
-  color: #fff;
-} */
+#myButton:hover{
+  color: #FF9A8B;
+}
+/* chuyển động  */
+@media (max-width: 900px){
+  section h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+  section .text-container{
+    flex-direction: column;
+  }
+}
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
 
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
 
+/* footer */
 .footer {
   background-color: #e3e0e0;
   width: 100%;
@@ -356,3 +384,9 @@ h1 {
   padding-left: 10px;
   gap:10px
 }
+.icon-footer label {
+  font-size: 10px;
+}
+
+
+
