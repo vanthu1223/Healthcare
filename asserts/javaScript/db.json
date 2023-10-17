@@ -2,28 +2,28 @@
   "User": [
     {
       "id": 1,
-      "nameUser": "Vân Thư",
+      "nameUser": "thu123",
       "email": "thu.vo25@student.passerellesnumriques.org",
       "password": "123123",
       "role": "admin"
     },
     {
       "id": 2,
-      "nameUser": "Văn Thảo",
+      "nameUser": "thao123",
       "email": "thao.le25@student.passerellesnumriques.org",
       "password": "123123",
       "role": "user"
     },
     {
       "id": 3,
-      "nameUser": "Hồng Duyên",
+      "nameUser": "duyen123",
       "email": "duyen.dinh25@student.passerellesnumriques.org",
       "password": "123123",
       "role": "user"
     },
     {
       "id": 4,
-      "nameUser": "A Bồn",
+      "nameUser": "bon123",
       "email": "bon.a25@student.passerellesnumriques.org",
       "password": "123123",
       "role": "user"
@@ -33,49 +33,75 @@
       "nameUser": "thu",
       "email": "thu.vo25@student.gmail.com",
       "password": "1234567",
-      "password2": "1234567"
+      "password2": "1234567",
+      "role": "user"
     },
     {
       "id": 1697416710091,
       "nameUser": "thu",
       "email": "t.@gmail.com",
       "password": "1234567",
-      "password2": "1234567"
+      "password2": "1234567",
+      "role": "user"
     },
     {
       "id": 1697416843751,
       "nameUser": "thu",
       "email": "t.@gmail.com",
       "password": "1234567",
-      "password2": "1234567"
+      "password2": "1234567",
+      "role": "user"
     },
     {
       "id": 1697416878094,
       "nameUser": "thu",
       "email": "t.@gmail.com",
       "password": "1234567",
-      "password2": "1234567"
+      "password2": "1234567",
+      "role": "user"
     },
     {
-      "id": 1697416878093,
-      "nameUser": "thu",
-      "email": "t.@gmail.com",
+      "id": 1697474241547,
+      "nameUser": "thu1234",
+      "email": "thu@gmail.com",
       "password": "1234567",
       "password2": "1234567"
     },
     {
-      "id": 1697416878097,
-      "nameUser": "thu",
-      "email": "t.@gmail.com",
+      "id": 1697474476270,
+      "nameUser": "thdxs e",
+      "email": "thu@gmail.com",
       "password": "1234567",
-      "password2": "1234567"
+      "password2": "1234567",
+      "role": "user"
     },
     {
-      "id": 1697416914722,
-      "nameUser": "thu",
-      "email": "1@gmail.com",
+      "id": 1697474476274,
+      "nameUser": "thdxs e",
+      "email": "thu@gmail.com",
       "password": "1234567",
-      "password2": "1234567"
+      "password2": "1234567",
+      "role": "user"
+    },
+    {
+      "id": 1697474606206,
+      "nameUser": "thu 123",
+      "email": "thu@gmail.com",
+      "password": "1234567",
+      "password2": "1234567",
+      "role": "user"
+    },
+    {
+      "password": "1234567",
+      "id": 1697474606207
+    },
+    {
+      "password": "1234567",
+      "id": 1697474606208
+    },
+    {
+      "password": "1234567",
+      "id": 1697474606209
     }
   ],
   "Sevicese": [

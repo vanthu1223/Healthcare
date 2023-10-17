@@ -194,11 +194,13 @@
 }
 
 
-button {
+.button {
   padding: 10px;
+  margin-top: 10px;
   margin-left: 20px;
   border: 2px solid #FF9A8B;
   background-color: transparent;
+  
 }
 
 .title {

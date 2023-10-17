@@ -37,10 +37,11 @@ function myRegister() {
 
     let newUser = {
       id: new Date().getTime(),
-      nameUser: username.value,
-      email: email.value,
-      password: password.value,
-      password2: password2.value
+      nameUser: username.value.trim(),
+      email: email.value.trim(),
+      password: password.value.trim(),
+      password2: password2.value.trim(),
+      role : "user"
     };
 
     const url = 'http://localhost:4001/User';

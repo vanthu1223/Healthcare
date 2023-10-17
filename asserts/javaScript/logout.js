@@ -7,4 +7,3 @@ function myLogout() {
     registerButton.style.display = 'block';
     window.location.href = '../pages/home.html';
 }
-
