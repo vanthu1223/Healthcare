@@ -9,12 +9,16 @@ h2{
     padding-top: 30px;
     padding-left: 40%;
 }
+/* .inner-item i{
+  padding-top: 30px;
+
+} */
 
 .inner-item p{
     padding-left: 40%;
     font-size:larger;
 }
-.row{
+.row-header{
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,6 +29,10 @@ h2{
     font-weight: 50px;
     justify-content: center;
     gap: 10px;
+    padding-top: 50px;
+}
+input:focus{
+  outline: none !important ;
 }
 input{
     width: 500px;
@@ -67,6 +75,7 @@ button{
 .list-button button{
     background-color: brown;
     margin-left: 10px;
+    width: 65px;
 }
 .button a{
     display: flex;
@@ -75,9 +84,9 @@ button{
     font-size: 14px;
     padding-left: 15px;
 }
-/* .div-service{
-    margin-top: 50px;
-} */
+.list p{
+  padding-top: 30px;
+}
 *{
     margin: 0;
     padding: 0;
@@ -161,14 +170,30 @@ button{
     height: 16px; */
     color: gray;
   }
+  .div-star{
+    padding-left: 50px;
+  }
+  .Recomment{
+    padding-left: 50px;
+  }
+  .Recomment input{
+    border: 1px solid #686161;
+    border-radius: 5px;
+    height: 50px;
+    width: 100%;
+    
+  }
   
   
   /* Footer */
   .footer {
-    background-color: #e3e0e0;
+    height: 100%;
     width: 100%;
-    height: 550px;
     padding-top: 20px;
+  }
+  .row{
+    background-color: #e3e0e0;
+  
   }
   .footer h4 {
     font-size: 20px;
@@ -187,5 +212,4 @@ button{
     padding-left: 10px;
     gap:10px
   }
-  
   

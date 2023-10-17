@@ -1,1 +1,3 @@
-var a=5;
+fetch("https://example.com", {
+  credentials: "include",
+});

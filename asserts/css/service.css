@@ -1,4 +1,4 @@
-
+/* ảnh và các input button */
 .inner-page section{
     width: 100vw;
     background-image: url("../img/gift-cards-page\ 2\ \(1\).png");
@@ -13,7 +13,7 @@
 h2{
     padding-top: 30px;
 }
-.row{
+.row-header{
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,7 +28,11 @@ h2{
 input,button{
     margin-top: 50px;
 }
+input:focus{
+  outline: none !important ;
+}
 input{
+
     width: 500px;
     height: 30px;
     border-radius: 50px;
@@ -46,7 +50,7 @@ button{
     background-color: rgb(69, 222, 222);
 
 }
-
+/* icon của các tên massage */
 .container2{
     display: flex;
     justify-content:space-around;
@@ -63,6 +67,7 @@ button{
 .list-service a:hover{
     color: hotpink;
 }
+
 .container3-service{
   border-top: 
   1px solid #999;
@@ -76,30 +81,53 @@ button{
     margin-top: 80px;
     font-size: larger;
 }
+h6{
+  top: 50px;
+  color: #070707;
+  font-size: large;
+  font-weight: 10px;
+}
 .service-item{
     display: flex;
     justify-content: center;
     gap: 50px;
-    margin-top: 60px;
+    padding-top: 30px;
 }
 .serviceItem{
   display: flex;
   /* gap: 50px; */
   padding-right: 100px;
 }
+.div-serviceItem{
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  /* border: 0.5px solid; */
+  width: 300px;
+  box-shadow: #c21717;
+}
 .div-serviceItem img{
+  /* padding-left: 10px; */
     display: flex;
-    border-radius: 5px;
+    border-radius: 30px;
     height: 300px;
     width: 300px;
+}
+.div-ListserviceItem{
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+.div-ListserviceItem:hover{
+  transform: scale(1.1);
+}
+.div-serviceItem:hover{
+  transform: scale(1.1);
 }
 .div-ListserviceItem img{
   height:200px ;
   width: 250px;
   border-radius: 10px;
-
-  /* margin-right: 50px; */
-
 }
 .div-ListserviceItem a{
   text-decoration: none;
@@ -128,8 +156,6 @@ button{
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');  
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500;800&display=swap');
 
 *{
   margin: 0;
@@ -212,9 +238,13 @@ nav ul li a:hover{
 
 /* Footer */
 .footer {
-  background-color: #e3e0e0;
+  height: 100%;
   width: 100%;
   padding-top: 20px;
+}
+.row{
+  background-color: #e3e0e0;
+
 }
 .footer h4 {
   font-size: 20px;
@@ -233,4 +263,13 @@ nav ul li a:hover{
   padding-left: 10px;
   gap:10px
 }
+@media screen and (max-width: 1024px) {
+  .header{
+    display: flex;
+  }
+  .checkbtn{
+    display: block !important ;
+    
+  }
 
+}
