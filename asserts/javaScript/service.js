@@ -1,34 +1,111 @@
-let productAPI = 'https://6520d354906e276284c4b3a6.mockapi.io/api/v1/products';
+const checkBtn = document.querySelector('.checkbtn');
+const navMenu = document.querySelector('nav ul');
 
-function loadData() {
-  $.ajax({
-    type: 'GET',
-    contentType: 'application/json',
-    url: productAPI,
-    success: function(responseData) {
-      $("#dataProduct").html(responseData.map(function(item) {
-        return `
-          <tr>
-            <td>${item.id}</td>
-            <td>${item.name}</td>
-            <td>${item.price}</td>
-            <td><img src="${item.Avarta}" alt="Product Image width="100px" height = "100px" " /></td>
-            <td>${item.Avarta}</td>
-            <td>
-              <button class="btn btn-primary" onclick="update(${item.id})">update</button>
-              <button class="btn btn-primary" onclick="deleteProduct(${item.id})">delete</button>
-            </td>
-          </tr>
-        `;
-      }));
-    },
-    error: function(e) {
-      console.log(e);
+checkBtn.addEventListener('click', function() {
+  navMenu.classList.toggle('open');
+});
+
+let productAPI1 = `http://localhost:3000/FacialCare`;
+let productAPI2 = `http://localhost:3000/BodyMassage`;
+let productAPI3 = `http://localhost:3000/FootMassage`;
+let productAPI4 = 'http://localhost:3000/BackMassage';
+
+function getbody(){
+    fetch(productAPI2)
+    .then(response => response.json())
+    .then(data => {
+      for (const item of data) {
+        const html = `
+        <div class="div-ListserviceItem col-3" id="MassageFullBack">
+            <img src='${item.img}' alt="">
+            <div class="div-serviceImg text-center">
+                <a href="">${item.name}</a>
+                <a href="">${item.Time}</a>
+                <a id="price">${item.price}</a>
+            </div>
+        </div>
+        `
+        document.getElementById('dataBodyMassage').innerHTML += html;
+      }
+  
+    })
+    .catch(error => {
+      console.log('Error:', error);
+    });
+  }
+getbody();
+
+function getFace(){
+  fetch(productAPI1)
+  .then(response => response.json())
+  .then(data => {
+    for (const item of data) {
+      const html = `
+      <div class="div-ListserviceItem col-3" id="MassageFullBack">
+          <img src='${item.img}' alt="">
+          <div class="div-serviceImg text-center">
+              <a href="">${item.name}</a>
+              <a href="">${item.Time}</a>
+              <a id="price">${item.price}</a>
+          </div>
+      </div>
+      `
+      document.getElementById('FacialCare').innerHTML += html;
     }
+
+  })
+  .catch(error => {
+    console.log('Error:', error);
   });
 }
-// Gọi hàm loadData để tải dữ liệu khi trang được tải
-loadData();
+getFace();
 
+function getFoot(){
+  fetch(productAPI3)
+  .then(response => response.json())
+  .then(data => {
+    for (const item of data) {
+      const html = `
+      <div class="div-ListserviceItem col-3" id="MassageFullBack">
+          <img src='${item.img}' alt="">
+          <div class="div-serviceImg text-center">
+              <a href="">${item.name}</a>
+              <a href="">${item.Time}</a>
+              <a id="price">${item.price}</a>
+          </div>
+      </div>
+      `
+      document.getElementById('dataFootMassage').innerHTML += html;
+    }
 
+  })
+  .catch(error => {
+    console.log('Error:', error);
+  });
+}
+getFoot();
+function getBack(){
+  fetch(productAPI4)
+  .then(response => response.json())
+  .then(data => {
+    for (const item of data) {
+      const html = `
+      <div class="div-ListserviceItem col-3" id="MassageFullBack">
+          <img src='${item.img}' alt="">
+          <div class="div-serviceImg text-center">
+              <a href="">${item.name}</a>
+              <a href="">${item.Time}</a>
+              <a id="price">${item.price}</a>
+          </div>
+      </div>
+      `
+      document.getElementById('dataBackMassage').innerHTML += html;
+    }
+
+  })
+  .catch(error => {
+    console.log('Error:', error);
+  });
+}
+getBack();
 

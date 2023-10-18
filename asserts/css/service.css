@@ -77,7 +77,7 @@ button{
 }
 
 .container3-service h6{
-    padding-left: 400px;
+    padding-left: 530px;
     margin-top: 80px;
     font-size: larger;
 }
@@ -86,6 +86,9 @@ h6{
   color: #070707;
   font-size: large;
   font-weight: 10px;
+}
+.container-ListSevice h6{
+  padding-left: 570px;
 }
 .service-item{
     display: flex;
@@ -244,7 +247,7 @@ nav ul li a:hover{
 }
 .row{
   background-color: #e3e0e0;
-
+  width: 100%;
 }
 .footer h4 {
   font-size: 20px;
@@ -263,13 +266,195 @@ nav ul li a:hover{
   padding-left: 10px;
   gap:10px
 }
-@media screen and (max-width: 1024px) {
-  .header{
+/* Add the following code at the end of the CSS file */
+
+/* Responsive Styles */
+
+@media screen and (max-width: 736px) {
+
+  /* Adjust the header and navigation */
+  .header {
     display: flex;
-  }
-  .checkbtn{
-    display: block !important ;
-    
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
   }
 
+  .logo {
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  .checkbtn {
+    display: block !important;
+    margin-right: 10px;
+  }
+  .checkbtn {
+    display: block;
+    margin-right: 10px;
+  }
+  
+  nav ul {
+    display: none;
+  }
+  
+  nav ul.open {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 10px;
+  }
+  
+
+
+  nav ul li {
+    line-height: 40px;
+    margin: 5px 0;
+  }
+
+  nav ul li a {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  /* Adjust the hero section */
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .inner-item h2{
+    padding-left: 120px;
+  }
+  .hero input{
+    width: 200px;
+  }
+  .hero button{
+    width: 50px;
+    font-size: small;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+  .list-img{
+    height: 40px;
+    width: 20px;
+  }
+  .list-service a{
+    font-size: 15px;
+  }
+  /* Adjust the service items */
+  .service-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container3-service h6{
+    padding-left: 70px;
+  }
+  .container .container-ListSevice h6{
+    padding-left: 110px;
+  }
+  .div-serviceItem,
+  .div-ListserviceItem {
+    width: auto;
+    margin-bottom: 20px;
+  }
+
+  .div-serviceItem img,
+  .div-ListserviceItem img {
+    height: auto;
+    width: 100%;
+  }
 }
+
+/*@media screen and (max-width: 1024px) {
+  
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  .checkbtn {
+    display: block !important;
+    margin-right: 10px;
+  }
+  .checkbtn {
+    display: block;
+    margin-right: 10px;
+  }
+  
+  nav ul {
+    display: none;
+  }
+  
+  nav ul.open {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 10px;
+  }
+  
+
+
+  nav ul li {
+    line-height: 40px;
+    margin: 5px 0;
+  }
+
+  nav ul li a {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  /* Adjust the hero section */
+  /*.hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .inner-item h2{
+    padding-left: 120px;
+  }
+  .hero input{
+    width: 400px;
+  }
+  .hero button{
+    width: 50px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  /* Adjust the service items */
+/*.service-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container3-service h6{
+    padding-left: 70px;
+  }
+  .container .container-ListSevice h6{
+    padding-left: 110px;
+  }
+  .div-serviceItem,
+  .div-ListserviceItem {
+    width: auto;
+    margin-bottom: 20px;
+  }
+
+  .div-serviceItem img,
+  .div-ListserviceItem img {
+    height: auto;
+    width: 100%;
+  }
+

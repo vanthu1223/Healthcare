@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../asserts/javaScript/detail.js"></script>
+</head>
+jg
+<body>
+    <script>
+        const apiUrl = 'http://localhost:3000/MostService';
+
+        fetch(apiUrl)
+            .then((response) => response.json())
+            .then((data) => {
+                for (const item of data) {
+                    
+                }
+                
+            })
+            .catch((error) => {
+                 console.log(error);
+            })
+    </script>
+</body>
+
+</html>
