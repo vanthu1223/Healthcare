@@ -1,16 +1,127 @@
 {
-  "product": [
+  "BackMassage": [
     {
       "id": 1,
-      "name": "jhsdj",
-      "price": 4525,
-      "img": "/asserts/img/sap31-31-Frame7-31-Frame3-31-Desktop-1.png"
+      "name": "Full back Massage",
+      "price": "20$",
+      "Time": "(30-60 minutes)",
+      "img": "../../asserts/img/back/back-massage-therapy-concept.jpg"
+      
     },
     {
       "id": 2,
-      "name": "fdhfd",
-      "price": 5625,
-      "img": "/asserts/img/sap31-31-Frame7-31-Frame3-31-Desktop-1.png"
+      "name": "Back Massage with hot stones",
+      "price": "15$",
+      "Time": "(30-50 minutes)",
+      "img": "../../asserts/img/back/stones-3184610_640.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Massage and apply oil",
+      "price": "17$",
+      "Time": "(30-40 minutes)",
+      "img": "../../asserts/img/back/honey-pouring-woman-s-naked-back-spa-salon.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Back Massage",
+      "price": "15$",
+      "Time": "(30-60 minute)",
+      "img": "../../asserts/img/back/female-model-having-massage-spa.jpg",
+      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
+    }
+  ],
+  "FootMassage": [
+    {
+      "id": 1,
+      "name": "Calf Massage",
+      "price": "2.2$",
+      "Time": "(20 minutes)",
+      "img": "../../asserts/img/leg/close-up-hands-massaging-leg.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Akle Massage",
+      "price": "2.2$",
+      "Time": "(10 minutes)",
+      "img": "../../asserts/img/leg/close-up-foot-massage-concept.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Massage the soles of the feet",
+      "price": "2.5$",
+      "Time": "(10 minutes)",
+      "img": "../../asserts/img/leg/close-up-woman-doing-foot-massage-spa.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Full foot Massage",
+      "price": "10$",
+      "Time": "(60 minute)",
+      "img": "../../asserts/img/leg/closeup-female-masseuse-giving-foot-massage-one-her-clients-health-beauty-spa.jpg"
+    }
+  ],
+  "BodyMassage": [
+    {
+      "id": 1,
+      "name": "Massage body",
+      "price": "20$",
+      "Time": "(30-60 minutes)",
+      "img": "../../asserts/img/body/two-cute-young-women-enjoy-relaxing-during-massage-spa.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Massage body",
+      "price": "20$",
+      "Time": "(30-60 minutes)",
+      "img": "../../asserts/img/body/masseur-doing-massage-backbone-man-body-spa-salon-beauty-treatment-concept (1).jpg"
+    },
+    {
+      "id": 3,
+      "name": "Massage body",
+      "price": "2.5$",
+      "Time": "(10 minutes)",
+      "img": "../../asserts/img/body/istockphoto-1162187810-1024x1024.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Massage body",
+      "price": "10$",
+      "Time": "(60 minute)",
+      "img": "../../asserts/img/body/woman-567021_640.jpg"
+    }
+  ],
+  "FacialCare": [
+    {
+      "id": 1,
+      "name": "Apply lotion",
+      "price": "5$",
+      "Time": "(20 minutes)",
+      "img": "../../asserts/img/face/istockphoto-1125908113-1024x1024.jpg",
+      "content": "hskfsj"
+    },
+    {
+      "id": 2,
+      "name": "Mask",
+      "price": "20$",
+      "Time": "(30-60 minutes)",
+      "img": "../../asserts/img/face/young-woman-spa-salon-with-cosmetic-mask-face-high-angle-photo.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Head Massage",
+      "price": "20$",
+      "Time": "(30-60 minutes)",
+      "img": "../../asserts/img/face/beautiful-young-woman-having-spa-massage-head-beauty-salon-indoors.jpg"
+      
+    },
+    {
+      "id": 4,
+      "name": "Peeling acne",
+      "price": "10$",
+      "Time": "(30-60 minute)",
+      "img": "../../asserts/img/face/cosmetologist-applying-mask-face-client-beauty-salon.jpg"
     }
   ]
+  
 }
