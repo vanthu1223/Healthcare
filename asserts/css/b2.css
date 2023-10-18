@@ -1,0 +1,226 @@
+.box {
+    width: 604px;
+    height: 51px;
+    background-color: white;
+    
+}
+
+.box .search1{
+    /* position:static; */
+    width: 300px;
+    height: 26px;
+    
+    /* background-color: #f4b7b7; */
+    border-radius: 10px;
+    margin-top: 100px;
+    background-color: #f4b7b7; 
+    margin-left: 40%;
+    margin-top: 1%;
+
+}
+.box .overlap {
+
+        position: absolute;
+        width: 211px;
+        height: 15px;
+        top: -19px;
+        margin-right: 264px;
+        background-color: #ffffff;
+        border-radius: 20px;
+    }
+.box .text-wrapper {
+    position: absolute;
+    
+    top: 1px;
+    left: 17px;
+    font-size: 1px;
+    color: rgb(181, 178, 178);
+    font-size: 15px;
+    
+    
+}
+.fa-search {
+    color: rgb(255, 255, 255);
+    padding-left: 5%;
+    padding-top: 2%;
+
+}
+.box .nav-bar {
+    /* position:fixed; */
+    display: flex;
+    width: 1024px;
+    height: 51px;
+    top: 0;
+    margin-bottom: 30px;
+    background-color: white;
+    gap: 80px;
+}
+
+.box .overlap1 {
+    font-size: 10px;
+    gap: 10px;
+    display: flex;
+    position: relative;
+    width: 604px;
+    height: 51px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    
+}
+.fa-search{
+    color: rgb(255, 255, 255);
+    padding-left: 5%;
+    padding-top: 2%;
+   
+}
+
+
+
+
+/* .box .icon-search {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    top: 5px;
+    left: 24px;
+} */
+.overlap1 .text-wrapper-0{
+    text-align: center;
+    padding-bottom: 10px;
+
+    
+   
+}
+.overlap1 .text-wrapper-0:hover{
+    background-color: #efabab;
+    color: white;
+    height: 13px;
+    
+    padding: 3px;
+    border-radius: 3px;
+    margin-top: 1px;
+    }
+.frame {
+    position: absolute;
+    width: -100px;
+    height: 150px;
+    background-color: #e6d1a921;
+    border-radius: 36px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: #efedea;
+    padding-left: 30%;
+    margin-left: 15%;
+    margin-top: 15%;
+}
+
+.frame .facce {
+    position: absolute;
+    width: 190px;
+    height: 106px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    padding-left: -7px;
+    border-radius: 37px;}
+
+/* .frame .text-wrapper {
+    position: absolute;
+    width: 192px;
+    top: 195px;
+    left: 25px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+} */
+
+.frame .div {
+    position: absolute;
+    width: 270px;
+    top: 230px;
+    left: 25px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.frame .overlap-group {
+    position: absolute;
+    width: 97px;
+    height: 21px;
+    top: 308px;
+    left: 128px;
+    background-color: #f3b6b6;
+}
+
+.frame .text-wrapper-2 {
+    position: absolute;
+    width: 90px;
+    top: 1px;
+    left: 0;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: 109px;
+}
+.card-title{
+    font-size: 10px;
+}
+.row{
+    width: 100%;
+    padding-right: 80px;
+    padding-left: 100px;
+    /* margin-right: 5%;
+    margin-left: 5%; */
+    margin-top: 10%;
+} 
+.card-text{
+    font-size: 8px;
+}
+.card-body .btn{
+    justify-content: center;
+    text-align: center;
+    background-color: #fefdfd;
+    color: #828282;
+    font-size: 10px;
+    margin-left: 20px;
+    width: auto;
+    width: 80px;
+    
+
+}
+.card-body .btn:hover{
+    background-color: #efabab;
+    color: #000000;
+    justify-content: center;
+    width:80px;
+    margin-left: 23px;
+    text-align: center;
+    justify-content: 10px;
+
+
+}
+.col-4{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.col-4 .card {
+    border-radius: 3.25rem;
+}
+.cImg{
+    border-radius: 3rem;
+    height: 100px;
+}

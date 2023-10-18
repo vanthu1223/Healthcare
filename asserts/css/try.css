@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500;800&display=swap');
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+ .logo {
+     cursor: pointer;
+     padding-left: 10px;
+ }
+ nav ul li {
+     display: inline-block;
+     line-height: 10px;
+     margin-top:15px;
+ }
+nav ul li a{
+    text-decoration: none;
+
+}
+.navbar {
+    background-color: white;
+
+}
+.navbar ul  {
+    float: right;
+    margin-right: 20px;
+}
+nav ul li a {
+    color: black;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 10px;
+}
+
+nav ul li a:hover {
+    font-size: 12px;
+    color: #FF6A88;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+} 
+
+#check {
+    display: none;
+}
+
+/* @media (max-width: 836px) {
+    .checkbtn {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+} */
+
+ .header {
+    background: url(../image/woman-relaxing-spa.jpg)no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+.content {
+    text-align: center;
+}
+
+.content h2 {
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+} 
+
+.animate-charcter {
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #FF99AC 0%,
+            #FF6A88 29%,
+            #FF9A8B 67%,
+            #FBAB7E 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+} 
+
+/* Login Register */
+.button-header {
+    border: none;
+}
+
+.button-header button {
+    background-color: transparent;
+    padding: 10px;
+
+}
+
+.button-header a {
+    color: white;
+    padding: 20px;
+    transition: 0.5s;
+    font-size: 19px;
+}
+
+.button-header a:hover {
+    font-size: 20px;
+    background-color: transparent;
+    color: #FF6A88;
+}
+

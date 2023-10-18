@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Nhúng file CSS -->
+    <link rel="stylesheet" href="../asserts/css/re.css" />
+    <script src="../asserts/javaScript/re.js"></script>
+<body>
+    <!-- Nhúng file JavaScript -->
+    <script language="javascript" src="kiemtra.js"></script>
+    <form name="frmdangky" id="frmdangky" method="post" action="#">
+        <div class="container mt-4">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card mx-4">
+                        <div class="card-body p-4">
+                            <h1>Đăng ký</h1>
+                            <p class="text-muted">Tạo tài khoản</p>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fa fa-user"></i>
+                                    </span>
+                                </div>
+                                <input class="form-control" type="text" placeholder="Tên tải khoản" name="kh_tendangnhap">
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fa fa-user"></i>
+                                    </span>
+                                </div>
+                                <input class="form-control" type="password" placeholder="Mật khẩu" name="kh_matkhau">
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fa fa-user"></i>
+                                    </span>
+                                </div>
+                                <input class="form-control" type="text" placeholder="Họ tên" name="kh_ten">
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fa fa-user"></i>
+                                    </span>
+                                </div>
+                                <select name="kh_gioitinh" class="form-control">
+                                    <option value="0">Nam</option>
+                                    <option value="1">Nữ</option>
+                                </select>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fa fa-user"></i>
+                                    </span>
+                                </div>
+                                <input class="form-control" type="text" placeholder="Địa chỉ" name="kh_diachi">
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fa fa-user"></i>
+                                    </span>
+                                </div>
+                                <input class="form-control" type="text" placeholder="Điện thoại" name="kh_dienthoai">
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fa fa-user"></i>
+                                    </span>
+                                </div>
+                                <input class="form-control" type="email" placeholder="Email" name="kh_email">
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fa fa-user"></i>
+                                    </span>
+                                </div>
+                                <input class="form-control" type="text" placeholder="Ngày sinh" name="kh_ngaysinh">
+                                <input class="form-control" type="text" placeholder="Tháng sinh" name="kh_thangsinh">
+                                <input class="form-control" type="text" placeholder="Năm sinh" name="kh_namsinh">
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fa fa-user"></i>
+                                    </span>
+                                </div>
+                                <input class="form-control" type="text" placeholder="CMND" name="kh_cmnd">
+                            </div>
+                            <button class="btn btn-block btn-success" name="btnDangKy">Tạo tài khoản</button>
+                        </div>
+                        <div class="card-footer p-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <center>Nếu bạn đã có Tài khoản, xin mời Đăng nhập</center>
+                                    <a class="btn btn-primary form-control" href="login.html">Đăng nhập</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+        // Lắng nghe sự kiện submit của biểu mẫu
+                document.getElementById("frmdangky").addEventListener("submit", function(event) {
+                    event.preventDefault(); // Ngăn chặn hành vi mặc định của sự kiện submit
+
+                // Lấy giá trị từ các trường nhập liệu
+                var kh_tendangnhap = document.getElementsByName("kh_tendangnhap")[0].value;
+                var kh_matkhau = document.getElementsByName("kh_matkhau")[0].value;
+                var kh_ten = document.getElementsByName("kh_ten")[0].value;
+                var kh_gioitinh = document.getElementsByName("kh_gioitinh")[0].value;
+                var kh_diachi = document.getElementsByName("kh_diachi")[0].value;
+                var kh_dienthoai = document.getElementsByName("kh_dienthoai")[0].value;
+                var kh_email = document.getElementsByName("kh_email")[0].value;
+                var kh_ngaysinh = document.getElementsByName("kh_ngaysinh")[0].value;
+                var kh_thangsinh = document.getElementsByName("kh_thangsinh")[0].value;
+                var kh_namsinh = document.getElementsByName("kh_namsinh")[0].value;
+                var kh_cmnd = document.getElementsByName("kh_cmnd")[0].value;
+
+                // Tạo một đối tượng user từ các giá trị nhập liệu
+                var user = {
+                    kh_tendangnhap: kh_tendangnhap,
+                kh_matkhau: kh_matkhau,
+                kh_ten: kh_ten,
+                kh_gioitinh: kh_gioitinh,
+                kh_diachi: kh_diachi,
+                kh_dienthoai: kh_dienthoai,
+                kh_email: kh_email,
+                kh_ngaysinh: kh_ngaysinh,
+                kh_thangsinh: kh_thangsinh,
+                kh_namsinh: kh_namsinh,
+                kh_cmnd: kh_cmnd
+            };
+
+                // Lưu đối tượng user vào Local Storage
+                localStorage.setItem("user", JSON.stringify(user));
+
+                // Hiển thị thông báo thành công
+                alert("Tạo tài khoản thành công!");
+
+                // Xóa giá trị nhập liệu trong các trường
+                document.getElementsByName("kh_tendangnhap")[0].value = "";
+                document.getElementsByName("kh_matkhau")[0].value = "";
+                document.getElementsByName("kh_ten")[0].value = "";
+                document.getElementsByName("kh_gioitinh")[0].value = "0";
+                document.getElementsByName("kh_diachi")[0].value = "";
+                document.getElementsByName("kh_dienthoai")[0].value = "";
+                document.getElementsByName("kh_email")[0].value = "";
+                document.getElementsByName("kh_ngaysinh")[0].value = "";
+                document.getElementsByName("kh_thangsinh")[0].value = "";
+                document.getElementsByName("kh_namsinh")[0].value = "";
+                document.getElementsByName("kh_cmnd")[0].value = "";
+        });
+        </script>
+    </body>
+    
+    </html></script>
+    </form>
+    
+</body>
+</html>
