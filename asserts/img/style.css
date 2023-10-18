@@ -1,0 +1,21 @@
+table,
+tr,
+td,
+th {
+    border: 1px solid;
+    color: red;
+    background-color: yellowgreen;
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    column-width: auto;
+}
+
+#mauxanh {
+    background-color: blue;
+}
+
+tbody#mautim {
+    background-color: blueviolet;
+}
