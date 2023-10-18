@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.header li{
+    list-style: none;
+  }
+  .header a{
+    list-style: none;
+    text-decoration: none;
+  }
+  nav{
+    background-color: white;
+    height: 80px;
+    width: 100%;
+  }
+  nav ul{
+    float:right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  .navbar {
+    background-color: white;
+    height: 80px;
+    width: 100%;
+  }
+  
+  nav ul {
+    float: right;
+    margin-right: 20px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+   nav ul li button {
+    border: none;
+    background-color: transparent;
+   }
+
+  nav ul li a {
+    color: black;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  nav ul li a:hover{
+    font-size: 17px;
+    color: #FF6A88;
+  }
+  
+  
+  .logo {
+    cursor: pointer;
+    padding-left: 10px;
+  }
+  
+  .checkbtn {
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  @media (max-width: 858px) {
+    .checkbtn {
+      display: block;
+    }
+  
+    nav ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all 0.5s;
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 50px 0;
+    }
+  
+    nav ul li a {
+      font-size: 20px;
+    }
+  
+    #check:checked ~ ul {
+      left: 0;
+    }
+  }
+  .header{
+    background:url(../image/contactus.jpg)no-repeat ;
+    background-position: left bottom;
+    background-size:cover ;
+    height: calc(100vh - 80px);
+  }
+  
+  .content h2{
+    color: #fff;
+    font-size: 70px;
+    justify-content: center;
+  }
+  /* Login Register */
+
+
+/* CHỮ CHẠY TRONG PHẦN HEADING */
+.animate-charcter
+{
+    text-align: center;
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #FF99AC 0%,
+    #FF6A88 29%,
+    #FF9A8B 67%,
+    #FBAB7E 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 60px;
+      font-weight: bold;
+     
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.heading{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  margin-top: 10%;
+}
+.heading h6{
+  color: #fff;
+  font-size: 20px;
+}
+.heading hr{
+  border: 2px solid #fff;
+  font-weight: bold;
+  margin-top: 1%;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*  chạy chuyển dông */
+
+
+
+
+
+
+
+
+/* contact */
+.contact h3{
+  color: #FF9A8B;
+  font-weight: bold;
+}
+
+.contact p{
+  font-size: 15px;
+  color: darkgray;
+}
+
+.contact img {
+  border-radius: 2px;
+}
+
+/* form */
+.form-question{
+  border: 1px solid whitesmoke;
+  padding: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  max-height: max-content;
+}
+
+
+.form-question h3{
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+.input {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+}
+@media (max-width: 858px) {
+  .input{
+    flex-wrap: wrap;
+  }
+    
+}
+.input-group {
+  position: relative;
+  margin: 20px 0;
+}
+.input-group label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #FF9A8B;
+  padding: 0 5px;
+  pointer-events: none;
+}
+.input-group input{
+  width: 250px;
+  height: 40px;
+  font-size: 16px;
+  color: gray;
+  padding: 0 10px;
+  background: transparent;
+  border: 1.2px solid gray;
+  outline: none;
+  border-radius: 5px;
+}
+.input-group input:focus~label,
+.input-group input:valid~label{
+  top:0;
+  font-size: 12px;
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+.message input{
+  width: 100%;
+  height: 100px;
+}
+
+nav ul li i{
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid gray;
+  padding: 10px;
+  transition: 0.5s;
+}
+nav ul li i:hover {
+  background-color: #faa292;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* Modal */
+.popup {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+.popup-content {
+  background-color: white;
+  border-radius: 3px;
+  /* height: 300px; */
+  width: max-content;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888888;
+  width: 30%;
+  font-weight: bolder;
+}
+.popup-content button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: transparent;
+  transition: 0.5s;
+}
+.popup-content button:hover{
+  color: #FF9A8B;
+  font-size: 20px;
+}
+.show {
+  display: block;
+}
+.popup-content h1 {
+  color: #FF9A8B;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.popup-content p {
+  text-transform:inherit;color: #888888;
+  text-align: center;
+}
+.icon i {
+  padding: 2%;
+  border-radius: 50%;
+  background-color:#FBAB7E;
+  margin: 10px;
+}
+
+#myButton{
+  border-radius: 3px;
+  background-color: transparent;
+  transition: 0.5s;
+}
+#myButton:hover{
+  color: #FF9A8B;
+}
+/* chuyển động  */
+@media (max-width: 900px){
+  section h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+  section .text-container{
+    flex-direction: column;
+  }
+}
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* footer */
+.footer {
+  background-color: #e3e0e0;
+  width: 100%;
+  padding-top: 20px;
+}
+.footer h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.footer h4, p {
+  padding-top: 20px;
+}
+.footer p {
+  color: #686161;
+  font-size: 15px;
+}
+.icon-footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  gap:10px
+}
+.icon-footer label {
+  font-size: 10px;
+}
+
+
+
