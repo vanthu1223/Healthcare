@@ -35,6 +35,14 @@
       "password": "1234567",
       "password2": "1234567",
       "role": "user"
+    },
+    {
+      "id": 1697637200775,
+      "nameUser": "thu",
+      "email": "thu@gmail.com",
+      "password": "1234567",
+      "password2": "1234567",
+      "role": "user"
     }
   ],
   "Sevicese": [

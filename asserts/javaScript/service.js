@@ -27,7 +27,6 @@ function loadData() {
     }
   });
 }
-// Gọi hàm loadData để tải dữ liệu khi trang được tải
 loadData();
 
 

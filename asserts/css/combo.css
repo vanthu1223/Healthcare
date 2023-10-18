@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');  
 
 *{
-    font-family: 'Crimson Text', serif;
+    /* font-family: 'Crimson Text', serif; */
     font-size: medium;
     padding: 0;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 .header{
@@ -149,7 +151,7 @@
     );
     background-size: auto auto;
     background-clip: border-box;
-    background-size: 200% auto;
+    background-size: 100% auto;
     color: #fff;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -157,7 +159,7 @@
     -webkit-text-fill-color: transparent;
     animation: textclip 2s linear infinite;
     display: inline-block;
-        font-size: 60px;
+        font-size: 40px;
         font-weight: bold;
        
   }
@@ -413,9 +415,12 @@
   width: 100%;
   padding-top: 20px;
 }
+.footer h6 {
+  font-size: 15px;
+}
 
 .footer h4 {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
 }
 
@@ -433,4 +438,7 @@
   flex-wrap: wrap;
   padding-left: 10px;
   gap:10px
+}
+label {
+  font-size: 10px;
 }

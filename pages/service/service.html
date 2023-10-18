@@ -23,21 +23,22 @@
                 <li><a href="#" target="_blank">Home</a></li>
                 <li><a href="#"target="_blank">Spa Servieces</a></li>
                 <li><a href="#" target="_blank">Most Used Service</a></li>
-                <li><a href="#" target="_blank">Discount Combo</a></li>
+                <li><a href="../combo.html" target="_blank">Discount Combo</a></li>
                 <li><a href="contact.html" target="_blank">Contact Us</a></li>
+                <li class="user" data-bs-toggle="popover"><a href="user.html"><i class="fa fa-user-circle-o" aria-hidden="true" ></i></a>
+                </li>
                 <li>
-                  <select class="form-select" aria-label="Default select example">
-                    <option selected>Language <i class="fa fa-language" aria-hidden="true"></i></option>
-                    <option value="1">English</option>
-                    <option value="2">Vietnamese</option>
-                  </select>
+                  <a href="login.html" id="loginButton">Login</a>
+                </li>
+                <li>
+                  <a href="resgister.html" id="registerButton">Resgister</a>
                 </li>
               </ul>
           </nav>
         </div>
     <div class="inner-page">
         <section class="inner-item">
-            <h2>BEAUTY QEEN</h2>
+            <h2 class="animate-charcter">Service</h2>
             <div class="container1">
                 <div class="row-header">
                     <div class="hero">
@@ -89,7 +90,7 @@
                     <div class="div-serviceImg text-center">
                         <a href="">Back Massage with hot stones</a>
                         <a href="">(30-50 minute)</a>
-                        <a id="price"><b>More >></b></a>
+                        <a id="price" href="../service/details.html"><b>More >></b></a>
                     </div>
                 </div>
                 <div class="div-serviceItem col-4" id="MassageHead">
@@ -97,7 +98,7 @@
                     <div class="div-serviceImg text-center" style="padding-left: 15px;">
                         <a href="">Head Massage</a>
                         <a href="">(20-40 minute)</a>
-                        <a id="price" href=""><b>More >></b></a>
+                        <a id="price" href="../service/details.html"><b>More >></b></a>
                     </div>
                 </div>
             </div>
@@ -337,5 +338,6 @@
       </div>
    
       <script src="../../asserts/javaScript/service.js"></script>
+      <script src="../../asserts/javaScript/loadProfileUser.js"></script>
 </body>
 </html> 
