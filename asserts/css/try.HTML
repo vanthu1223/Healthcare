@@ -45,5 +45,31 @@ body{
     <div class="box1"></div>
     <div class="box2"></div>
     
+
+
+
+
+  <button id="find">OK</button>
+<p id="demo"></p>
+
+  <script>
+    let findButton = document.getElementById("find");
+
+    findButton.addEventListener("click", async function () {
+      await fetch("https://65199e11818c4e98ac6093d9.mockapi.io/person", {
+        method: "PATCH",
+        headers: { "Content-type": "application/json; charset=UTF-8" },
+        body: JSON.stringify({
+          
+          name: "Patti Hintz",
+          age: 24,
+          avatar:
+            "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/112.jpg",
+          id: "2",
+        }),
+      });
+    });
+  </script>
+
 </body>
 </html>

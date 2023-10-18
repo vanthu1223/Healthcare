@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Crimson+Text&display=swap');
+
 *{
     font-family: 'Crimson Text', serif;
     font-size: medium;
@@ -6,7 +8,9 @@
     margin: 0;
 }
 
-
+.header{
+  margin-bottom: 4%;
+}
 
 .header li{
     list-style: none;
@@ -29,11 +33,20 @@
     margin: 0 5px;
   }
   .navbar {
+    position: fixed;
+    top:0;
+    z-index: 200;
     background-color: white;
     height: 80px;
     width: 100%;
+    transition: background-color 0.3s ease;
   }
-  
+
+  /* thanh navbar khi cuộn lên */
+  .navbar-scrolled{
+    background-color: rgba(255, 192, 203, 0.8);
+  }
+
   nav ul {
     float: right;
     margin-right: 20px;
@@ -157,6 +170,7 @@
   
   /* Login Register */
   .button-header{
+    margin:5% ;
     border: none;
   }
   .button-header button{
@@ -175,12 +189,55 @@
     background-color: transparent;
     color: #FF6A88;
   }
+/* giữ chỗ 30s */
+  .quick-booking-30s{
+    border: 1px solid #FF6A88;
+    margin-top: 8%;
+    position: relative;
+    text-align: center;
+  }
 
+  .quick-booking-30s .input-phone-number{
+    width: 100%;
+    height: 35px;
+    padding-left: 1%;
+    background-color: whitesmoke;
+    border: 1px solid white;
+    color: #FF6A88;
+    outline: none;
+    
+  }
+  /* tạo vị trí cho dòng chữ tên Spa */
+  .intro{
+    display: flex;
+    justify-content: center;
+  }
 
-.row1{
-    /* margin-left: 10%; */
-   
+  .intro1{
+    font-family: 'Comforter Brush', cursive;
+    margin-top: 20px;
+    height: 100px;
+    line-height: -20%;
+    font-size: 80px;
+    position: absolute;
+    opacity: 0.4;
+    color: #FF6A88;
+  }
+  
+  .intro2{
+    font-size: 64px;
+    margin-top: 55px;
+  }
+  
+.intro3{
+  width: 50%;
+  font-size: 18px;
+  margin-left: 24%;
+  text-align: center;
+  
 }
+
+
 
 .card{
     flex-wrap: wrap;
@@ -200,14 +257,16 @@
   
   }
   .card img {
+
     border-radius: 50%;
+
   }
   /* .card img:hover{
     font-size: 30px;
   } */
-  .card h3{
+  .card h5{
     margin-top: 10px;
-    font-size: 25px;
+    /* font-size: 25px; */
     color: #FF6A88;
     font-weight: bold;
     font-family:sans-serif;
@@ -218,9 +277,49 @@
   transition: 0.5s;
   }
   .card-p a:hover{
+    
     color: #FF6A88;
   }
 
+  .card img:hover{
+    border: 2px solid #FF6A88;
+  }
+
+   hr{
+    background-color: #FF6A88;
+  }
+
+  .card .fa{
+    width:10%;
+    height: auto;
+    color: #FF6A88;
+  }
+
+  .details{
+
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #FF6A88;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  }
+
+  .details:hover{
+    border: 2px solid #FF6A88;
+    background-color: white;
+    color: #FF6A88;
+
+  }
+
+  .details:focus{
+    outline: none;
+  }
 .button{
     margin-left: 20%;
 }
@@ -230,31 +329,60 @@
 }
 
 .three-col{
+    margin-top: 5%;
     margin-left: 10%;
-    gap: 30px;
+    gap: 7%;
     
 }
-
+.three-col .lable{
+  text-align: center;
+  margin-bottom: 5%;
+}
 .introduce-combo {
     margin-top: 15px;
-    /* background-color: blueviolet; */
+    background-color: blueviolet;
     text-align: center;
 }
 
 .three-combo{
 
     width: max-content;
-    border: 1px solid;
+    border: 1px solid #e3e0e0;
     border-radius: 20px;
+    box-shadow: 1px 0px 1px #e0ffff ;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
 }
 
+.list-combo{
+  margin-left: 15%;
+}
+
+.list-combo .fa{
+  margin-right: 5%;
+  color: #FF6A88;
+}
+
+.three-combo{
+  width: 500px;
+}
 .three-combo h3{
-    padding: 5px;
-    margin-top: 10px;
-    text-align: center;
+  margin-top: 10px;
+  color: #FF6A88;
+  font-weight: bold;
+  font-family:sans-serif;
+  padding: 5px;
+  margin-top: 15%;
+  text-align: center;
+
+}
+
+.three-combo:hover{
+  border:1px solid #FF6A88;
 }
 
 .cost {
+  padding-top: 0;
     font-weight: bold;
     font-size: 30px;
     text-align: center;
@@ -268,7 +396,7 @@
 
 /* banner */
 .banner{
- 
+    margin-top: 5%;
     background-image: url(../img/banner-5.jpg); 
     background-repeat:  no-repeat;
     background-size: cover ;
@@ -276,24 +404,30 @@
     text-align: center;
   
 }
-
+.booknow-banner{
+  margin: 7%
+}
 /* Footer */
 .footer {
   background-color: #e3e0e0;
   width: 100%;
   padding-top: 20px;
 }
+
 .footer h4 {
   font-size: 20px;
   font-weight: bold;
 }
+
 .footer h4, p {
   padding-top: 20px;
 }
+
 .footer p {
   color: #686161;
   font-size: 15px;
 }
+
 .icon-footer {
   display: flex;
   flex-wrap: wrap;
