@@ -1,0 +1,275 @@
+/* ảnh và các input button */
+.inner-page section{
+    width: 100vw;
+    background-image: url("../img/gift-cards-page\ 2\ \(1\).png");
+
+}
+.inner-item h2{
+    justify-content: center;
+    align-items: center;
+    padding-left: 40%;
+    color: hotpink;
+}
+h2{
+    padding-top: 30px;
+}
+.row-header{
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+   
+}
+.hero {
+    font-weight: 50px;
+    justify-content: center;
+    gap: 10px;
+}
+input,button{
+    margin-top: 50px;
+}
+input:focus{
+  outline: none !important ;
+}
+input{
+
+    width: 500px;
+    height: 30px;
+    border-radius: 50px;
+    border: 1px solid hotpink;
+    padding-left: 20px;
+}
+input::placeholder{
+    padding-left: 1px;
+}
+button{
+  width: 80px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid hotpink;
+    background-color: rgb(69, 222, 222);
+
+}
+/* icon của các tên massage */
+.container2{
+    display: flex;
+    justify-content:space-around;
+}
+.container2 a{
+    display: flex;
+    text-decoration: none;
+    margin-top: 18px;
+    color: black;
+}
+.list-service{
+    margin-top: 10px;
+}
+.list-service a:hover{
+    color: hotpink;
+}
+
+.container3-service{
+  border-top: 
+  1px solid #999;
+  border-top-width: 2px;
+ border-top-style: solid;
+ border-top-color: rgb(153, 153, 153);
+}
+
+.container3-service h6{
+    padding-left: 400px;
+    margin-top: 80px;
+    font-size: larger;
+}
+h6{
+  top: 50px;
+  color: #070707;
+  font-size: large;
+  font-weight: 10px;
+}
+.service-item{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 30px;
+}
+.serviceItem{
+  display: flex;
+  /* gap: 50px; */
+  padding-right: 100px;
+}
+.div-serviceItem{
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  /* border: 0.5px solid; */
+  width: 300px;
+  box-shadow: #c21717;
+}
+.div-serviceItem img{
+  /* padding-left: 10px; */
+    display: flex;
+    border-radius: 30px;
+    height: 300px;
+    width: 300px;
+}
+.div-ListserviceItem{
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+.div-ListserviceItem:hover{
+  transform: scale(1.1);
+}
+.div-serviceItem:hover{
+  transform: scale(1.1);
+}
+.div-ListserviceItem img{
+  height:200px ;
+  width: 250px;
+  border-radius: 10px;
+}
+.div-ListserviceItem a{
+  text-decoration: none;
+  display: block;
+  justify-content: center;
+  color: #070707;
+  font-size: 14px;
+  font-weight: 400;
+}
+.div-serviceItem a{
+    text-decoration: none;
+    display: block;
+    justify-content: center;
+    color: #070707;
+    font-size: 14px;
+    font-weight: 400;
+  
+}
+#price{
+    color: #F60606;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header li{
+  list-style: none;
+}
+.header a{
+  list-style: none;
+  text-decoration: none;
+}
+nav{
+  background-color: white;
+  height: 80px;
+  width: 100%;
+}
+nav ul{
+  float:right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+.navbar {
+  background-color: white;
+  height: 80px;
+  width: 100%;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: black;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+nav ul li a:hover{
+  font-size: 17px;
+  color: #FF6A88;
+}
+
+
+.logo {
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+
+/* Footer */
+.footer {
+  height: 100%;
+  width: 100%;
+  padding-top: 20px;
+}
+.row{
+  background-color: #e3e0e0;
+
+}
+.footer h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.footer h4, p {
+  padding-top: 20px;
+}
+.footer p {
+  color: #686161;
+  font-size: 15px;
+}
+.icon-footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  gap:10px
+}
+@media screen and (max-width: 1024px) {
+  .header{
+    display: flex;
+  }
+  .checkbtn{
+    display: block !important ;
+    
+  }
+
+}
