@@ -27,6 +27,14 @@
       "email": "bon.a25@student.passerellesnumriques.org",
       "password": "123123",
       "role": "user"
+    },
+    {
+      "id": 1697628280710,
+      "nameUser": "thu",
+      "email": "thu@gmail.com",
+      "password": "1234567",
+      "password2": "1234567",
+      "role": "user"
     }
   ],
   "Sevicese": [
@@ -101,10 +109,12 @@
       "id": "10"
     }
   ],
-  "Message":[{
-    "id":"1",
-    "nameUser": "thao1234",
-    "email":"thao.le25@student.passerellesnumriques.org",
-    "message ": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus vel fuga labore dicta rerum obcaecati libero tenetur facere error inventore in voluptatum voluptatibus, pariatur nesciunt modi vero laborum repellat eos?"
-  }]
+  "Message": [
+    {
+      "id": "1",
+      "nameUser": "thao1234",
+      "email": "thao.le25@student.passerellesnumriques.org",
+      "message ": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus vel fuga labore dicta rerum obcaecati libero tenetur facere error inventore in voluptatum voluptatibus, pariatur nesciunt modi vero laborum repellat eos?"
+    }
+  ]
 }

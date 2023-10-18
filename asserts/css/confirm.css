@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');  
+
 .content {
     background-image: url(../img/gift-cards-page.jpg); 
     height: calc(50vh - 80px);
+    font-family: 'Poppins', sans-serif;
+
   }
 
   .container-form{
