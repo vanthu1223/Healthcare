@@ -1,0 +1,215 @@
+
+.div-container section{
+    width: 100vw;
+    background-image: url("../img/banner-5\ 2.png");
+
+}
+
+h2{
+    padding-top: 30px;
+    padding-left: 40%;
+}
+/* .inner-item i{
+  padding-top: 30px;
+
+} */
+
+.inner-item p{
+    padding-left: 40%;
+    font-size:larger;
+}
+.row-header{
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+   
+}
+.hero {
+    font-weight: 50px;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 50px;
+}
+input:focus{
+  outline: none !important ;
+}
+input{
+    width: 500px;
+    height: 30px;
+    border-radius: 50px;
+    border: 1px solid hotpink;
+    padding-left: 20px;
+}
+input::placeholder{
+    padding-left: 1px;
+}
+button{
+    width: 80px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid hotpink;
+    color: white;
+    background-color: rgb(38, 183, 223);
+    cursor: pointer;
+}
+/* .list-container{
+    background-color: rgb(232, 150, 191);
+} */
+.list-details{
+    display: flex;
+    /* border: 1px solid; */
+    margin-top: 10px;
+    background-color:  #f4f4f2!important;
+}
+.list-details img{
+    margin-left: 50px;
+    margin-top: 40px;
+    border-radius: 20px;
+    width: 500px;
+}
+.list-button{
+    margin-top: 20px;
+    padding-left: 100px;
+}
+.list-button button{
+    background-color: brown;
+    margin-left: 10px;
+    width: 65px;
+}
+.button a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    padding-left: 15px;
+}
+.list p{
+  padding-top: 30px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .header li{
+    list-style: none;
+  }
+  .header a{
+    list-style: none;
+    text-decoration: none;
+  }
+  nav{
+    background-color: white;
+    height: 80px;
+    width: 100%;
+  }
+  nav ul{
+    float:right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  .navbar {
+    background-color: white;
+    height: 80px;
+    width: 100%;
+  }
+  
+  nav ul {
+    float: right;
+    margin-right: 20px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  
+  nav ul li a {
+    color: black;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  nav ul li a:hover{
+    font-size: 17px;
+    color: #FF6A88;
+  }
+  
+  
+  .logo {
+    cursor: pointer;
+    padding-left: 10px;
+  }
+  
+  .checkbtn {
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #check {
+    display: none;
+  }
+  .star {
+    display:flex;
+    /* width: 16px;
+    height: 16px; */
+    color: gray;
+  }
+  .div-star{
+    padding-left: 50px;
+  }
+  .Recomment{
+    padding-left: 50px;
+  }
+  .Recomment input{
+    border: 1px solid #686161;
+    border-radius: 5px;
+    height: 50px;
+    width: 100%;
+    
+  }
+  
+  
+  /* Footer */
+  .footer {
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+  }
+  .row{
+    background-color: #e3e0e0;
+  
+  }
+  .footer h4 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .footer h4, p {
+    padding-top: 20px;
+  }
+  .footer p {
+    color: #686161;
+    font-size: 15px;
+  }
+  .icon-footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    gap:10px
+  }
+  
