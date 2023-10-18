@@ -1,8 +1,3 @@
-// let btn = document.querySelector('#btn')
-// let sidebar = document.querySelector('.sidebar');
-// btn.onclick = function (){
-//     sidebar.classList.toggle('active');
-// };
 
 // Đẩy dữ liệu từ local lên bản service
 const url = 'http://localhost:4001/Sevicese';  
@@ -19,8 +14,8 @@ fetch(url)
         <td><img src="${Sevicese.image}" alt="Product Image" width="100px" height="100px" /></td>
         <td>${Sevicese.details}</td>
         <td>
-          <button class="btn btn-primary" onclick="update(${Sevicese.id})" style="margin-bottom:5px">update</button>
-          <button class="btn btn-primary" onclick="deleteProduct(${Sevicese.id})">delete</button>
+          <button class="btn btn-outline-warning" onclick="update(${Sevicese.id})" style="margin-bottom:5px">update</button>
+          <button class="btn btn-outline-danger" onclick="deleteProduct(${Sevicese.id})">delete</button>
         </td>
       </tr>
       `;
@@ -47,12 +42,11 @@ fetch("http://localhost:4001/User")
       <tr>
         <td>${user.id}</td>
         <td>${user.nameUser}</td>
-        <td><img src="${user.avatar}" alt="Product Image" width="100px" height="100px" /></td>
         <td>${user.email}</td>
         <td>${user.role}</td>
         <td>
-          <button class="btn btn-primary" onclick="update(${user.id})">update</button>
-          <button class="btn btn-primary" onclick="deleteProduct(${user.id})">delete</button>
+          <button class="btn btn-outline-warning" onclick="update(${user.id})">update</button>
+          <button class="btn btn-outline-danger" onclick="deleteProduct(${user.id})">delete</button>
         </td>
       </tr>
       `;
@@ -102,7 +96,7 @@ function displayData1(html) {
 }
 
 
-// tạo thêm một service mới
+// tạo thêm một service mới// lỗi chưa đẩy dữ liệu lên service
 function newService() {
   const nameService = document.getElementById('nameService').value;
   const price = document.getElementById('price').value;
@@ -129,15 +123,13 @@ function newService() {
     .then(result => {
       console.log('Dữ liệu đã được gửi thành công:', result);
       alert("Dữ liệu cập nhật thành công");
-      displayData2();
-      getServices()
+      displayData1(html1);
     })
     .catch(error => {
       console.error('Lỗi khi gửi dữ liệu:', error);
-      window.location.href = "admin.js";
     });
 }
-function displayData2(html) {
+function displayData1(html) {
   const element = document.getElementById('dataProduct');
   element.innerHTML += html;
 }
