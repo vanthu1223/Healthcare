@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../asserts/css/combo.css">
+    <!-- <link rel="stylesheet" href="../asserts/css/combo.css"> -->
     <link rel="stylesheet" href="../asserts/css/booking.css">
     <link rel="stylesheet" href="../asserts/javaScript/combo.js">
 
@@ -50,10 +50,6 @@
             <h2 class="animate-charcter">Booking 30s<br>
                 <span style="font-size: 14px;">Book online now and embark on an incredible journey with us!</span>
             </h2>
-            <!-- <div class="button-header">
-                <button><a href="#">Login</a></button>
-                <button><a href="#">Resgister</a></button>
-            </div> -->
         </div>
     </div>
 
@@ -90,18 +86,6 @@
                             </div>
                         </div>
                         <div class="col-md-4 mb-3">
-                            <!-- <label for="validationCustomUsername">Username</label> -->
-                            <!-- <div class="input-group"> -->
-
-                            <!-- <div class="input-group-prepend">
-                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
-                                </div> -->
-                            <!-- <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required> -->
-                            <!-- <input type="text" class="form-control datepicker"> -->
-                            <!-- <div class="invalid-feedback"> -->
-                            <!-- Please choose a username. -->
-                            <!-- </div> -->
-                            <!-- </div> -->
 
                             <div class="form-group">
                                 <label for="datepicker">Select Date:</label>
@@ -117,85 +101,83 @@
                     <div class="row">
                         <label for="" style="padding-left: 10px;">Time</label>
                     </div>
-                    <div class="row time">
-                        <div class="col-md-2 mb-2">
-                            <input class="time-picker" type="radio" id="a7" name="aq" value=7>
-                            <label for="a7">7:00</label>
 
-                        </div>
-                        <div class="col-md-2 mb-2">
-                            <input class="time-picker" type="radio" id="a8" name="aq" value=8>
-                            <label for="a8">8:00</label>
-                        </div>
-                        <div class="col-md-2 mb-2">
-                            <input class="time-picker" type="radio" id="a9" name="aq" value=9>
-                            <label for="a9">9:00</label>
-                        </div>
-                        <div class="col-md-2 mb-2">
-                            <input class="time-picker" type="radio" id="a10" name="aq" value=10>
-                            <label for="a10">10:00</label>
-                        </div>
-                        <div class="col-md-2 mb-2">
-                            <input class="time-picker" type="radio" id="a11" name="aq" value=11>
-                            <label for="a11">11:00</label>
-                        </div>
-                    </div>
-                    <div class="row time">
-                        <div class="col-md-2 mb-2">
-                            <input class="time-picker" type="radio" id="a12" name="aq" value=12>
-                            <label for="a12">12:00</label>
+                    <div id="time-picker"></div>
 
-                        </div>
-                        <div class="col-md-2 mb-2">
-                            <input class="time-picker" type="radio" id="a13" name="aq" value=13>
-                            <label for="a13">13:00</label>
-                        </div>
-                        <div class="col-md-2 mb-2">
-                            <input class="time-picker" type="radio" id="a14" name="aq" value=14>
-                            <label for="a14">14:00</label>
-                        </div>
-                        <div class="col-md-2 mb-2">
-                            <input class="time-picker" type="radio" id="a15" name="aq" value=15>
-                            <label for="a15">15:00</label>
-                        </div>
-                        <div class="col-md-2 mb-2">
-                            <input class="time-picker" type="radio" id="a16" name="aq" value=16>
-                            <label for="a16">16:00</label>
-                        </div>
-                    </div>
-                    <div class="row time">
-                        <div class="col-md-2 mb-2">
-                            <input class="time-picker" type="radio" id="a17" name="aq" value=17>
-                            <label for="a17">17:00</label>
-
-                        </div>
-                        <div class="col-md-2 mb-2">
-                            <input class="time-picker" type="radio" id="a18" name="aq" value=18>
-                            <label for="a18">18:00</label>
-                        </div>
-                        <div class="col-md-2 mb-2">
-                            <input class="time-picker" type="radio" id="a19" name="aq" value=19>
-                            <label for="a19">19:00</label>
-                        </div>
-                        <div class="col-md-2 mb-2">
-                            <input class="time-picker" type="radio" id="a20" name="aq" value=20>
-                            <label for="a20">20:00</label>
-                        </div>
-                        <div class="col-md-2 mb-2">
-                            <input class="time-picker" type="radio" id="a21" name="aq" value=21>
-                            <label for="a21">21:00</label>
-                        </div>
-                    </div>
                 </form>
                 <div class="row">
                     <button class="details" style="width: 77%;margin-left: 2%">Click to select service</button>
                 </div>
+                
                 <div class="row">
-                    <h1>Đây là nơi sản phẩm đổ ra</h1>
+                    <div class="col-sm-4 mb-2">
+                        <figure><img src="../asserts/image/avatar1.jpg" alt="ảnh" width="220px" height="200px"></figure>
+                        <hr>
+                            <h5>Massage</h5>
+                            <p>shdhsdvdsg fdsdhfbdsbfhdshfbsdhhbfh jdnfjsdj sdkfnfjkn</p>
+                            <hr>
+                            <label>86$</label>
+                            <div>
+                                <input type="checkbox">
+                            </div>
+                    </div>
+                    <div class="col-sm-4 mb-2">
+                        <figure><img src="../asserts/image/avatar1.jpg" alt="ảnh" width="220px" height="200px"></figure>
+                        <hr>
+                            <h5>Massage</h5>
+                            <p>shdhsdvdsg fdsdhfbdsbfhdshfbsdhhbfh jdnfjsdj sdkfnfjkn</p>
+                            <hr>
+                            <label>86$</label>
+                            <div>
+                                <input type="checkbox">
+                            </div>
+                    </div>
+                    <div class="col-sm-4 mb-2">
+                        <figure><img src="../asserts/image/avatar1.jpg" alt="ảnh" width="220px" height="200px"></figure>
+                        <hr>
+                            <h5>Massage</h5>
+                            <p>shdhsdvdsg fdsdhfbdsbfhdshfbsdhhbfh jdnfjsdj sdkfnfjkn</p>
+                            <hr>
+                            <label>86$</label>
+                            <div>
+                                <input type="checkbox">
+                            </div>
+                    </div>
+                    <div class="col-sm-4 mb-2">
+                        <figure><img src="../asserts/image/avatar1.jpg" alt="ảnh" width="220px" height="200px"></figure>
+                        <hr>
+                            <h5>Massage</h5>
+                            <p>shdhsdvdsg fdsdhfbdsbfhdshfbsdhhbfh jdnfjsdj sdkfnfjkn</p>
+                            <hr>
+                            <label>86$</label>
+                            <div>
+                                <input type="checkbox">
+                            </div>
+                    </div>
+                    <!-- <h1>Đây là nơi sản phẩm đổ ra</h1> -->
+                    <!-- <div class="col-sm-4 mt-3">
+                        <div class="card-booking">
+                          <div class="card-body">
+                            <figure><img src="../asserts/image/avatar1.jpg" alt="ảnh" width="220px" height="200px"></figure>
+                            <hr>
+                            <h5>Massage</h5>
+                            <p>shdhsdvdsg fd</p>
+                            <hr>
+                            <div>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                            </div>
+                            <p class="card-p"> <a href="#"><button class="details">DETAILS</button></a></p>
+                          </div>
+                        </div>
+                    </div> -->
 
                 </div>
                 <div class="row">
-                    <button class="details" style="width: 77%;margin-left: 2%">Book a massage</button>
+                    <button class="details" style="width: 77%;margin-left: 2%"><a href="confirm.html">Book a massage</a></button>
                 </div>
             </div>
             <!-- information of the Spa -->
@@ -218,7 +200,7 @@
         </div>
     </div>
     <!-- footer -->
-
+    
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
