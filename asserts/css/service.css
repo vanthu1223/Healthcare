@@ -1,17 +1,39 @@
 /* ảnh và các input button */
 .inner-page section{
     width: 100vw;
+    height: 30vw;
     background-image: url("../img/gift-cards-page\ 2\ \(1\).png");
 
 }
 .inner-item h2{
     justify-content: center;
     align-items: center;
-    padding-left: 40%;
+    padding-left: 35%;
     color: hotpink;
 }
 h2{
-    padding-top: 30px;
+    padding-top: 10%;
+    text-align: center;
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #FF99AC 0%,
+    #FF6A88 29%,
+    #FF9A8B 67%,
+    #FBAB7E 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 60px;
+      font-weight: bold;
 }
 .row-header{
     text-align: center;
@@ -25,31 +47,7 @@ h2{
     justify-content: center;
     gap: 10px;
 }
-input,button{
-    margin-top: 50px;
-}
-input:focus{
-  outline: none !important ;
-}
-input{
 
-    width: 500px;
-    height: 30px;
-    border-radius: 50px;
-    border: 1px solid hotpink;
-    padding-left: 20px;
-}
-input::placeholder{
-    padding-left: 1px;
-}
-button{
-  width: 80px;
-    height: 35px;
-    border-radius: 20px;
-    border: 1px solid hotpink;
-    background-color: rgb(69, 222, 222);
-
-}
 /* icon của các tên massage */
 .container2{
     display: flex;
@@ -95,6 +93,10 @@ h6{
     justify-content: center;
     gap: 50px;
     padding-top: 30px;
+}
+.product{
+  display: flex;
+  gap: 30px;
 }
 .serviceItem{
   display: flex;
@@ -239,15 +241,10 @@ nav ul li a:hover{
 }
 
 
-/* Footer */
 .footer {
-  height: 100%;
-  width: 100%;
-  padding-top: 20px;
-}
-.row{
   background-color: #e3e0e0;
   width: 100%;
+  padding-top: 20px;
 }
 .footer h4 {
   font-size: 20px;
@@ -265,6 +262,9 @@ nav ul li a:hover{
   flex-wrap: wrap;
   padding-left: 10px;
   gap:10px
+}
+.icon-footer label {
+  font-size: 10px;
 }
 /* Add the following code at the end of the CSS file */
 

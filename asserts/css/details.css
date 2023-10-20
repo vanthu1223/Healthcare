@@ -1,18 +1,36 @@
 
 .div-container section{
     width: 100vw;
+    height: 20vw;
     background-image: url("../img/banner-5\ 2.png");
 
 }
 
 h2{
-    padding-top: 30px;
-    padding-left: 40%;
+    padding-top: 50px;
+    padding-left: 35%;
+    text-align: center;
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #FF99AC 0%,
+    #FF6A88 29%,
+    #FF9A8B 67%,
+    #FBAB7E 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 60px;
+      font-weight: bold;
 }
-/* .inner-item i{
-  padding-top: 30px;
-
-} */
 
 .inner-item p{
     padding-left: 40%;
@@ -31,21 +49,9 @@ h2{
     gap: 10px;
     padding-top: 50px;
 }
-input:focus{
-  outline: none !important ;
-}
-input{
-    width: 500px;
-    height: 30px;
-    border-radius: 50px;
-    border: 1px solid hotpink;
-    padding-left: 20px;
-}
-input::placeholder{
-    padding-left: 1px;
-}
+
 button{
-    width: 80px;
+    width: 70px;
     height: 35px;
     border-radius: 20px;
     border: 1px solid hotpink;
@@ -53,9 +59,7 @@ button{
     background-color: rgb(38, 183, 223);
     cursor: pointer;
 }
-/* .list-container{
-    background-color: rgb(232, 150, 191);
-} */
+
 .list-details{
     display: flex;
     /* border: 1px solid; */
@@ -164,15 +168,6 @@ button{
   #check {
     display: none;
   }
-  .star {
-    display:flex;
-    /* width: 16px;
-    height: 16px; */
-    color: gray;
-  }
-  .div-star{
-    padding-left: 50px;
-  }
   .Recomment{
     padding-left: 50px;
   }
@@ -183,7 +178,6 @@ button{
     width: 100%;
     
   }
-  
   
   /* Footer */
   .footer {

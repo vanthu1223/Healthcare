@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
   <script src="../asserts/javaScript/home.js"></script>
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../asserts/css/home.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -20,36 +20,36 @@
         <i class="fa fa-bars" style="font-size:30px"></i>
       </label>
         <label class="logo"><img src="../asserts/image/logo-spa-removebg-preview.png" alt="logo" width="150px"></label>
-        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+   
         <ul>
-          <li><a href="#" target="_blank">Home</a></li>
+          <li><a href="home.html" target="_blank">Home</a></li>
           <li><a href="#"target="_blank">Spa Servieces</a></li>
-          <li><a href="#" target="_blank">Most Used Service</a></li>
-          <li><a href="#" target="_blank">Discount Combo</a></li>
+          <li><a href="../pages/service/service.html" target="_blank">Most Used Service</a></li>
+          <li><a href="combo.html" target="_blank">Discount Combo</a></li>
           <li><a href="contact.html" target="_blank">Contact Us</a></li>
+          <li class="user" data-bs-toggle="popover"><a href="user.html"><i class="fa fa-user-circle-o" aria-hidden="true" ></i></a>
+          </li>
           <li>
-            <select class="form-select" aria-label="Default select example">
-              <option selected>Language <i class="fa fa-language" aria-hidden="true"></i></option>
-              <option value="1">English</option>
-              <option value="2">Vietnamese</option>
-            </select>
+            <a href="login.html" id="loginButton">Login</a>
+          </li>
+          <li>
+            <a href="resgister.html" id="registerButton">Resgister</a>
           </li>
         </ul>
     </nav>
   </div>
   <div class="content">
    <h2 class="animate-charcter">Welcome to Spa servies</h2>
-   <div class="button-header">
-    <button><a href="#">Login</a></button>
-    <button><a href="#">Resgister</a></button>
-   </div>
+   <!-- <div class="button-header">
+   </div> -->
   </div>
 </div>
 <div class="bodier">
   <div class="container">
   <section class="section">
     <div class="container reveal">
-      <h2>Reputable Spa In Vietnam</h2>
+      <h2 style="font-weight: bold;">Reputable Spa In Vietnam</h2>
+      <p style="color: black;text-align: center;font-size: 17px;">Clean - Cool - Cheap</p>
       <div class="text-container">
         <div class="text-box">
           <div class="flip-card">                                                                                       
@@ -58,9 +58,11 @@
                 <img src="../asserts/image/hinh1.jpg" alt="Avatar" style="width:300px;height:300px;background-size: cover;">
               </div>
               <div class="flip-card-back">
-                <h1>John Doe</h1> 
-                <p>Architect & Engineer</p> 
-                <p>We love that guy</p>
+                <h1>Healthy Massage </h1> 
+                <p>Improve sleep
+                  Reduce low back pain.
+                  Reduce shoulder and neck pain
+                  Supports circulation and blood circulation.</p> 
               </div>
             </div>
           </div>
@@ -72,9 +74,8 @@
                 <img src="../asserts/image/hình-massage.jpg" alt="Avatar" style="width:300px;height:300px;">
               </div>
               <div class="flip-card-back">
-                <h1>John Doe</h1> 
-                <p>Architect & Engineer</p> 
-                <p>We love that guy</p>
+                <h1>Facial Care</h1> 
+                <p>Facials can help remove dirt, grime, and acne-causing bacteria from your face. They also remove toxins, oils, and dead skin cells that cause acne.</p> 
               </div>
             </div>
           </div>
@@ -86,9 +87,13 @@
                 <img src="../asserts/image/hình3.jpg" alt="Avatar" style="width:300px;height:300px;">
               </div>
               <div class="flip-card-back">
-                <h1>John Doe</h1> 
-                <p>Architect & Engineer</p> 
-                <p>We love that guy</p>
+                <h1>Foot Massage</h1> 
+                <p>Reduce stress levels
+                  Lower blood pressure
+                   Improve mood
+                  Reduces headaches Reduces pain caused by foot diseases
+                   Minimize risk of injury
+                </p> 
               </div>
             </div>
           </div>
@@ -100,11 +105,11 @@
     <div class="container-fluid reveal fade-left">
       <div class="text-container">
         <div class="text-box">
-          <img src="../asserts/image/Group 16 (1).png" alt="ảnh" width="400px">
+          <img src="../asserts/image/Group 16 (1).png" alt="ảnh" width="400px" class="big_image">
         </div>
         <div class="text-box" >
-          <p>Welcome to Spa</p>
-          <h2 style="text-align: left;">100 years of experience</h2>
+          <p style="color: gray;">Welcome to Spa</p>
+          <h2 style="text-align: left; font-weight: bold;">10 years of experience</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
             eius molestiae perferendis eos provident vitae iste.
@@ -123,32 +128,30 @@
   </div>
   <div class="container-fluid" style="background-color: bisque;">
     <div class="row" style="text-align: center;padding-bottom: 10px ;">
-      <div class="col-sm-3">  <div class="cow">
-        <img src="../asserts/image/hình_cọ-removebg-preview.png" alt="ảnh" width="200px" style="opacity: 0.5;">
-      </div></div>
-      <div class="col-sm-6"><p>GOOD FOR HEATHER</p>
-        <H2>Why we are you choose spa</H2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero asperiores, commodi sint voluptatem earum quo assumenda eos laborum enim non unde illum veniam, rem cupiditate molestiae laboriosam voluptas expedita quod!</p>
-      </div>
+      <div class="col-sm-3"></div>
       <div class="col-sm-3"></div>
     </div>
     <div class="row">
       <div class="col-sm-1"> </div>
       <div class="col-sm-3">
-        <h3>Exprienced Specialist</h3>
-        <p>Message,.....</p><br>
-        <h3>100% sale</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias culpa ratione distinctio esse harum! Doloribus perferendis amet autem, eum itaque modi quibusdam, optio magnam praesentium quam esse dolore non quia.</p>
+        <div class="why">
+          <h3>Exprienced Specialist</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem non officia iusto ex illum debitis porro, quae cupiditate id eum perferendis repellendus adipisci dolore quidem ducimus reprehenderit recusandae laudantium aut.</p><br>
+          <h3>10% sale</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias culpa ratione distinctio esse harum! Doloribus perferendis amet autem, eum itaque modi quibusdam, optio magnam praesentium quam esse dolore non quia.</p>
+        </div>
       </div>
       <div class="col-sm-4" style="text-align: center;">
         <img src="../asserts/image/massage-2768833_1280.jpg" alt="ảnh" width="300px" style="border-radius: 3px;">
         <img src="../asserts/image/masseur-doing-massage-backbone-man-body-spa-salon-beauty-treatment-concept.jpg" alt="ảnh" width="300px" style="border-radius: 3px;margin-top: 10px;">
       </div>
       <div class="col-sm-3">
-        <h3>Heading</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum voluptatem quam aspernatur obcaecati omnis eveniet nihil? Molestiae voluptatibus magnam alias, saepe est facere, quae illum beatae, sequi quam sed maxime?</p><br>
-        <h3>Heading</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam consequatur, at numquam sit aperiam nostrum est non consequuntur quibusdam omnis quae obcaecati molestiae iure recusandae eos reiciendis sint maxime delectus?</p>
+        <div class="why">
+          <h3>Exprienced Specialist</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem non officia iusto ex illum debitis porro, quae cupiditate id eum perferendis repellendus adipisci dolore quidem ducimus reprehenderit recusandae laudantium aut.</p><br>
+          <h3>10% sale</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias culpa ratione distinctio esse harum! Doloribus perferendis amet autem, eum itaque modi quibusdam, optio magnam praesentium quam esse dolore non quia.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -343,8 +346,7 @@
             </div>
               <div class="col-sm-1"></div>
               <div class="col-sm-2">
-                <h4>Về Chúng Tôi</h4>
-                <p>About Us</p>
+                <h4>About Us</h4>
                 <p>Contact Us</p>
                 <p>Career</p>
                 <p>Advertising</p>
@@ -361,8 +363,9 @@
                 </div>
                 <div class="col-sm-1"></div>
                 <div class="col-sm-2">
-                  <h4>Subscribe Us</h4>
-                <p>  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae aspernatur earum placeat in saepe odio, eos aliquid error? Distinctio vero officiis dignissimos earum quia atque est aperiam odio perspiciatis suscipit?</p>
+                  <h4>Beauty Queen</h4>
+                  <p>Question</p>
+                  <p>Help</p>
                 </div>
           </div>
         </div>
@@ -383,16 +386,16 @@
           <div class="col-sm-3">
             <div class="icon-footer">
               <div>
-                <label>Facebook</label> <i class="bi bi-facebook"></i>
+                <label>Facebook</label> <i class="fa fa-facebook" aria-hidden="true"></i>
               </div>
               <div>
-                <label>Youtube</label> <i class="bi bi-youtube"></i>
+                <label>Youtube</label> <i class="fa fa-youtube-play" aria-hidden="true"></i>
               </div>
               <div>
-                <label>Twitter</label> <i class="bi bi-twitter"></i>
+                <label>Twitter</label> <i class="fa fa-twitter" aria-hidden="true"></i>
               </div>
               <div>
-                <label>Instagram</label> <i class="bi bi-instagram"></i>
+                <label>Instagram</label> <i class="fa fa-instagram" aria-hidden="true"></i>
               </div>
             </div>
           </div>
@@ -403,5 +406,7 @@
 
 </div>
 </div>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="../asserts/javaScript/home.js"></script>
 </body>
 </html>

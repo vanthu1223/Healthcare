@@ -5,7 +5,8 @@
       "name": "Full back Massage",
       "price": "20$",
       "Time": "(30-60 minutes)",
-      "img": "../../asserts/img/back/back-massage-therapy-concept.jpg"
+      "img": "../../asserts/img/back/back-massage-therapy-concept.jpg",
+      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
       
     },
     {
@@ -13,14 +14,16 @@
       "name": "Back Massage with hot stones",
       "price": "15$",
       "Time": "(30-50 minutes)",
-      "img": "../../asserts/img/back/stones-3184610_640.jpg"
+      "img": "../../asserts/img/back/stones-3184610_640.jpg",
+      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
     },
     {
       "id": 3,
       "name": "Massage and apply oil",
       "price": "17$",
       "Time": "(30-40 minutes)",
-      "img": "../../asserts/img/back/honey-pouring-woman-s-naked-back-spa-salon.jpg"
+      "img": "../../asserts/img/back/honey-pouring-woman-s-naked-back-spa-salon.jpg",
+      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
     },
     {
       "id": 4,
@@ -71,21 +74,21 @@
     },
     {
       "id": 2,
-      "name": "Massage body",
+      "name": "Massage Full body",
       "price": "20$",
       "Time": "(30-60 minutes)",
       "img": "../../asserts/img/body/masseur-doing-massage-backbone-man-body-spa-salon-beauty-treatment-concept (1).jpg"
     },
     {
       "id": 3,
-      "name": "Massage body",
+      "name": "Massage new body",
       "price": "2.5$",
       "Time": "(10 minutes)",
       "img": "../../asserts/img/body/istockphoto-1162187810-1024x1024.jpg"
     },
     {
       "id": 4,
-      "name": "Massage body",
+      "name": "Massage bodybody",
       "price": "10$",
       "Time": "(60 minute)",
       "img": "../../asserts/img/body/woman-567021_640.jpg"

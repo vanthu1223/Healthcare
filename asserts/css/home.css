@@ -29,6 +29,19 @@ nav ul li{
   line-height: 80px;
   margin: 0 5px;
 }
+nav ul li i{
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid gray;
+  padding: 10px;
+  transition: 0.5s;
+}
+nav ul li i:hover {
+  background-color: #faa292;
+  border: none;
+  cursor: pointer;
+}
+
 .navbar {
   background-color: white;
   height: 80px;
@@ -83,8 +96,11 @@ nav ul li a:hover{
   .checkbtn {
     display: block;
   }
-
+  .big_image {
+    width: 200px;
+  }
   nav ul {
+    background-color:rgba(100, 100, 111, 0.5);
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -92,6 +108,7 @@ nav ul li a:hover{
     left: -100%;
     text-align: center;
     transition: all 0.5s;
+    color: #FFF;
   }
 
   nav ul li {
@@ -154,27 +171,6 @@ nav ul li a:hover{
   }
 }
 
-/* Login Register */
-.button-header{
-  border: none;
-}
-.button-header button{
-  background-color: transparent;
-  padding: 10px;
-  
-}
-.button-header a{
-  color: white;
-  padding: 20px;
-  transition: 0.5s;
-  font-size: 19px;
-}
-.button-header a:hover{
-  font-size: 20px;
-  background-color: transparent;
-  color: #FF6A88;
-}
-
 
 /* Phần headefding */
 /* Card xoay */
@@ -220,7 +216,7 @@ nav ul li a:hover{
 
 .flip-card-back {
   border-radius: 10px;
-  background-color:lightcoral;
+  background-color:#FF9A8B;
   color: white;
   transform: rotateY(180deg);
 }
@@ -320,6 +316,20 @@ section .text-container .text-box h3{
   bottom:-8px;
   padding:0 15px;
 }
+
+/*  */
+.why{
+  margin-top: 100px;
+}
+.why h3 {
+  font-size: 500;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #686161;
+}
+
+
+/*  */
 
 /* card hình ảnh nháy */
 .container-h1 {
@@ -457,5 +467,8 @@ transition: 0.5s;
   flex-wrap: wrap;
   padding-left: 10px;
   gap:10px
+}
+.icon-footer label {
+  font-size: 10px;
 }
 
