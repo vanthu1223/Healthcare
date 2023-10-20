@@ -1,3 +1,4 @@
+
 // CHuyển động
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
@@ -17,38 +18,37 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
+function myLogin(e) {
+  e.preventDefault();
+  const usernameInput = document.getElementById("username").value;
+  const passwordInput = document.getElementById("password").value;
+  const Users = {
+    username: usernameInput.trim(),
+    password: passwordInput.trim(),
+  };
+  const arrUsers = [];
+  console.log(Users);
 
-function myLogin() {
-  function myLogin() {
-    const usernameInput = document.getElementById("username").value;
-    const passwordInput = document.getElementById("password").value;
-    const Users = {
-      username: usernameInput,
-      password: passwordInput
-    };
-    const arrUsers = [];
-  
-    fetch('http://localhost:4001/User')
-      .then(response => response.json())
-      .then(data => {
-        console.log(data);
-        data?.forEach(item => {
-          console.log(item.id, item.name, item.password);
-          if (Users.username === item.name && Users.password === item.password) {
-            arrUsers.push(Users);
-            localStorage.setItem('list_user', JSON.stringify(arrUsers));
-            alert("Đăng nhập thành công");
-            window.location.href = './pages/home.html';
-          } else {
-            alert("Đăng nhập không thành công");
-          }
-        });
-      })
-      .catch(error => {
-        console.error(error);
-      });
-  }
+  fetch("http://localhost:4001/User")
+    .then((response) => response.json())
+    .then((data) => {
+      let user = data.find(
+        (e) => Users.username === e.nameUser && Users.password === e.password
+      );
+      if (user) {
+        localStorage.setItem(
+          "list_user",
+          JSON.stringify({ id: user.id, role: user.role })
+        );
+        alert("Đăng nhập thành công");
+
+        window.location.href = "./home.html";
+      } else {
+        console.log("Dang nhap khong thanh cong");
+        return;
+      }
+    })
+    .catch((error) => {
+      console.error(error);
+    });
 }
-
-
-
