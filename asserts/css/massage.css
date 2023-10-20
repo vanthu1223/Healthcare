@@ -110,6 +110,7 @@ nav ul li a {
 }
 
 .animate-charcter {
+    margin-left: 35%;
     padding: 10px;
     text-align: center;
     text-transform: uppercase;
@@ -265,4 +266,5 @@ p {
     padding-top: 2px;
 
 }
+
 
