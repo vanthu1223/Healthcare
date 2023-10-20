@@ -20,10 +20,10 @@
               <label class="logo"><img src="../asserts/image/logo-spa-removebg-preview.png" alt="logo" width="150px"></label>
               <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
               <ul>
-                <li><a href="../pages/home.html" target="_blank">Home</a></li>
-                <li><a href="../pages/" target="_blank">Spa Servieces</a></li>
-                <li><a href="#" target="_blank">Most Used Service</a></li>
-                <li><a href="#" target="_blank">Discount Combos</a></li>
+                <li><a href="../pages/home.html">Home</a></li>
+                <li><a href="../pages/">Spa Servieces</a></li>
+                <li><a href="#">Most Used Service</a></li>
+                <li><a href="#">Discount Combos</a></li>
                 <li><a href="../pages/contact.html"target="_blank">Contact Us</a></li>
                 <li class="user"><a href="user.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
                   <li>
@@ -61,7 +61,7 @@
                         <div class="card-body">
                             <div class="container" style="text-align: center; justify-content: center;align-items: center;">
                             <img id="avatar" style="width: 100px; height: 100px; border-radius: 50%;">
-                            <h2>Hi <span id="avatarUser" class="avatarUser"></span></h2>
+                            <h2>Hi <span id="avatarUser" class="avatarUser" style="color: #FF6A88; text-transform: uppercase;"></span></h2>
                             <p class="title">Welcome to our spa. This is your personal information</p>
                               <div class="row">
                                 <div class="col-sm-3"></div>
@@ -81,12 +81,14 @@
                                 </div>
                                 <div class="col-sm-3"></div>
                               </div>
-                              <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal1">Change Password</button>
+                              <!-- button change Password -->
+                              <button type="button" class="button"  id="button" data-bs-toggle="modal" data-bs-target="#exampleModal1">Change Password</button>
+
                               <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                   <div class="modal-content">
                                     <div class="modal-header">
-                                      <h5 class="modal-title" id="exampleModalLabel">Change your Password</h5>
+                                      <h5 class="modal-title" id="exampleModalLabel" class="changePassword">Change your Password</h5>
                                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body" style="text-align: left;">
@@ -116,7 +118,9 @@
                                   </div>
                                 </div>
                               </div>
-                              <button type="button" id="fix"  data-bs-toggle="modal" data-bs-target="#exampleModal" class="button">Change</button>
+                              <!-- button change -->
+                              <button type="button" class="button"  id="buttonChange" data-bs-toggle="modal" data-bs-target="#exampleModal">Change</button>
+
                               <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                   <div class="modal-content">
@@ -147,12 +151,12 @@
                                     </div>
                                     <div class="modal-footer">
                                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                      <button type="button" class="btn btn-success">Save changes</button>
+                                      <button type="button" class="btn btn-success" onclick="myFix()">Save changes</button>
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                              <button type="button" onclick="myLogout()" class="button">Logout</button>
+                              <button type="button" id="buttonLogout" onclick="myLogout()" class="button">Logout</button>
                             </div>
                         </div>
                       </div>

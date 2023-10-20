@@ -32,7 +32,7 @@
       "id": 1697628280710,
       "nameUser": "thu",
       "email": "thu@gmail.com",
-      "password": "1234567",
+      "password": "12345678",
       "password2": "1234567",
       "role": "user"
     },
@@ -75,10 +75,10 @@
       "id": "4"
     },
     {
-      "nameService": "nourishing shampoo",
+      "nameService": "Nourishing Shampoo",
       "price": 75,
       "image": "https://img.freepik.com/free-photo/woman-washing-head-hairsalon_1157-27179.jpg?w=996&t=st=1696650012~exp=1696650612~hmac=cc2dec067b2c87b260f9e9db6b0465d7d3d4116e110ee0a43a5b195eeb716b44",
-      "details": "Agran has outstanding effectiveness in nourishing and restoring hair. Specially combined with Jojoba and almond essential oils create a nutrient source of vitamins C, E and omega 3.6.9 to help nourish and restore hair from deep inside.",
+      "details": "Agran has outstanding effectiveness in nourishing and restoring hair. Specially combined with Jojoba and almond essential oils create a nutrient source of vitamins C, E and omega 3.6.9 ",
       "id": "5"
     },
     {

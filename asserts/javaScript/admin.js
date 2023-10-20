@@ -63,40 +63,7 @@ function displayData(html1) {
 }
 
 
-// 
-
-fetch( 'http://localhost:4001/Services')
-  .then(response => response.json())
-  .then(data => {
-    console.log(data);
-    data.forEach(service => {
-      const html = `
-      <tr>
-        <td>${service.id}</td>
-        <td>${service.nameService}</td>
-        <td>${service.price}</td>
-        <td><img src="${service.image}" alt="Product Image" width="100px" height="100px" /></td>
-        <td>${service.details}</td>
-        <td>
-          <button class="btn btn-primary" onclick="update(${service.id})" style="margin-bottom:5px">update</button>
-          <button class="btn btn-primary" onclick="deleteProduct(${service.id})">delete</button>
-        </td>
-      </tr>
-      `;
-      displayData1(html);
-    });
-  })
-  .catch(error => {
-    console.error(error);
-  });
-
-function displayData1(html) {
-  const element = document.getElementById('dataProduct');
-  element.innerHTML += html;
-}
-
-
-// tạo thêm một service mới// lỗi chưa đẩy dữ liệu lên service
+// Tạo mới một service
 function newService() {
   const nameService = document.getElementById('nameService').value;
   const price = document.getElementById('price').value;
@@ -104,13 +71,14 @@ function newService() {
   const details = document.getElementById('details').value;
 
   const data = {
+    //id:
     nameService: nameService,
     price: price,
     image: image,
     details: details
   };
 
-  const url = 'http://localhost:4001/Services'; // Đường dẫn API JSON
+  const url = 'http://localhost:4001/Sevicese'; // Đường dẫn API JSON
 
   fetch(url, {
     method: 'POST',
@@ -122,16 +90,38 @@ function newService() {
     .then(response => response.json())
     .then(result => {
       console.log('Dữ liệu đã được gửi thành công:', result);
-      alert("Dữ liệu cập nhật thành công");
-      displayData1(html1);
+      alert('Dữ liệu cập nhật thành công');
+      fetch('http://localhost:4001/Sevicese')
+        .then(response => response.json())
+        .then(data => {
+          console.log(data);
+          data?.forEach(service => {
+            const html = `
+            <tr>
+              <td>${service.id}</td>
+              <td>${service.nameService}</td>
+              <td>${service.price}</td>
+              <td><img src="${service.image}" alt="Product Image" width="100px" height="100px" /></td>
+              <td>${service.details}</td>
+              <td>
+                <button class="btn btn-primary" onclick="update(${service.id})" style="margin-bottom:5px">update</button>
+                <button class="btn btn-primary" onclick="deleteProduct(${service.id})">delete</button>
+              </td>
+            </tr>
+            `;
+            displayData1(html);
+          });
+        })
+        .catch(error => {
+          console.error(error);
+        });
     })
     .catch(error => {
       console.error('Lỗi khi gửi dữ liệu:', error);
     });
 }
+
 function displayData1(html) {
   const element = document.getElementById('dataProduct');
   element.innerHTML += html;
 }
-
-
