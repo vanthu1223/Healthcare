@@ -24,18 +24,18 @@
         <label class="logo"><img src="../../asserts/img/logo-spa 1.png" alt="logo" width="150px"></label>
         <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
         <ul>
-          <li><a href="#" target="_blank">Home</a></li>
-          <li><a href="#" target="_blank">Spa Servieces</a></li>
-          <li><a href="#" target="_blank">Most Used Service</a></li>
-          <li><a href="#" target="_blank">Discount Combo</a></li>
-          <li><a href="contact.html" target="_blank">Contact Us</a></li>
-          <li>
-            <select class="form-select" aria-label="Default select example">
-              <option selected>Language <i class="fa fa-language" aria-hidden="true"></i></option>
-              <option value="1">English</option>
-              <option value="2">Vietnamese</option>
-            </select>
-          </li>
+          <li><a href="../home.html">Home</a></li>
+          <li><a href="#">Spa Servieces</a></li>
+          <li><a href="#">Most Used Service</a></li>
+          <li><a href="../combo.html">Discount Combo</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li class="user"><a href="user.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+            <li>
+              <a href="login.html" id="loginButton">Login</a>
+            </li>
+            <li>
+              <a href="resgister.html" id="registerButton">Resgister</a>
+            </li>
         </ul>
       </nav>
     </div>
@@ -43,7 +43,7 @@
       <section class="inner-item">
         <!-- <i class="fa fa-chevron-left"></i> -->
         <div class="">
-          <h2 style="color: hotpink;">BEAUTY QEEN</h2>
+          <h2 class="animate-charcter">details</h2>
         </div>
         <div class="container1">
           <div class="row-header">
@@ -60,10 +60,8 @@
         <img src="../../asserts/img/back/woman-3701712_640.jpg" alt="">
         <div class="list-button">
           <p><strong>Back Massage</strong> (30-60 minute)</p>
-          <!-- <p>(30-60 phút)</p> -->
           <p class="text-danger"><b>450.000VND</b></p>
-          <button class="button"><a href="detailsBook.html">Book</a></button>
-          <!-- </div> -->
+          <button class="button"><a href="../booking.html">Book</a></button>
           <div class="div-service">
             <p><strong>Service details</strong></p>
             Widen joint spaces, and release pressure on roots and nerves. <br>
@@ -80,12 +78,11 @@
           <p><strong>Service reviews and comments</strong></p>
         </div>
         <div class="star">
-          <div class="star"><i class="fa fa-star"></i></div>
-          <div class="star"><i class="fa fa-star"></i></div>
-          <div class="star"><i class="fa fa-star"></i></div>
-          <div class="star"><i class="fa fa-star"></i></div>
-          <div class="star"><i class="fa fa-star"></i></div>
-          <div class="star">(0)</div>
+          <div class="star"><i class="fa fa-star " style="color: 	#FFD700;"></i></div>
+          <div class="star"><i class="fa fa-star" style="color: 	#FFD700;"></i></div>
+          <div class="star"><i class="fa fa-star" style="color: 	#FFD700;"></i></div>
+          <div class="star"><i class="fa fa-star" style="color: 	#FFD700;"></i></div>
+          <div class="star"><i class="fa fa-star" style="color: 	#FFD700;"></i></div>
         </div>
 
       </div>
@@ -171,6 +168,12 @@
             </div>
           </div>
         </div>
+        <script src="../../asserts/javaScript/loadProfileUser.js"></script>
+        <script>
+          function myFunction(x) {
+          x.classList.toggle("fa-fa-star-o");
+        }
+        </script>
 </body>
 
 </html>

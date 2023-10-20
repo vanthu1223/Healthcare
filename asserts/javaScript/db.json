@@ -2,80 +2,47 @@
   "User": [
     {
       "id": 1,
-      "nameUser": "Vân Thư",
+      "nameUser": "thu123",
       "email": "thu.vo25@student.passerellesnumriques.org",
       "password": "123123",
       "role": "admin"
     },
     {
       "id": 2,
-      "nameUser": "Văn Thảo",
+      "nameUser": "thao123",
       "email": "thao.le25@student.passerellesnumriques.org",
       "password": "123123",
       "role": "user"
     },
     {
       "id": 3,
-      "nameUser": "Hồng Duyên",
+      "nameUser": "duyen123",
       "email": "duyen.dinh25@student.passerellesnumriques.org",
       "password": "123123",
       "role": "user"
     },
     {
       "id": 4,
-      "nameUser": "A Bồn",
+      "nameUser": "bon123",
       "email": "bon.a25@student.passerellesnumriques.org",
       "password": "123123",
       "role": "user"
     },
     {
-      "id": 1697416642248,
+      "id": 1697628280710,
       "nameUser": "thu",
-      "email": "thu.vo25@student.gmail.com",
-      "password": "1234567",
-      "password2": "1234567"
+      "email": "thu@gmail.com",
+      "password": "12345678",
+      "password2": "1234567",
+      "role": "user"
     },
     {
-      "id": 1697416710091,
+      "id": 1697637200775,
       "nameUser": "thu",
-      "email": "t.@gmail.com",
+      "email": "thu@gmail.com",
       "password": "1234567",
-      "password2": "1234567"
-    },
-    {
-      "id": 1697416843751,
-      "nameUser": "thu",
-      "email": "t.@gmail.com",
-      "password": "1234567",
-      "password2": "1234567"
-    },
-    {
-      "id": 1697416878094,
-      "nameUser": "thu",
-      "email": "t.@gmail.com",
-      "password": "1234567",
-      "password2": "1234567"
-    },
-    {
-      "id": 1697416878093,
-      "nameUser": "thu",
-      "email": "t.@gmail.com",
-      "password": "1234567",
-      "password2": "1234567"
-    },
-    {
-      "id": 1697416878097,
-      "nameUser": "thu",
-      "email": "t.@gmail.com",
-      "password": "1234567",
-      "password2": "1234567"
-    },
-    {
-      "id": 1697416914722,
-      "nameUser": "thu",
-      "email": "1@gmail.com",
-      "password": "1234567",
-      "password2": "1234567"
+      "password2": "1234567",
+      "role": "user"
     }
   ],
   "Sevicese": [
@@ -108,10 +75,10 @@
       "id": "4"
     },
     {
-      "nameService": "nourishing shampoo",
+      "nameService": "Nourishing Shampoo",
       "price": 75,
       "image": "https://img.freepik.com/free-photo/woman-washing-head-hairsalon_1157-27179.jpg?w=996&t=st=1696650012~exp=1696650612~hmac=cc2dec067b2c87b260f9e9db6b0465d7d3d4116e110ee0a43a5b195eeb716b44",
-      "details": "Agran has outstanding effectiveness in nourishing and restoring hair. Specially combined with Jojoba and almond essential oils create a nutrient source of vitamins C, E and omega 3.6.9 to help nourish and restore hair from deep inside.",
+      "details": "Agran has outstanding effectiveness in nourishing and restoring hair. Specially combined with Jojoba and almond essential oils create a nutrient source of vitamins C, E and omega 3.6.9 ",
       "id": "5"
     },
     {
@@ -148,6 +115,14 @@
       "image": "https://img.freepik.com/free-photo/spa-treatment-product-female-feet-hand-spa-orchid-flowers-ceramic-bowl_1150-37717.jpg?w=996&t=st=1696651219~exp=1696651819~hmac=8a1f5a43446177cff4370c79e0e5609c6d9dca82353d6965e32436055eb6bbfb",
       "details": "Helps the mind relax, reduce anxiety and stress.Treatment of some diseases: Insomnia, painful and swollen leg joints, cold feet, high blood pressure, dizziness",
       "id": "10"
+    }
+  ],
+  "Message": [
+    {
+      "id": "1",
+      "nameUser": "thao1234",
+      "email": "thao.le25@student.passerellesnumriques.org",
+      "message ": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus vel fuga labore dicta rerum obcaecati libero tenetur facere error inventore in voluptatum voluptatibus, pariatur nesciunt modi vero laborum repellat eos?"
     }
   ]
 }
