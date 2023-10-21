@@ -1,8 +1,3 @@
-// let btn = document.querySelector('#btn')
-// let sidebar = document.querySelector('.sidebar');
-// btn.onclick = function (){
-//     sidebar.classList.toggle('active');
-// };
 
 // Đẩy dữ liệu từ local lên bản service
 const url = 'http://localhost:4001/Sevicese';  
@@ -19,8 +14,8 @@ fetch(url)
         <td><img src="${Sevicese.image}" alt="Product Image" width="100px" height="100px" /></td>
         <td>${Sevicese.details}</td>
         <td>
-          <button class="btn btn-primary" onclick="update(${Sevicese.id})" style="margin-bottom:5px">update</button>
-          <button class="btn btn-primary" onclick="deleteProduct(${Sevicese.id})">delete</button>
+          <button class="btn btn-outline-warning" onclick="update(${Sevicese.id})" style="margin-bottom:5px">update</button>
+          <button class="btn btn-outline-danger" onclick="deleteProduct(${Sevicese.id})">delete</button>
         </td>
       </tr>
       `;
@@ -47,12 +42,11 @@ fetch("http://localhost:4001/User")
       <tr>
         <td>${user.id}</td>
         <td>${user.nameUser}</td>
-        <td><img src="${user.avatar}" alt="Product Image" width="100px" height="100px" /></td>
         <td>${user.email}</td>
         <td>${user.role}</td>
         <td>
-          <button class="btn btn-primary" onclick="update(${user.id})">update</button>
-          <button class="btn btn-primary" onclick="deleteProduct(${user.id})">delete</button>
+          <button class="btn btn-outline-warning" onclick="update(${user.id})">update</button>
+          <button class="btn btn-outline-danger" onclick="deleteProduct(${user.id})">delete</button>
         </td>
       </tr>
       `;
@@ -69,40 +63,7 @@ function displayData(html1) {
 }
 
 
-// 
-
-fetch( 'http://localhost:4001/Services')
-  .then(response => response.json())
-  .then(data => {
-    console.log(data);
-    data.forEach(service => {
-      const html = `
-      <tr>
-        <td>${service.id}</td>
-        <td>${service.nameService}</td>
-        <td>${service.price}</td>
-        <td><img src="${service.image}" alt="Product Image" width="100px" height="100px" /></td>
-        <td>${service.details}</td>
-        <td>
-          <button class="btn btn-primary" onclick="update(${service.id})" style="margin-bottom:5px">update</button>
-          <button class="btn btn-primary" onclick="deleteProduct(${service.id})">delete</button>
-        </td>
-      </tr>
-      `;
-      displayData1(html);
-    });
-  })
-  .catch(error => {
-    console.error(error);
-  });
-
-function displayData1(html) {
-  const element = document.getElementById('dataProduct');
-  element.innerHTML += html;
-}
-
-
-// tạo thêm một service mới
+// Tạo mới một service
 function newService() {
   const nameService = document.getElementById('nameService').value;
   const price = document.getElementById('price').value;
@@ -110,13 +71,14 @@ function newService() {
   const details = document.getElementById('details').value;
 
   const data = {
+    //id:
     nameService: nameService,
     price: price,
     image: image,
     details: details
   };
 
-  const url = 'http://localhost:4001/Services'; // Đường dẫn API JSON
+  const url = 'http://localhost:4001/Sevicese'; // Đường dẫn API JSON
 
   fetch(url, {
     method: 'POST',
@@ -128,18 +90,38 @@ function newService() {
     .then(response => response.json())
     .then(result => {
       console.log('Dữ liệu đã được gửi thành công:', result);
-      alert("Dữ liệu cập nhật thành công");
-      displayData2();
-      getServices()
+      alert('Dữ liệu cập nhật thành công');
+      fetch('http://localhost:4001/Sevicese')
+        .then(response => response.json())
+        .then(data => {
+          console.log(data);
+          data?.forEach(service => {
+            const html = `
+            <tr>
+              <td>${service.id}</td>
+              <td>${service.nameService}</td>
+              <td>${service.price}</td>
+              <td><img src="${service.image}" alt="Product Image" width="100px" height="100px" /></td>
+              <td>${service.details}</td>
+              <td>
+                <button class="btn btn-primary" onclick="update(${service.id})" style="margin-bottom:5px">update</button>
+                <button class="btn btn-primary" onclick="deleteProduct(${service.id})">delete</button>
+              </td>
+            </tr>
+            `;
+            displayData1(html);
+          });
+        })
+        .catch(error => {
+          console.error(error);
+        });
     })
     .catch(error => {
       console.error('Lỗi khi gửi dữ liệu:', error);
-      window.location.href = "admin.js";
     });
 }
-function displayData2(html) {
+
+function displayData1(html) {
   const element = document.getElementById('dataProduct');
   element.innerHTML += html;
 }
-
-
