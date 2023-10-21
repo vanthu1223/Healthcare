@@ -1,8 +1,10 @@
 /* ảnh và các input button */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');  
 .inner-page section{
     width: 100vw;
     height: 30vw;
     background-image: url("../img/gift-cards-page\ 2\ \(1\).png");
+    font-family: 'Poppins', sans-serif;
 
 }
 .inner-item h2{
@@ -46,6 +48,10 @@ h2{
     font-weight: 50px;
     justify-content: center;
     gap: 10px;
+}
+/* chỉnh sửa input và button */
+.input-group{
+ padding-left: 500px;
 }
 
 /* icon của các tên massage */
@@ -97,6 +103,7 @@ h6{
 .product{
   display: flex;
   gap: 30px;
+  padding-bottom: 50px;
 }
 .serviceItem{
   display: flex;
@@ -122,6 +129,11 @@ h6{
   width: 250px;
   border-radius: 10px;
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  line-height: 1.5em;
+  transition: 0.5s;
+  box-shadow: 1px 0px 1px #e0ffff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .div-ListserviceItem:hover{
   transform: scale(1.1);
@@ -243,7 +255,8 @@ nav ul li a:hover{
 
 .footer {
   background-color: #e3e0e0;
-  width: 100%;
+  width: 100vw;
+  height: 35vw;
   padding-top: 20px;
 }
 .footer h4 {
@@ -354,6 +367,9 @@ nav ul li a:hover{
   }
   .container .container-ListSevice h6{
     padding-left: 110px;
+  }
+  .container-ListSevice{
+    padding-bottom: 30px;
   }
   .div-serviceItem,
   .div-ListserviceItem {

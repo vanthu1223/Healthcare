@@ -16,17 +16,16 @@ function reveal() {
 }
 window.addEventListener("scroll", reveal);
 
-
 function myRegister() {
-  const form = document.getElementById('form');
-  const username = document.getElementById('username');
-  const email = document.getElementById('email');
-  const password = document.getElementById('password');
-  const password2 = document.getElementById('password2');
+  const form = document.getElementById("form");
+  const username = document.getElementById("username");
+  const email = document.getElementById("email");
+  const password = document.getElementById("password");
+  const password2 = document.getElementById("password2");
 
-  form.addEventListener('submit', (event) => {
+  form.addEventListener("submit", (event) => {
     event.preventDefault();
-    if(password.value.length <=6){
+    if (password.value.length <= 6) {
       alert("Phải nhập trên 6 kí tự");
       return;
     }
@@ -37,26 +36,26 @@ function myRegister() {
 
     let newUser = {
       id: new Date().getTime(),
-      nameUser: username.value,
-      email: email.value,
-      password: password.value,
-      password2: password2.value
+      nameUser: username.value.trim(),
+      email: email.value.trim(),
+      password: password.value.trim(),
+      role: "user",
     };
 
-    const url = 'http://localhost:4001/User';
+    const url = " http://localhost:3000/User";
     fetch(url, {
-      method: 'POST',
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json'
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify(newUser)
+      body: JSON.stringify(newUser),
     })
-      .then(response => response.json())
-      .then(data => {
+      .then((response) => response.json())
+      .then((data) => {
         window.location.href = "./login.html";
         displayUserData(data);
       })
-      .catch(error => {
+      .catch((error) => {
         console.error(error);
       });
   });
@@ -75,7 +74,7 @@ function myRegister() {
         </td>
       </tr>
     `;
-    const element = document.getElementById('dataUser');
+    const element = document.getElementById("dataUser");
     element.innerHTML += html;
   }
 }

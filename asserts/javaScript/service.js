@@ -1,3 +1,4 @@
+
 const checkBtn = document.querySelector('.checkbtn');
 const navMenu = document.querySelector('nav ul');
 

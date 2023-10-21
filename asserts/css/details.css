@@ -1,9 +1,9 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');  
 .div-container section{
     width: 100vw;
     height: 20vw;
     background-image: url("../img/banner-5\ 2.png");
-
+    font-family: 'Poppins', sans-serif;
 }
 
 h2{
@@ -23,7 +23,7 @@ h2{
   background-size: 200% auto;
   color: #fff;
   background-clip: text;
-  text-fill-color: transparent;
+  -text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
@@ -35,13 +35,6 @@ h2{
 .inner-item p{
     padding-left: 40%;
     font-size:larger;
-}
-.row-header{
-    text-align: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 40vh;
-   
 }
 .hero {
     font-weight: 50px;
@@ -60,17 +53,17 @@ button{
     cursor: pointer;
 }
 
-.list-details{
-    display: flex;
-    /* border: 1px solid; */
-    margin-top: 10px;
-    background-color:  #f4f4f2!important;
+
+.product-item img{
+  margin-bottom: 30px;
+  margin-left: 50px;
+  margin-top: 40px;
+  width: 350px;
+  height: 300px;
+  border-radius: 10px 10px 10px 10px;
 }
-.list-details img{
-    margin-left: 50px;
-    margin-top: 40px;
-    border-radius: 20px;
-    width: 500px;
+#name, #Time, #price, #infor {
+  text-decoration: none;
 }
 .list-button{
     margin-top: 20px;
@@ -88,9 +81,7 @@ button{
     font-size: 14px;
     padding-left: 15px;
 }
-.list p{
-  padding-top: 30px;
-}
+
 *{
     margin: 0;
     padding: 0;
@@ -168,9 +159,19 @@ button{
   #check {
     display: none;
   }
+  .star {
+    display:flex;
+    /* width: 16px;
+    height: 16px; */
+    /* color: gray; */
+  }
+  .div-star{
+    padding-left: 50px;
+  }
   .Recomment{
     padding-left: 50px;
   }
+
   .Recomment input{
     border: 1px solid #686161;
     border-radius: 5px;
@@ -205,5 +206,36 @@ button{
     flex-wrap: wrap;
     padding-left: 10px;
     gap:10px
+  }
+  .animate-charcter{ 
+    padding-top: 10%;
+    text-align: center;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      #FF99AC 0%,
+      #FF6A88 29%,
+      #FF9A8B 67%,
+      #FBAB7E 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+        font-size: 60px;
+        font-weight: bold;
+       
+  }
+  
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
   }
   
