@@ -42,7 +42,7 @@ function myRegister() {
       role: "user",
     };
 
-    const url = "http://localhost:4001/User";
+    const url = " http://localhost:3000/User";
     fetch(url, {
       method: "POST",
       headers: {

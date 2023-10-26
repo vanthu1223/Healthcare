@@ -29,7 +29,7 @@ function myLogin(e) {
   const arrUsers = [];
   console.log(Users);
 
-  fetch("http://localhost:4001/User")
+  fetch("http://localhost:3000/User")
     .then((response) => response.json())
     .then((data) => {
       let user = data.find(
