@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Crimson+Text&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');  
 
@@ -10,11 +9,168 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
-.content {
-    background-image: url(../img/booking-page.jpg);
-    height: calc(70vh - 80px);
 
+.header{
+  margin-bottom: 4%;
 }
+
+.header li{
+    list-style: none;
+}
+
+  .header a{
+    list-style: none;
+    text-decoration: none;
+  }
+  nav{
+    height: 80px;
+    width: 100%;
+  }
+  nav ul{
+    float:right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  .navbar {
+    position: fixed;
+    top:0;
+    z-index: 200;
+    background-color: white;
+    height: 80px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+
+  /* thanh navbar khi cuộn lên */
+  .navbar-scrolled{
+    background-color: rgba(255, 192, 203, 0.8);
+  }
+
+  nav ul {
+    float: right;
+    margin-right: 20px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  
+  nav ul li a {
+    color: black;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  nav ul li a:hover{
+    font-size: 17px;
+    color: #FF6A88;
+  }
+  
+  
+  .logo {
+    cursor: pointer;
+    padding-left: 10px;
+  }
+  
+  .checkbtn {
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  @media (max-width: 858px) {
+    .checkbtn {
+      display: block;
+    }
+  
+    nav ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all 0.5s;
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 50px 0;
+    }
+  
+    nav ul li a {
+      font-size: 20px;
+    }
+  
+    #check:checked ~ ul {
+      left: 0;
+    }
+  }
+  
+
+  .content {
+    background-image: url(../img/booking-page.jpg);
+    background-repeat:  no-repeat;
+    background-size: cover ;
+    height: calc(70vh - 80px);
+    text-align: center;
+  }
+
+  .content h2{
+    color: #fff;
+    font-size: 70px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .animate-charcter{ 
+    padding-top: 10%;
+    text-align: center;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      #FF99AC 0%,
+      #FF6A88 29%,
+      #FF9A8B 67%,
+      #FBAB7E 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+        font-size: 60px;
+        font-weight: bold;
+       
+  }
+  
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+
 
 .introduce{
     display: flex;
@@ -48,30 +204,127 @@
   height: fit-content;
   text-align: left;
 }
-/* .location .card-body{
-  margin: 0;
-  padding: 0;
-} */
+
+
 .location .card-body h5,p{
   margin: 0;
   padding: 0;
 }
-/* timme */
+
+.card{
+  flex-wrap: wrap;
+  text-align: center;
+  height: 500px;
+  line-height: 1.5em ;
+  transition: 0.5s;
+  box-shadow: 1px 0px 1px #e0ffff ;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.card:hover{
+border: 2px solid #FF6A88;
+
+}
+.card-body{
+  background-size: cover;
+
+}
+.card img {
+
+  border-radius: 50%;
+
+}
+
+.card h5{
+  margin-top: 10px;
+  color: #FF6A88;
+  font-weight: bold;
+  font-family:sans-serif;
+}
+.card-p a{
+color: black;
+text-decoration: none;
+transition: 0.5s;
+}
+.card-p a:hover{
+  
+  color: #FF6A88;
+}
+
+.card img:hover{
+  border: 2px solid #FF6A88;
+}
+
+ hr{
+  background-color: #FF6A88;
+}
+
+.card .fa{
+  width:10%;
+  height: auto;
+  color: #FF6A88;
+}
+
+/* card tại nơi đổ sản phẩm ra */
+.card-booking{
+  flex-wrap: wrap;
+  text-align: center;
+  height: 200px;
+  line-height: 1.5em ;
+  transition: 0.5s;
+  box-shadow: 1px 0px 1px #e0ffff ;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* button */
+.details{
+
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #FF6A88;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  }
+
+  .details:hover{
+    border: 2px solid #FF6A88;
+    background-color: white;
+    color: #FF6A88;
+
+  }
+
+  .details:focus{
+    outline: none;
+  }
+.button{
+    margin-left: 20%;
+}
+
+.button button{
+    width: 10%;
+}
+
+
+
+/* time */
 .time label {
   width: 80px;
   margin: 0px;
   padding: 0;
   height: 40px;
   border: 1px solid #FF6A88;
+
   /* background-color: gray; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.form-control{
-  
-}
 
 .time input:checked + label {
   background-color: red;
@@ -81,7 +334,32 @@
   display: none;
 }
 
-.time label{
-  /* display: none; */
+
+/* footer */
+.footer {
+  background-color: #e3e0e0;
+  width: 100%;
+  padding-top: 20px;
+}
+.footer h4 {
+  /* font-size: 20px; */
+  font-weight: bold;
+}
+.footer h4, p {
+  padding-top: 20px;
+}
+.footer p {
+  color: #686161;
+  font-size: 15px;
+}
+.icon-footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  gap:10px
+  
+}
+.icon-footer label {
+  font-size: 10px;
 }
 
