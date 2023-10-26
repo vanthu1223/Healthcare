@@ -54,26 +54,33 @@
   <div class="container-fluid">
     <a class="product-item">
       <div class="div-ListserviceItem">
-        <div class="row">
-          <div class="col-sm-4">
+        <div class="">
+          <div class="col-md-3">
             <img alt="" id="imgDetail">
           </div>
-          <div class="col-sm-4">
-            <div class="div-serviceImg">
-              <p id="name"></p>
-              <p id="Time"></p>
-              <p id="price"></p>
-              <button class="btn btn-primary">Book</button>
-              <p id="infor"></p>
+          <div class="col-md-8" style="padding-left: 50px;">
+            <div class="infor">
+              <a id="name" style="font-weight:900;"></a><br>
+              <a id="price" style="color: rgb(253, 4, 4);"></a><br>
+              <a id="Time"></a><br>
+              <a id="infor"></a><br>
+              <button class="button "><a href="../booking.html">Book</a></button>
             </div>
           </div>
         </div>
       </div>
     </a>
   </div>
-  <div class="Recomment" style="padding-top: 20px;">
-    <input type="text" name="comment" id="cm" placeholder="comment" style="padding-left: 10px;">
+  
+  <!-- Phần comment và đánh giá -->
+  <div class="comment">
+    <div class="comment-main">
+      <textarea id="commentInput" placeholder="Comment"></textarea>
+      <button class="button " onclick="submitComment()">Post</button>
+    </div>
+    <div id="commentsContainer"></div>
   </div>
+ 
 
 <!-- footer -->
   <div class="footer">
@@ -152,6 +159,7 @@
       </div>
     </div>
   </div>
+  <script src="../comment/comment.js"></script>
   <script src="../../asserts/javaScript/detail.js"></script>
 </body>
 

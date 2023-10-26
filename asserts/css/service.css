@@ -50,8 +50,28 @@ h2{
     gap: 10px;
 }
 /* chỉnh sửa input và button */
+.form{
+  padding-left: 500px;
+}
+input{
+  width: 450px;
+}
 .input-group{
  padding-left: 500px;
+}
+input#searchInput {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  padding: 6px 12px;
+  background-color: #f18cd9;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 /* icon của các tên massage */
@@ -80,18 +100,17 @@ h2{
  border-top-color: rgb(153, 153, 153);
 }
 
-.container3-service h6{
+.container3-service h4{
     padding-left: 530px;
     margin-top: 80px;
     font-size: larger;
 }
-h6{
+h4{
   top: 50px;
   color: #070707;
-  font-size: large;
   font-weight: 10px;
 }
-.container-ListSevice h6{
+.container-ListSevice h4{
   padding-left: 570px;
 }
 .service-item{

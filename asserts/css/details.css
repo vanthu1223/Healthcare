@@ -49,7 +49,7 @@ button{
     border-radius: 20px;
     border: 1px solid hotpink;
     color: white;
-    background-color: rgb(38, 183, 223);
+    background-color: rgb(124, 169, 182);
     cursor: pointer;
 }
 
@@ -62,9 +62,7 @@ button{
   height: 300px;
   border-radius: 10px 10px 10px 10px;
 }
-#name, #Time, #price, #infor {
-  text-decoration: none;
-}
+
 .list-button{
     margin-top: 20px;
     padding-left: 100px;
@@ -155,18 +153,68 @@ button{
     cursor: pointer;
     display: none;
   }
+  .btn{
+    margin-top: 20px;
+    background-color: #FF99AC;
+    text-decoration: none;
+    color: black;
+  }
+
+  .div-serviceImg{
+    padding-left: 500px;
+  }
+  /* CSS cho phần comment và đánh giá */
+  .comment-main {
+    margin-top: 20px;
+    padding-left: 15px;
+  }
+
+  .comment-main textarea {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .comment-main button {
+    margin-top: 10px;
+    margin-left: 35px;
+  }
+
+  .review-container {
+    margin-top: 20px;
+  }
+
+  .review {
+    margin-bottom: 10px;
+  }
+
+  .review .name {
+    font-weight: bold;
+  }
+
+  .rating {
+    color: orange;
+  }
+  
+  .comment {
+    /* border: 1px solid pink; */
+    background-color: #f2f2f2;
+    margin-top: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+
+  .comment-name {
+    font-weight: bold;
+  }
+
+  .comment-text {
+    display: block;
+    margin-top: 5px;
+  }
   
   #check {
     display: none;
-  }
-  .star {
-    display:flex;
-    /* width: 16px;
-    height: 16px; */
-    /* color: gray; */
-  }
-  .div-star{
-    padding-left: 50px;
   }
   .Recomment{
     padding-left: 50px;
