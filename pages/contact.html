@@ -114,35 +114,25 @@
                       </div>
                     </div>
                     <div class="col-sm-5">
-                     
-                      <div class="input">
-                        <div class="input-group">
-                          <input type="text" required id="username">
-                          <label for="">Username</label>
-                         </div>
-                         <div class="input-group">
-                          <input type="email" required id="email">
-                          <label for="">Email</label>
-                         </div>
-                      </div>
-                      <div class="message">
+                      <form class="contact_form">
+                        <div class="input">
+                          <div class="input-group">
+                            <input type="text" required id="username">
+                            <label for="">Username</label>
+                            </div>
                             <div class="input-group">
-                              <input type="text" required id="message">
-                              <label for="">Message</label>
-                             </div>
-                      </div>
-                      <button id="myButton" onclick="myContact()" style="padding: 10px;">Send now</button>
-                      <div id="myPopup" class="popup">
-                      <div class="popup-content">
-                        <h1>
-                             THANK YOU 
-                          </h1>
-                        <p>We Will Ansew You Soon. See You Later</p>
-                        <button id="closePopup">
-                              Close
-                          </button>
-                      </div>
-                      </div>
+                            <input type="email" required id="email">
+                            <label for="">Email</label>
+                            </div>
+                        </div>
+                        <div class="message">
+                              <div class="input-group">
+                                <input type="text" required id="message">
+                                <label for="">Message</label>
+                                </div>
+                        </div>
+                        <button id="myButton" type="submit" style="padding: 10px;">Send now</button>
+                      </form>
                     </div>
                     
                     <div class="col-sm-0"></div>
@@ -155,7 +145,6 @@
       </div>
       <div class="container-fluid">
         <div class="row p-5"></div>
-
       </div>
     </div>
     <div class="footer">
@@ -237,5 +226,7 @@
     </div>  
     <script src="../asserts/javaScript/contact.js"></script>
   <script src="../asserts/javaScript/loadProfileUser.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
 </body>
 </html>

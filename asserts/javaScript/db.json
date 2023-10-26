@@ -43,6 +43,41 @@
       "password": "1234567",
       "password2": "1234567",
       "role": "user"
+    },
+    {
+      "id": 1697789201656,
+      "nameUser": "lopchungminh",
+      "email": "fdrs@gmail.com",
+      "password": "1234567",
+      "role": "user"
+    },
+    {
+      "id": 1697789201657,
+      "nameUser": "lopchungminh",
+      "email": "fdrs@gmail.com",
+      "password": "1234567",
+      "role": "user"
+    },
+    {
+      "id": 1697789201659,
+      "nameUser": "lopchungminh",
+      "email": "fdrs@gmail.com",
+      "password": "1234567",
+      "role": "user"
+    },
+    {
+      "id": 1697789201662,
+      "nameUser": "lopchungminh",
+      "email": "fdrs@gmail.com",
+      "password": "1234567",
+      "role": "user"
+    },
+    {
+      "id": 1697789201660,
+      "nameUser": "lopchungminh",
+      "email": "fdrs@gmail.com",
+      "password": "1234567",
+      "role": "user"
     }
   ],
   "Sevicese": [
@@ -115,6 +150,13 @@
       "image": "https://img.freepik.com/free-photo/spa-treatment-product-female-feet-hand-spa-orchid-flowers-ceramic-bowl_1150-37717.jpg?w=996&t=st=1696651219~exp=1696651819~hmac=8a1f5a43446177cff4370c79e0e5609c6d9dca82353d6965e32436055eb6bbfb",
       "details": "Helps the mind relax, reduce anxiety and stress.Treatment of some diseases: Insomnia, painful and swollen leg joints, cold feet, high blood pressure, dizziness",
       "id": "10"
+    },
+    {
+      "nameService": "massage 1",
+      "price": "111111",
+      "image": "https://kenh14cdn.com/thumb_w/660/2020/7/17/brvn-15950048783381206275371.jpg",
+      "details": "123",
+      "id": "yVayvwu"
     }
   ],
   "Message": [

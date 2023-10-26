@@ -26,7 +26,7 @@ function myDetails(id) {
                 <span>(5.0/5.0)</span>
               </div>
             <p>${data.details}</p>
-            <button type="button" style="background-color: transparent;padding: 5px;border-radius: 5px;"><a href="../pages/booking.html" style="padding: 10px;text-decoration: none; color: coral; background-color: transparent;">Book Now</a></button>
+            <button type="button" style="background-color: transparent;padding: 5px;border-radius: 5px;"><a href="../pages/bookingSpa.html?id=${data.id}"  onclick= "myBooking()"   style="padding: 10px;text-decoration: none; color: coral; background-color: transparent;">Book Now</a></button>
         </div>
         <div class="col-sm-1"></div>
     </div>

@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../asserts/css/combo.css">
     <link rel="stylesheet" href="../asserts/css/booking.css">
+    <link rel="stylesheet" href="../asserts/css/bookingSpa.css">
     <link rel="stylesheet" href="../asserts/javaScript/combo.js">
-
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://unpkg.com/gijgo@1.9.14/css/gijgo.min.css" rel="stylesheet" type="text/css" />
 
     <style>
@@ -71,16 +72,16 @@
                     <div class="form row">
                         <div class="col-md-4 mb-3">
                             <label for="validationCustom01">Full Name</label>
-                            <input type="text" class="form-control" id="validationCustom01" placeholder="Full name"
-                                value="" required>
+                            <input type="text" class="form-control" id="username" placeholder="Full name"
+                                value="" disabled>
                             <div class="valid-feedback">
                                 Looks good!
                             </div>
                         </div>
                         <div class="col-md-4 mb-3">
                             <label for="validationCustom02">Email</label>
-                            <input type="text" class="form-control" id="validationCustom02" placeholder="Email" value=""
-                                required>
+                            <input type="text" class="form-control" id="email" placeholder="Email" value=""
+                                disabled>
                             <div class="valid-feedback">
                                 Looks good!
                             </div>
@@ -91,11 +92,7 @@
                                 <input type="text" class="form-control datepicker" data-date-start-date="10/13/2023"
                                     id="datepicker">
                             </div>
-
-
-
                         </div>
-
                     </div>
                     <div class="row">
                         <label for="" style="padding-left: 10px;">Time</label>
@@ -170,14 +167,11 @@
                         </div>
                     </div>
                 </form>
-                <div class="row">
-                    <button class="details" style="width: 77%;margin-left: 2%">Click to select service</button>
+                <div id="showService" class="row">
                 </div>
                 <div class="row">
-                    <h1>Đây là nơi sản phẩm đổ ra</h1>
-                </div>
-                <div class="row">
-                    <button class="details" style="width: 77%;margin-left: 2%">Book a massage</button>
+                    <!-- <button class="details" style="width: 77%;margin-left: 2%"><a class="long-book" href="../pages/confirm.html">Book a massage</a></button> -->
+                    <a class="long-book" href="../pages/confirm.html" onclick="myConfirm()">Book a massage</a>
                 </div>
             </div>
             <!-- information of the Spa -->
@@ -199,7 +193,86 @@
             </div>
         </div>
     </div>
+    <div class="container-fluid">
+        <div class="row p-5"></div>
+      </div>
     <!-- footer -->
+    <div class="footer">
+        <div class="container-fluid">
+          <div class="row">
+              <div class="col-sm-2"></div>
+              <div class="col-sm-8">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <img src="../asserts/image/logo-spa-removebg-preview.png" alt="logo" width="200px">
+                    <br>
+                    <p>121 King Street Melbourne</p>
+                    <p>  Victoria 3000 Australia</p>
+                    <p>E:hello@yourdomain.com</p>
+                    <p> P: +12 9 8765 4321</p>
+                  </div>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-2">
+                      <h4>Về Chúng Tôi</h4>
+                      <p>About Us</p>
+                      <p>Contact Us</p>
+                      <p>Career</p>
+                      <p>Advertising</p>
+                      <p>Reviews</p>
+                    </div>
+                      <div class="col-sm-1"></div>
+                      <div class="col-sm-2">
+                        <h4>Userful Links</h4>
+                        <p>Location</p>
+                        <p>Help & FAQs</p>
+                        <p>Appointments</p>
+                        <p>Membership</p>
+                        <p>Gift Cards</p>
+                      </div>
+                      <div class="col-sm-1"></div>
+                      <div class="col-sm-2">
+                        <h4>Beauty Queen</h4>
+                        <p>Question</p>
+                        <p>Help</p>
+                      </div>
+                </div>
+              </div>
+              <div class="col-sm-2"></div>
+              <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                  <hr style="border: 2px solid gray;">
+                </div>
+                <div class="col-sm-2"></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-3">
+                  <h6>© 2020 Spa Magic. All Rights Reserved</h6>
+                </div>
+                <div class="col-sm-2"></div>
+                <div class="col-sm-3">
+                  <div class="icon-footer">
+                    <div>
+                      <label>Facebook</label> <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                      <label>Youtube</label> <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                      <label>Twitter</label> <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                      <label>Instagram</label><i class="fa fa-instagram" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2"></div>
+              </div>
+            </div>
+      </div>
+      
+      </div>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -214,8 +287,8 @@
 
     <script src="https://unpkg.com/gijgo@1.9.14/js/gijgo.min.js" type="text/javascript"></script>
     
-    <script src="../asserts/javaScript/booking.js" type="text/javascript"></script>
     <script src="../asserts/javaScript/loadProfileUser.js"></script>
+    <script src="../asserts/javaScript/bookingSpa.js"></script>
 </body>
 
 </html>

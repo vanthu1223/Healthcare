@@ -24,3 +24,6 @@ $('.datepicker').datepicker({
 $('.datepicker').on("change", (e) => {
     console.log(e.target.value)
 })
+
+
+// Show data lên trang đặt 
