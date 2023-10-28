@@ -47,20 +47,6 @@
   ],
   "Sevicese": [
     {
-      "nameService": "Body Massage",
-      "price": 68,
-      "image": "https://img.freepik.com/free-photo/beauty-spa_144627-46202.jpg?size=626&ext=jpg&uid=R118456395&ga=GA1.2.650210055.1693416336&semt=sph",
-      "details": "The effect of full body massage is to help reduce stress.Helps blood circulation and stabilize blood pressureFull body massage helps firm skin and prevents aging.",
-      "id": "1"
-    },
-    {
-      "nameService": "Face Massage",
-      "price": 53,
-      "image": "https://img.freepik.com/free-photo/attractive-woman-getting-face-beauty-procedures-spa-salon_1098-18097.jpg?size=626&ext=jpg&uid=R118456395&ga=GA1.2.650210055.1693416336&semt=ais",
-      "details": "Effects of facial massage. Anti-aging and reduces wrinkles. Reduce sinus pressure. Limit the appearance of acne Reduce symptoms of temporomandibular disorders.",
-      "id": "2"
-    },
-    {
       "nameService": "Back Massage",
       "price": 81,
       "image": "https://img.freepik.com/free-photo/beauty-spa_144627-46183.jpg?size=626&ext=jpg&uid=R118456395&ga=GA1.2.650210055.1693416336&semt=ais",
@@ -115,6 +101,13 @@
       "image": "https://img.freepik.com/free-photo/spa-treatment-product-female-feet-hand-spa-orchid-flowers-ceramic-bowl_1150-37717.jpg?w=996&t=st=1696651219~exp=1696651819~hmac=8a1f5a43446177cff4370c79e0e5609c6d9dca82353d6965e32436055eb6bbfb",
       "details": "Helps the mind relax, reduce anxiety and stress.Treatment of some diseases: Insomnia, painful and swollen leg joints, cold feet, high blood pressure, dizziness",
       "id": "10"
+    },
+    {
+      "nameService": "ffđ",
+      "price": "2",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fsnapshot.canon-asia.com%2Fvn%2Farticle%2Fviet%2Flandscape-photography-quick-tips-for-stunning-deep-focused-images&psig=AOvVaw0N646M3V_uo3OV_1OSdY13&ust=1697872023198000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCMDRi6iIhIIDFQAAAAAdAAAAABAE",
+      "details": "4xcb",
+      "id": "dMOgDZK"
     }
   ],
   "Message": [

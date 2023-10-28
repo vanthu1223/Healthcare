@@ -1,6 +1,8 @@
-
 // Đẩy dữ liệu từ local lên bản service
-const url = 'http://localhost:4001/Sevicese';  
+const url = 'http://localhost:4001/Sevicese';
+const modal = document.getElementById("modal");
+const modalInner = modal.querySelector(".modal_inner");
+// const nodemailer = require('nodemailer');
 fetch(url)
   .then(response => response.json())
   .then(data => {
@@ -125,3 +127,100 @@ function displayData1(html) {
   const element = document.getElementById('dataProduct');
   element.innerHTML += html;
 }
+
+
+function update(id) {
+  const url = `http://localhost:4001/Sevicese/${id}`;
+  fetch(url)
+    .then(response => response.json())
+    .then(product => {
+      // Hiển thị thông tin sản phẩm và cho phép chỉnh sửa
+      document.getElementById('id').value = product.id;
+      document.getElementById('updateNameService').value = product.nameService;
+      document.getElementById('updatePrice').value = product.price;
+      document.getElementById('updateImage').value = product.image;
+      document.getElementById('updateDetails').value = product.details;
+
+      const modal = document.getElementById('modal');
+      modal.style.display = "block";
+    })
+    .catch(error => {
+      console.error(error);
+    });
+}
+
+
+function saveUpdate(id) {
+  const updateNameService = document.getElementById('updateNameService').value;
+  const updatePrice = document.getElementById('updatePrice').value;
+  const updateImage = document.getElementById('updateImage').value;
+  const updateDetails = document.getElementById('updateDetails').value;
+
+  const updatedData = {
+    nameService: updateNameService,
+    price: updatePrice,
+    image: updateImage,
+    details: updateDetails
+  };
+
+  const url = `http://localhost:4001/Sevicese/${id}`;
+  fetch(url, {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(updatedData)
+  })
+    .then(response => response.json())
+    .then(result => {
+      console.log('Dữ liệu đã được cập nhật:', result);
+      const form = document.getElementById('updateForm');
+      form.innerHTML = ''; // Xóa nội dung của form
+      // Hiển thị thông báo hoặc thực hiện các hành động khác sau khi lưu thành công
+    })
+    .catch(error => {
+      console.error('Lỗi khi cập nhật dữ liệu:', error);
+    });
+}
+
+function cancelUpdate() {
+  const modal = document.getElementById('modal');
+  modal.style.display = "none";
+}
+
+// Liên kết hàm saveUpdate() với nút "Save"
+const saveButton = document.getElementById('saveUpdate');
+saveButton.addEventListener('click', function () {
+  const id = document.getElementById('id').value;
+  saveUpdate(id);
+});
+// Liên kết hàm cancelUpdate() với nút "Cancel"
+const cancelButton = document.getElementById('cancelButton');
+cancelButton.addEventListener('click', cancelUpdate);
+
+
+function deleteProduct(id) {
+  const url = `http://localhost:4001/Sevicese/${id}`;
+
+  fetch(url, {
+    method: 'disable'
+  })
+    .then(response => response.json())
+    .then(result => {
+      console.log('Sản phẩm đã được khóa:', result);
+      const productRow = document.querySelector(`tr[data-id="${id}"]`);
+      productRow.classList.add("locked"); // Thêm class "locked" để khóa sản phẩm
+
+      // Thay đổi giá trị của sản phẩm thành undefined
+      const productNameCell = productRow.querySelector(".product-name");
+      productNameCell.innerText = "Undefined";
+
+      const deleteButton = productRow.querySelector(".btn-outline-danger");
+      deleteButton.disabled = true; // Vô hiệu hóa nút "deleteProduct"
+    })
+    .catch(error => {
+      console.error('Lỗi khi xóa sản phẩm:', error);
+    });
+}
+
+
