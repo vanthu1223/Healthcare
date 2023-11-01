@@ -1,16 +1,7 @@
 const searchInput = document.getElementById("searchInput");
 const suggestionList = document.getElementById("suggestionList");
 const searchButton = document.getElementById("searchButton");
-const productContainer = document.getElementById("FacialCare");
-
-// searchInput.addEventListener("input", function () {
-//     searchProductByName(searchValue);
-//     document.getElementById("suggestionList").style.display = "block";
-// });
-
-// searchButton.addEventListener("click", function (event) {
-
-// });
+// const productContainer = document.getElementById("FacialCare");
 searchButton.onclick = (e) => {
     const searchValue = searchInput.value.toLowerCase().trim();
     e.preventDefault(); // Ngăn chặn sự kiện submit mặc định của button

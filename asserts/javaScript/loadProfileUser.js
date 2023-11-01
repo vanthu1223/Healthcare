@@ -82,7 +82,7 @@ async function myFix() {
 
 async function updateUserInfo(users) {
   try {
-    const response = await fetch("http://localhost:4001/User", {
+    const response = await fetch("http://localhost:3000/User", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
