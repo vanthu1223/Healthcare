@@ -301,12 +301,41 @@ transition: 0.5s;
   .details:focus{
     outline: none;
   }
+
+  
+/* nút dài */
+.long-book{
+  border: none;
+  border-radius: 5px;
+  display: block;
+  width: 77%;
+  height: auto;
+  padding: 1.5%;
+  margin-left: 2%;
+  background-color: #FF6A88;
+  color: #e0ffff;
+  text-decoration: none;
+  text-align: center;
+}
+.long-book:hover{
+  text-decoration: none;
+  background-color: #e0ffff;
+  color: #FF6A88;
+}
+
+
 .button{
     margin-left: 20%;
 }
 
 .button button{
     width: 10%;
+}
+.buttonForm {
+  padding: 10px;
+  background-color: #FF99AC;
+  border-radius: 3px;
+  color: #fff;
 }
 
 
@@ -334,6 +363,12 @@ transition: 0.5s;
   display: none;
 }
 
+/* sau khi chạy file datePicker */
+.disabled{
+  color:aqua;
+  background-color: gray;
+  border: none;
+}
 
 /* footer */
 .footer {
