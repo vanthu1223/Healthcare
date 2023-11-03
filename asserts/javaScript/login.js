@@ -1,4 +1,3 @@
-
 // CHuyển động
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
@@ -36,10 +35,7 @@ function myLogin(e) {
         (e) => Users.username === e.nameUser && Users.password === e.password
       );
       if (user) {
-        localStorage.setItem(
-          "list_user",
-          JSON.stringify({ id: user.id, role: user.role })
-        );
+        localStorage.setItem("userProfile", JSON.stringify(user));
         alert("Đăng nhập thành công");
 
         window.location.href = "./home.html";

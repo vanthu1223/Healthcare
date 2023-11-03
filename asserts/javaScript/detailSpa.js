@@ -8,6 +8,7 @@ function myDetails(id) {
   })
     .then((response) => response.json())
     .then((data) => {
+      console.log(data);
       const html = `
         <div class="row">
         <div class="col-sm-1"></div>

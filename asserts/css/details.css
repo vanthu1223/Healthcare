@@ -1,29 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');  
 .div-container section{
     width: 100vw;
+    height: 20vw;
     background-image: url("../img/banner-5\ 2.png");
     font-family: 'Poppins', sans-serif;
 }
 
 h2{
-    padding-top: 30px;
-    padding-left: 40%;
+    padding-top: 50px;
+    padding-left: 35%;
+    text-align: center;
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #FF99AC 0%,
+    #FF6A88 29%,
+    #FF9A8B 67%,
+    #FBAB7E 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 60px;
+      font-weight: bold;
 }
-/* .inner-item i{
-  padding-top: 30px;
-
-} */
 
 .inner-item p{
     padding-left: 40%;
     font-size:larger;
-}
-.row-header{
-    text-align: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 40vh;
-   
 }
 .hero {
     font-weight: 50px;
@@ -31,43 +42,27 @@ h2{
     gap: 10px;
     padding-top: 50px;
 }
-input:focus{
-  outline: none !important ;
-}
-input{
-    width: 500px;
-    height: 30px;
-    border-radius: 50px;
-    border: 1px solid hotpink;
-    padding-left: 20px;
-}
-input::placeholder{
-    padding-left: 1px;
-}
+
 button{
-    width: 80px;
+    width: 70px;
     height: 35px;
     border-radius: 20px;
     border: 1px solid hotpink;
     color: white;
-    background-color: rgb(38, 183, 223);
+    background-color: rgb(124, 169, 182);
     cursor: pointer;
 }
-/* .list-container{
-    background-color: rgb(232, 150, 191);
-} */
-.list-details{
-    display: flex;
-    /* border: 1px solid; */
-    margin-top: 10px;
-    background-color:  #f4f4f2!important;
+
+
+.product-item img{
+  margin-bottom: 30px;
+  margin-left: 50px;
+  margin-top: 40px;
+  width: 350px;
+  height: 300px;
+  border-radius: 10px 10px 10px 10px;
 }
-.list-details img{
-    margin-left: 50px;
-    margin-top: 40px;
-    border-radius: 20px;
-    width: 500px;
-}
+
 .list-button{
     margin-top: 20px;
     padding-left: 100px;
@@ -84,9 +79,7 @@ button{
     font-size: 14px;
     padding-left: 15px;
 }
-.list p{
-  padding-top: 30px;
-}
+
 *{
     margin: 0;
     padding: 0;
@@ -160,22 +153,73 @@ button{
     cursor: pointer;
     display: none;
   }
+  .btn{
+    margin-top: 20px;
+    background-color: #FF99AC;
+    text-decoration: none;
+    color: black;
+  }
+
+  .div-serviceImg{
+    padding-left: 500px;
+  }
+  /* CSS cho phần comment và đánh giá */
+  .comment-main {
+    margin-top: 20px;
+    padding-left: 15px;
+  }
+
+  .comment-main textarea {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .comment-main button {
+    margin-top: 10px;
+    margin-left: 35px;
+  }
+
+  .review-container {
+    margin-top: 20px;
+  }
+
+  .review {
+    margin-bottom: 10px;
+  }
+
+  .review .name {
+    font-weight: bold;
+  }
+
+  .rating {
+    color: orange;
+  }
+  
+  .comment {
+    /* border: 1px solid pink; */
+    background-color: #f2f2f2;
+    margin-top: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+
+  .comment-name {
+    font-weight: bold;
+  }
+
+  .comment-text {
+    display: block;
+    margin-top: 5px;
+  }
   
   #check {
     display: none;
   }
-  .star {
-    display:flex;
-    /* width: 16px;
-    height: 16px; */
-    /* color: gray; */
-  }
-  .div-star{
-    padding-left: 50px;
-  }
   .Recomment{
     padding-left: 50px;
   }
+
   .Recomment input{
     border: 1px solid #686161;
     border-radius: 5px;
@@ -183,7 +227,6 @@ button{
     width: 100%;
     
   }
-  
   
   /* Footer */
   .footer {

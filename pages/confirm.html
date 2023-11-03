@@ -26,64 +26,38 @@
             crossorigin="anonymous"
           ></script>
           <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="#">Spa Servieces</a></li>
-            <li><a href="#">Most Used Service</a></li>
-            <li><a href="combo.html">Discount Combo</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li class="user"><a href="user.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
-              <li>
-                <a href="login.html" id="loginButton">Login</a>
-              </li>
-              <li>
-                <a href="resgister.html" id="registerButton">Resgister</a>
-              </li>
+            <li><a href="#" target="_blank">Home</a></li>
+            <li><a href="#" target="_blank">Spa Servieces</a></li>
+            <li><a href="#" target="_blank">Most Used Service</a></li>
+            <li><a href="#" target="_blank">Discount Combo</a></li>
+            <li><a href="contact.html" target="_blank">Contact Us</a></li>
+            <li class="user">
+              <a href="user.html"
+                ><i class="fa fa-user-circle-o" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="login.html" id="loginButton">Login</a>
+            </li>
+            <li>
+              <a href="resgister.html" id="registerButton">Resgister</a>
+            </li>
           </ul>
         </nav>
       </div>
       <div class="content">
         <h2 class="animate-charcter">
           Booking/Confirm<br />
+          <!-- <span style="font-size: 14px;">Book online now and embark on an incredible journey with us!</span> -->
         </h2>
+        <button onclick="createBooking()" type="button">click</button>
+        <!-- <div class="button-header">
+                <button><a href="#">Login</a></button>
+                <button><a href="#">Resgister</a></button>
+            </div> -->
       </div>
     </div>
-    <div class="container container-form" id="confirm">
-      <form action="" class="container form-infor">
-        <h1>Book an appointment at Spa Beauty Queen</h1>
-        <p>Hi! <b id = "username"></b></p>
-        <label for="">Here is your information:</label><br />
-        <hr />
-        <label for="">Email:</label><br />
-        <input type="text" id="email"><br />
-        <hr />
-        <label for="">Date - Time:</label><br />
-        <input type="text" id="datetime" /><br />
-        <hr />
-        <label for="">Selected service:</label><br />
-        <input type="text" id = "nameSevice" /><br />
-        <hr />
-        <label for=""><b>Total Amount:</b></label
-        ><br />
-        <input type="text" id="price"/>
-        <hr />
-        <p>
-          Thank you for booking to use our services. <br />
-          We look forward to welcoming you and serving you at
-          <b>the Spa Beauty Queen</b>
-        </p>
-
-        <div class="row button-confirm">
-          <!-- <div class="col-sm-4"> -->
-          <div class="col-sm-6">
-            <a href="#"><button class="details">Confirm</button></a>
-          </div>
-          <div class="col-sm-6">
-            <a href="http://127.0.0.1:5500/pages/booking.html"
-              ><button class="details">Update</button></a
-            >
-          </div>
-        </div>
-      </form>
-    </div>
+    <div class="container container-form" id="confirm"></div>
+    <script src="../asserts/javaScript/confirm.js"></script>
   </body>
 </html>
