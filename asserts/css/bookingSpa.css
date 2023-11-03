@@ -1,0 +1,46 @@
+/* nút dài */
+.long-book{
+    border: none;
+    border-radius: 5px;
+    display: block;
+    width: 77%;
+    height: auto;
+    padding: 1.5%;
+    margin-left: 2%;
+    background-color: #FF6A88;
+    color: #e0ffff;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.5s;
+  }
+  .long-book:hover{
+    text-decoration: none;
+    background-color: transparent;
+    color: #FF6A88;
+    border: 1px solid #FF6A88;
+  }
+  .footer {
+    background-color: #e3e0e0;
+    width: 100%;
+    padding-top: 20px;
+  }
+  .footer h4 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .footer h4, p {
+    padding-top: 20px;
+  }
+  .footer p {
+    color: #686161;
+    font-size: 15px;
+  }
+  .icon-footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    gap:10px
+  }
+  .icon-footer label {
+    font-size: 10px;
+  }

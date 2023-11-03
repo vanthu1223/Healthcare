@@ -1,4 +1,4 @@
-const usersAPI = " http://localhost:3000/User";
+const usersAPI = " http://localhost:4001/User";
 
 async function getUser(id) {
   try {
@@ -21,13 +21,13 @@ async function getUser(id) {
 }
 async function loadUserProfile() {
   try {
-    const user_token = JSON.parse(localStorage.getItem("list_user"));
+    const user_token = JSON.parse(localStorage.getItem("userProfile"));
     // check dang nhap thanh cong hay chua
     // undefined false
     // !undefined => true
-    if (!user_token) {
-      return;
-    }
+    // if (!user_token) {
+    //   return;
+    // }
     //dang nhap thanh cong check vai tro
     if (user_token.role == "user") {
       const user = await getUser(user_token.id);
@@ -96,7 +96,7 @@ async function updateUserInfo(users) {
 
 // update password
 async function myPassword() {
-  const { id } = JSON.parse(localStorage.getItem("list_user"));
+  const { id } = JSON.parse(localStorage.getItem("userProfile"));
   const oldPassword = document.getElementById("password").value;
   const newPassword = document.getElementById("newPassword").value;
   const confirmPassword = document.getElementById("confirmPassword").value;
