@@ -12,13 +12,13 @@ function myBooking() {
   const id = window.location.search.split("=")?.[1];
   const nameUser = document.querySelector("#username");
   const email = document.querySelector("#email");
-  fetch("http://localhost:4001/User" + "/" + userCurrent.id)
+  fetch("http://localhost:3000/User" + "/" + userCurrent.id)
     .then((respone) => respone.json())
     .then((data) => {
       nameUser.placeholder = data.nameUser;
       email.placeholder = data.email;
     });
-  fetch(`http://localhost:4001/Sevicese/${id}`, {
+  fetch(`http://localhost:3000/Sevicese/${id}`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
@@ -66,7 +66,7 @@ function myBooking() {
   }
 }
 
-const baseURL = "http://localhost:4001/";
+const baseURL = "http://localhost:3000/";
 myBooking();
 function createBooking() {
   const serviceId = window.location.search.split("=")?.[1];
@@ -119,7 +119,7 @@ function createBooking() {
 
 function payMomo() {
   // Send a POST request to the server if needed
-  fetch("http://localhost:4001/payment", {
+  fetch("http://localhost:3000/payment", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

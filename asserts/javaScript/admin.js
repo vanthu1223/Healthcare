@@ -1,5 +1,5 @@
 // Đẩy dữ liệu từ local lên bản service
-const url = "http://localhost:4001/";
+const url = "http://localhost:3000/";
 fetch(url + "Sevicese")
   .then((response) => response.json())
   .then((data) => {
@@ -49,7 +49,7 @@ function displayData12(dataBooking) {
 }
 
 //  đẩy dữ liệu lên user
-fetch("http://localhost:4001/User")
+fetch("http://localhost:3000/User")
   .then((response) => response.json())
   .then((data) => {
     console.log(data);
@@ -93,7 +93,7 @@ function newService() {
     details: details,
   };
 
-  const url = "http://localhost:4001/Sevicese"; // Đường dẫn API JSON
+  const url = "http://localhost:3000/Sevicese"; // Đường dẫn API JSON
 
   fetch(url, {
     method: "POST",
@@ -106,7 +106,7 @@ function newService() {
     .then((result) => {
       console.log("Dữ liệu đã được gửi thành công:", result);
       alert("Dữ liệu cập nhật thành công");
-      fetch("http://localhost:4001/Sevicese")
+      fetch("http://localhost:3000/Sevicese")
         .then((response) => response.json())
         .then((data) => {
           console.log(data);
