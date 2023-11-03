@@ -1,4 +1,4 @@
-const usersAPI = "http://localhost:4001/User/";
+const usersAPI = " http://localhost:4001/User";
 
 async function getUser(id) {
   try {

@@ -17,7 +17,7 @@ fetch(url)
         <td>${Sevicese.details}</td>
         <td>
           <button class="btn btn-outline-warning" onclick="update(${Sevicese.id})" style="margin-bottom:5px">update</button>
-          <button class="btn btn-outline-danger" onclick="deleteProduct(${Sevicese.id})">delete</button>
+          <button class="btn btn-outline-danger" onclick="deleteProduct(${Sevicese.id})">Undifine</button>
         </td>
       </tr>
       `;
@@ -48,7 +48,7 @@ fetch("http://localhost:4001/User")
         <td>${user.role}</td>
         <td>
           <button class="btn btn-outline-warning" onclick="update(${user.id})">update</button>
-          <button class="btn btn-outline-danger" onclick="deleteProduct(${user.id})">delete</button>
+          <button class="btn btn-outline-danger" onclick="deleteProduct(${user.id})">Undifine</button>
         </td>
       </tr>
       `;
@@ -107,7 +107,7 @@ function newService() {
               <td>${service.details}</td>
               <td>
                 <button class="btn btn-primary" onclick="update(${service.id})" style="margin-bottom:5px">update</button>
-                <button class="btn btn-primary" onclick="deleteProduct(${service.id})">delete</button>
+                <button class="btn btn-primary" onclick="deleteProduct(${service.id})">undifine</button>
               </td>
             </tr>
             `;
@@ -199,28 +199,29 @@ const cancelButton = document.getElementById('cancelButton');
 cancelButton.addEventListener('click', cancelUpdate);
 
 
-function deleteProduct(id) {
-  const url = `http://localhost:4001/Sevicese/${id}`;
+function toggleStatus(id) {
+  const url = `http://localhost:4001/Services/${id}`;
 
   fetch(url, {
-    method: 'disable'
+    method: 'PUT',
+    body: JSON.stringify({ status: 'unactive' }), // Gửi trạng thái 'unactive' đến máy chủ
+    headers: {
+      'Content-Type': 'application/json'
+    }
   })
     .then(response => response.json())
     .then(result => {
-      console.log('Sản phẩm đã được khóa:', result);
+      console.log('Sản phẩm đã được thay đổi trạng thái:', result);
       const productRow = document.querySelector(`tr[data-id="${id}"]`);
-      productRow.classList.add("locked"); // Thêm class "locked" để khóa sản phẩm
+      productRow.classList.add("unactive"); // Thêm class "unactive" để ẩn sản phẩm trên trang chủ
 
-      // Thay đổi giá trị của sản phẩm thành undefined
-      const productNameCell = productRow.querySelector(".product-name");
-      productNameCell.innerText = "Undefined";
+      const unactiveButton = productRow.querySelector(".btn-outline-danger");
+      unactiveButton.disabled = true; // Vô hiệu hóa nút "unactive"
 
-      const deleteButton = productRow.querySelector(".btn-outline-danger");
-      deleteButton.disabled = true; // Vô hiệu hóa nút "deleteProduct"
+      const activeButton = productRow.querySelector(".btn-outline-success");
+      activeButton.disabled = false; // Bật lại nút "active"
     })
     .catch(error => {
-      console.error('Lỗi khi xóa sản phẩm:', error);
+      console.error('Lỗi khi thay đổi trạng thái sản phẩm:', error);
     });
 }
-
-
