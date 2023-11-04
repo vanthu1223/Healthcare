@@ -39,7 +39,7 @@
     {
       "id": 1697637200775,
       "nameUser": "thu",
-      "email": "thu@gmail.com",
+      "email": "thu@gmail1.com",
       "password": "1234567",
       "password2": "1234567",
       "role": "user"
@@ -82,9 +82,31 @@
     {
       "id": 1698892157173,
       "nameUser": "thu",
-      "email": "thu@gmail.com",
+      "email": "thu@gmail2.com",
       "password": "thu123456",
       "role": "user"
+    },
+    {
+      "id": 1699029982724,
+      "nameUser": "thu123",
+      "email": "t@gmail.com",
+      "password": "123123123",
+      "role": "user"
+    },
+    {
+      "id": 1699094397739,
+      "nameUser": "usertest",
+      "email": "test@gmail.com",
+      "password": "1231231231234",
+      "role": "user"
+    },
+    {
+      "id": 1699094397741,
+      "nameUser": "1111111111",
+      "email": "thanh@gmail.com",
+      "password": "1111",
+      "role": "user",
+      "name": "111111111111111"
     }
   ],
   "Sevicese": [
@@ -420,6 +442,26 @@
       "time": "11",
       "status": "booking",
       "id": 3
+    },
+    {
+      "user": {
+        "id": 1699029982724,
+        "nameUser": "thu123",
+        "email": "t@gmail.com",
+        "password": "123123123",
+        "role": "user"
+      },
+      "service": {
+        "nameService": "Back Massage",
+        "price": 81000,
+        "image": "https://img.freepik.com/free-photo/beauty-spa_144627-46183.jpg?size=626&ext=jpg&uid=R118456395&ga=GA1.2.650210055.1693416336&semt=ais",
+        "details": "Back massage reduces pain because it helps relax muscles, widen joint spaces, and release pressure on roots and nerves.",
+        "id": "3"
+      },
+      "bookingDate": "11/04/2023",
+      "time": "11",
+      "status": "booking",
+      "id": 4
     }
   ]
 }

@@ -1,5 +1,5 @@
 // Đẩy dữ liệu từ local lên bản service
-const url = "http://localhost:4001/";
+const url = "https://healthcare-ujzv.onrender.com/";
 fetch(url + "Sevicese")
   .then((response) => response.json())
   .then((data) => {
@@ -48,8 +48,45 @@ function displayData12(dataBooking) {
   element.innerHTML += dataBooking;
 }
 
+fetch(url + "booking")
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data);
+    data.forEach((booking) => {
+    const dataBooking = `
+    <tr>
+        <td>${booking.user.id}</td>
+        <td>${booking.service.nameService}</td>
+        <td>${booking.time}</td>
+         <td>${booking.status}</td>
+        <td>${booking.service.price}</td>
+      </tr>
+    `;
+    displayData12(dataBooking);
+  });
+})
+
+function displayData12(dataBooking) {
+  const element = document.getElementById("myCard");
+  element.innerHTML += dataBooking;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //  đẩy dữ liệu lên user
-fetch("http://localhost:4001/User")
+fetch("https://healthcare-ujzv.onrender.com/User")
   .then((response) => response.json())
   .then((data) => {
     console.log(data);
@@ -93,7 +130,7 @@ function newService() {
     details: details,
   };
 
-  const url = "http://localhost:4001/Sevicese"; // Đường dẫn API JSON
+  const url = "https://healthcare-ujzv.onrender.com/Sevicese"; // Đường dẫn API JSON
 
   fetch(url, {
     method: "POST",
@@ -106,7 +143,7 @@ function newService() {
     .then((result) => {
       console.log("Dữ liệu đã được gửi thành công:", result);
       alert("Dữ liệu cập nhật thành công");
-      fetch("http://localhost:4001/Sevicese")
+      fetch("https://healthcare-ujzv.onrender.com/Sevicese")
         .then((response) => response.json())
         .then((data) => {
           console.log(data);

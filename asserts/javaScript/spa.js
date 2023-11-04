@@ -1,5 +1,5 @@
 //hiển thị data lên spa
-const url = "http://localhost:4001/Sevicese";
+const url = "https://healthcare-ujzv.onrender.com/Sevicese";
 fetch(url)
   .then((response) => response.json())
   .then((data) => {
