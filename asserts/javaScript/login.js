@@ -28,7 +28,7 @@ function myLogin(e) {
   const arrUsers = [];
   console.log(Users);
 
-  fetch("http://localhost:3000/User")
+  fetch("https://healthcare-ujzv.onrender.com/User")
     .then((response) => response.json())
     .then((data) => {
       let user = data.find(
@@ -48,3 +48,5 @@ function myLogin(e) {
       console.error(error);
     });
 }
+
+

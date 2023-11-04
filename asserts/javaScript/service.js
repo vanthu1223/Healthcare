@@ -27,7 +27,7 @@ const renderItem = (items, nodeId) => {
 }
 
 function featchAllServices() {
-  fetch("http://localhost:3000/services")
+  fetch("https://healthcare-ujzv.onrender.com/services")
     .then(response => response.json())
     .then(data => {
       localStorage.setItem('services', JSON.stringify(data))

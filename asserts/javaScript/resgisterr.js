@@ -42,7 +42,7 @@ function myRegister() {
       role: "user",
     };
 
-    const url = " http://localhost:3000/User";
+    const url = " https://healthcare-ujzv.onrender.com/User";
     fetch(url, {
       method: "POST",
       headers: {

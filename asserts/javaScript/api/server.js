@@ -24,9 +24,9 @@ server.post("/payment", async (req, res) => {
   //
   var orderInfo = "Thanh toán qua ví MoMo";
   // cung cấp họ về một cái pages sau khi thanh toán sẽ trở về trang nớ
-  var redirectUrl = "http://127.0.0.1:5500/pages/user.html";
+  var redirectUrl = "https://healthcare-ujzv.onrender.com/pages/user.html";
   // Trang thank you
-  var ipnUrl = "http://127.0.0.1:5500/home.html";
+  var ipnUrl = "https://healthcare-ujzv.onrender.com/home.html";
   // var ipnUrl = redirectUrl = "https://webhook.site/454e7b77-f177-4ece-8236-ddf1c26ba7f8";
   // số tiền
   var amount = priceGlobal;

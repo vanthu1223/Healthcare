@@ -1,4 +1,4 @@
-const usersAPI = " http://localhost:3000/User";
+const usersAPI = "https://healthcare-ujzv.onrender.com/User";
 
 async function getUser(id) {
   try {
@@ -13,67 +13,77 @@ async function getUser(id) {
       const data = await response.json();
       return data;
     } else {
-      throw new Error("Failed to fetch data from the API");
+      console.error("Error");
     }
   } catch (err) {
-    throw new Error(err.message);
+    console.error(err.message);
   }
 }
+
 async function loadUserProfile() {
-  try {
-    const user_token = JSON.parse(localStorage.getItem("userProfile"));
-    // check dang nhap thanh cong hay chua
-    // undefined false
-    // !undefined => true
-    // if (!user_token) {
-    //   return;
-    // }
-    //dang nhap thanh cong check vai tro
-    if (user_token.role == "user") {
+  const user_token = JSON.parse(localStorage.getItem("userProfile"));
+  if (user_token.role === "user") {
+    try {
       const user = await getUser(user_token.id);
-      //hide btn login and register
       const buttonLogin = document.getElementById("loginButton");
       const buttonSignup = document.getElementById("registerButton");
       const avatarUser = document.querySelector(".user");
       buttonLogin.style.display = "none";
       buttonSignup.style.display = "none";
       avatarUser.style.display = "inline";
-      //show info user
       document.querySelector("#avatarUser").innerHTML = user[0].nameUser;
       document.querySelector("#avatar").src =
         "https://haycafe.vn/wp-content/uploads/2022/02/Avatar-trang.jpg";
       document.querySelector("#username").value = user[0].nameUser;
       document.querySelector("#email").value = user[0].email;
-    } else if (user_token.role == "admin") {
-      alert("ban vui long dang xuat va dang nhap lai tai khoan");
-      window.location.href = "/pages/admin.html";
+    } catch (err) {
+      console.error(err.message);
     }
-    // Fetch data from the API
-  } catch (err) {
-    alert(err.message);
+  } else if (user_token.role === "admin") {
+    alert("Bạn vui lòng đăng xuất và đăng nhập lại tài khoản");
+    window.location.href = "/pages/admin.html";
   }
 }
+
 function render(users) {
   document.querySelector(".table-responsive tbody").innerHTML = users;
 }
+
 loadUserProfile();
 
 // Update user
 async function myFix() {
   const newInforUser = document.getElementById("username1").value;
   const newEmailUser = document.getElementById("email1").value;
+  const { id } = JSON.parse(localStorage.getItem("userProfile"));
   try {
-    const response = await fetch(usersAPI);
-    const user = await response.json();
-    const users = user[0];
-    users.username = newInforUser;
-    users.email = newEmailUser;
-    document.querySelector("#avatarUser").innerHTML = users.username;
-    document.querySelector("#username").value = users.username;
-    document.querySelector("#email").value = users.email;
-    console.log(users.username);
-    console.log(newEmailUser);
-    console.log(newInforUser);
+    let user;
+    if (newEmailUser) {
+      user = {
+        ...user,
+        email: newEmailUser,
+      };
+    }
+    if (newInforUser) {
+      user = {
+        ...user,
+        name: newInforUser,
+      };
+    }
+
+    console.log(user, "user");
+    const response = await fetch(`${usersAPI}/${id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(user),
+    })
+      .then((res) => res.json())
+      .then((res) => {
+        document.querySelector("#username").value = res.nameUser;
+        document.querySelector("#email").value = res.email;
+      });
     alert("oke");
   } catch (error) {
     console.error("Lỗi khi lấy thông tin người dùng:", error);
@@ -115,7 +125,7 @@ async function myPassword() {
 
 async function checkPassword(id, password) {
   try {
-    const response = await fetch(usersAPI + id, {
+    const response = await fetch(`${usersAPI}/${id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -139,20 +149,17 @@ async function checkPassword(id, password) {
 async function updatePassword(id, newPassword) {
   try {
     // Gửi yêu cầu cập nhật mật khẩu lên server
-    const response = await fetch(usersAPI + id, {
+
+    const response = await fetch(`${usersAPI}/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ password: newPassword }),
+    }).then((res) => {
+      console.log(res);
+      alert("Update password successfully");
     });
-
-    // Kiểm tra phản hồi từ server
-    if (response.ok) {
-      console.log("Mật khẩu đã được thay đổi thành công");
-    } else {
-      console.error("Lỗi khi cập nhật mật khẩu:", response.status);
-    }
   } catch (error) {
     console.error("Lỗi khi cập nhật mật khẩu:", error);
   }
