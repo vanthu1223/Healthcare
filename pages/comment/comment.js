@@ -66,7 +66,6 @@ function displayComments() {
     commentElement.appendChild(document.createElement('br'));
     commentElement.appendChild(textElement);
     commentElement.appendChild(deleteButton);
-
     commentsContainer.appendChild(commentElement);
   }
 }
