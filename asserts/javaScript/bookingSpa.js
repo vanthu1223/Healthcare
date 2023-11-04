@@ -12,13 +12,13 @@ function myBooking() {
   const id = window.location.search.split("=")?.[1];
   const nameUser = document.querySelector("#username");
   const email = document.querySelector("#email");
-  fetch("http://localhost:4001/User" + "/" + userCurrent.id)
+  fetch("https://healthcare-ujzv.onrender.com/User" + "/" + userCurrent.id)
     .then((respone) => respone.json())
     .then((data) => {
       nameUser.placeholder = data.nameUser;
       email.placeholder = data.email;
     });
-  fetch(`http://localhost:4001/Sevicese/${id}`, {
+  fetch(`https://healthcare-ujzv.onrender.com/Sevicese/${id}`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
@@ -66,7 +66,7 @@ function myBooking() {
   }
 }
 
-const baseURL = "http://localhost:4001/";
+const baseURL = "https://healthcare-ujzv.onrender.com/";
 myBooking();
 function createBooking() {
   const serviceId = window.location.search.split("=")?.[1];
@@ -92,16 +92,6 @@ function createBooking() {
     .then((res) => {
       console.log(res);
       alert("Bạn đã đặt lịch thành công ");
-      // const html12 = `
-      //   <tr>
-      //     <td>${res.userId}</td>
-      //     <td>${res.bookingDate}</td>
-      //     <td>${res.time}</td>
-      //     <td>${res.status}</td>
-      //     <td>${res.price}</td>
-      //   </tr>
-      //   `;
-      // displayData12(html12);
     })
     .catch((error) => {
       console.error(error);
@@ -110,7 +100,7 @@ function createBooking() {
   function displayData12(html12) {
     const element = document.getElementById("dataBooking");
     element.innerHTML += html12;
-    window.location.href = "http://127.0.0.1:5500/pages/admin.html";
+    window.location.href = "https://healthcare-ujzv.onrender.com/pages/admin.html";
   }
 }
 //     })
@@ -119,7 +109,7 @@ function createBooking() {
 
 function payMomo() {
   // Send a POST request to the server if needed
-  fetch("http://localhost:4001/payment", {
+  fetch("https://healthcare-ujzv.onrender.com/payment", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

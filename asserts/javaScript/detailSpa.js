@@ -1,6 +1,6 @@
 // Hiển thị detail thông tin theo
 function myDetails(id) {
-  fetch(`http://localhost:4001/Sevicese/${id}`, {
+  fetch(`https://healthcare-ujzv.onrender.com/Sevicese/${id}`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
