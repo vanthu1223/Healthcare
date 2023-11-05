@@ -25,10 +25,11 @@ fetch(url + "Sevicese")
     console.error(error);
   });
 
+
 fetch(url + "booking")
   .then((response) => response.json())
   .then((data) => {
-    console.log(data);
+    // console.log(data);
     data.forEach((booking) => {
     const dataBooking = `
     <tr>
@@ -48,48 +49,12 @@ function displayData12(dataBooking) {
   element.innerHTML += dataBooking;
 }
 
-fetch(url + "booking")
-  .then((response) => response.json())
-  .then((data) => {
-    console.log(data);
-    data.forEach((booking) => {
-    const dataBooking = `
-    <tr>
-        <td>${booking.user.id}</td>
-        <td>${booking.service.nameService}</td>
-        <td>${booking.time}</td>
-         <td>${booking.status}</td>
-        <td>${booking.service.price}</td>
-      </tr>
-    `;
-    displayData12(dataBooking);
-  });
-})
-
-function displayData12(dataBooking) {
-  const element = document.getElementById("myCard");
-  element.innerHTML += dataBooking;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //  đẩy dữ liệu lên user
 fetch("https://healthcare-ujzv.onrender.com/User")
   .then((response) => response.json())
   .then((data) => {
-    console.log(data);
+    // console.log(data);
     data?.forEach((user) => {
       const html1 = `
       <tr>
@@ -99,7 +64,7 @@ fetch("https://healthcare-ujzv.onrender.com/User")
         <td>${user.role}</td>
         <td>
           <button class="btn btn-outline-warning" onclick="update(${user.id})">update</button>
-          <button class="btn btn-outline-danger" onclick="deleteProduct(${user.id})">delete</button>
+          <button class="btn btn-outline-danger" onclick="deleteProduct(${user.id})">Delete</button>
         </td>
       </tr>
       `;
@@ -116,14 +81,21 @@ function displayData(html1) {
 }
 
 // Tạo mới một service
+function generateRandomTwoDigitNumber() {
+  // Sinh ngẫu nhiên một số từ 10 đến 99
+  const randomNumber = Math.floor(Math.random() * 90) + 10;
+  return randomNumber;
+}
+
 function newService() {
   const nameService = document.getElementById("nameService").value;
   const price = document.getElementById("price").value;
   const image = document.getElementById("image").value;
   const details = document.getElementById("details").value;
+  let id = generateRandomTwoDigitNumber();
 
   const data = {
-    //id:
+    id,
     nameService: nameService,
     price: price,
     image: image,
@@ -146,7 +118,7 @@ function newService() {
       fetch("https://healthcare-ujzv.onrender.com/Sevicese")
         .then((response) => response.json())
         .then((data) => {
-          console.log(data);
+          // console.log(data);
           data?.forEach((service) => {
             const html = `
             <tr>
@@ -167,6 +139,7 @@ function newService() {
         .catch((error) => {
           console.error(error);
         });
+      window.location.reload();
     })
     .catch((error) => {
       console.error("Lỗi khi gửi dữ liệu:", error);
@@ -177,6 +150,10 @@ function displayData1(html) {
   const element = document.getElementById("dataProduct");
   element.innerHTML += html;
 }
+
+
+
+
 
 function update(id) {
   // Hiển thị form
@@ -301,7 +278,7 @@ function deleteService(id) {
     .then(response => {
       if (response.ok) {
         console.log("Service deleted successfully");
-        // Xóa thành công, thực hiện các hành động phụ thuộc vào trang web của bạn
+// Xóa thành công, thực hiện các hành động phụ thuộc vào trang web của bạn
         // Ví dụ: làm mới danh sách sản phẩm, cập nhật giao diện, vv.
         window.location.reload();
       } else {
@@ -318,8 +295,3 @@ function deleteProduct(id) {
     deleteService(id);
   }
 }
-// Tạo mới một service
-function generateRandomTwoDigitNumber() {
-  // Sinh ngẫu nhiên một số từ 10 đến 99
-  const randomNumber = Math.floor(Math.random() * 90) + 10;
-  return randomNumber;}

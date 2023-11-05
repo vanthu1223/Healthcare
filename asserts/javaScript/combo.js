@@ -12,12 +12,12 @@ window.addEventListener('scroll', function() {
   });
 
 // giới hạn nhập số điện thoại
-    var input = document.getElementById("input-phone-number");
-    input.addEventListener("input", function() {
-      if (this.value.length > 10) {
-        this.value = this.value.slice(0, 10); // Giới hạn độ dài thành 10 ký tự
-      }
-    });
+    // var input = document.getElementById("input-phone-number");
+    // input.addEventListener("input", function() {
+    //   if (this.value.length > 10) {
+    //     this.value = this.value.slice(0, 10); // Giới hạn độ dài thành 10 ký tự
+    //   }
+    // });
 
 // lấy dữ liệu truyền vào .containrerJs
 async function getCombo() {
