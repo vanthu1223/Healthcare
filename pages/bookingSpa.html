@@ -148,7 +148,7 @@
                 <div class="row">
                     <!-- <button class="details" style="width: 77%;margin-left: 2%"><a class="long-book" href="../pages/confirm.html">Book a massage</a></button> -->
                     <!-- <a class="long-book" href="../pages/confirm.html" >Book a massage</a> -->
-                    <button type="button" class="buttonForm" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <button type="button" class="buttonForm" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="bookingnow">
                         Booking Now
                       </button>
                       
@@ -170,8 +170,8 @@
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                              <button type="submit" onclick="payMomo()" class="btn btn-primary">Pay with MoMo</button>
-                              <button type="button" class="btn btn-primary" onclick= "createBooking()">Booking</button>
+                              <button type="submit" onclick="payMomo()" class="btn btn-primary" id = "momo">Pay with MoMo</button>
+                              <button type="button" class="btn btn-primary" onclick= "createBooking()" id = "booking">Booking</button>
                              
                             </div>
                           </div>

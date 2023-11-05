@@ -19,52 +19,10 @@ window.addEventListener('scroll', function() {
       }
     });
 
-
-//   let productAPI = 'https://65199e11818c4e98ac6093d9.mockapi.io/products';
-//   fetch(productAPI)
-//   .then(respone => respone.json())
-//   .then(data => {
-//     console.log(data);
-//   })
-//   .catch(err => alert(err.message))
-// function loadData() {
-//   $.ajax({
-//     type: 'GET',
-//     contentType: 'application/json',
-//     url: productAPI,
-//     success: function(responseData) {
-//       $("#dataProduct").html(responseData.map(function(item) {
-//         return `
-//           <tr>  
-//             <td>${item.id}</td>
-//             <td>${item.name}</td>
-//             <td><img src="${item.avatar}" alt="Product Image width="100px" height = "100px" " /></td>
-//             <td>${item.price}</td>
-//             <td>${item.quantity}</td>
-//             <td>
-//               <button class="btn btn-primary" onclick="update(${item.id})">update</button>
-//               <button class="btn btn-primary" onclick="deleteProduct(${item.id})">delete</button>
-//             </td>
-//           </tr>
-//         `;
-//       }));
-//     },
-//     error: function(e) {
-//       console.log(e);
-//     }
-//   });
-// }
-// // Gọi hàm loadData để tải dữ liệu khi trang được tải
-// loadData();
-
-
-
-
-
 // lấy dữ liệu truyền vào .containrerJs
 async function getCombo() {
   try {
-    const response = await fetch("https://65199e11818c4e98ac6093d9.mockapi.io/products", {
+    const response = await fetch("https://healthcare-ujzv.onrender.com/products", {
       method: "GET", 
       headers: {
         "Content-Type": "application/json",
