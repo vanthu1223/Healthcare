@@ -7,11 +7,13 @@ function myBooking() {
 
   if (!userCurrent) {
     alert("ban phai dang nhap");
+    document.getElementById("bookingnow").disabled = true;
     return;
   }
   const id = window.location.search.split("=")?.[1];
   const nameUser = document.querySelector("#username");
   const email = document.querySelector("#email");
+  document.getElementById("bookingnow").disabled = true;
   fetch("https://healthcare-ujzv.onrender.com/User" + "/" + userCurrent.id)
     .then((respone) => respone.json())
     .then((data) => {

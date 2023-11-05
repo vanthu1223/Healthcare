@@ -193,364 +193,6 @@
       "image": "tưead",
       "details": "ửgsfd",
       "id": "GFdASmC"
-    },
-    {
-      "id": 21,
-      "name": "Full back Massage",
-      "price": "20$",
-      "Time": "(30-60 minutes)",
-      "img": "../../asserts/img/back/back-massage-therapy-concept.jpg",
-      "more": "More",
-      "type": "MostMassage",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    },
-    {
-      "id": 22,
-      "name": "Back Massage with hot stones",
-      "price": "15$",
-      "Time": "(30-50 minutes)",
-      "img": "../../asserts/img/back/stones-3184610_640.jpg",
-      "more": "More",
-      "type": "MostMassage",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    },
-    {
-      "id": 23,
-      "name": "Massage and apply oil",
-      "price": "17$",
-      "Time": "(30-40 minutes)",
-      "img": "../../asserts/img/back/honey-pouring-woman-s-naked-back-spa-salon.jpg",
-      "more": "More",
-      "type": "MostMassage",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    },
-    {
-      "id": 1,
-      "name": "Full back Massage",
-      "price": "20$",
-      "Time": "(30-60 minutes)",
-      "img": "../../asserts/img/back/back-massage-therapy-concept.jpg",
-      "type": "BackMassage",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    },
-    {
-      "id": 2,
-      "name": "Back Massage with hot stones",
-      "price": "15$",
-      "Time": "(30-50 minutes)",
-      "img": "../../asserts/img/back/stones-3184610_640.jpg",
-      "type": "BackMassage",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    },
-    {
-      "id": 3,
-      "name": "Massage and apply oil",
-      "price": "17$",
-      "Time": "(30-40 minutes)",
-      "img": "../../asserts/img/back/honey-pouring-woman-s-naked-back-spa-salon.jpg",
-      "type": "BackMassage",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    },
-    {
-      "id": 4,
-      "name": "Back Massage",
-      "price": "15$",
-      "Time": "(30-60 minute)",
-      "img": "../../asserts/img/back/female-model-having-massage-spa.jpg",
-      "type": "BackMassage",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    },
-    {
-      "id": 5,
-      "name": "Calf Massage",
-      "price": "2.2$",
-      "Time": "(20 minutes)",
-      "img": "../../asserts/img/leg/close-up-hands-massaging-leg.jpg",
-      "type": "FootMassage",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    },
-    {
-      "id": 6,
-      "name": "Akle Massage",
-      "price": "2.2$",
-      "Time": "(10 minutes)",
-      "img": "../../asserts/img/leg/close-up-foot-massage-concept.jpg",
-      "type": "FootMassage",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    },
-    {
-      "id": 7,
-      "name": "Massage the soles of the feet",
-      "price": "2.5$",
-      "Time": "(10 minutes)",
-      "img": "../../asserts/img/leg/close-up-woman-doing-foot-massage-spa.jpg",
-      "type": "FootMassage",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    },
-    {
-      "id": 8,
-      "name": "Full foot Massage",
-      "price": "10$",
-      "Time": "(60 minute)",
-      "img": "../../asserts/img/leg/closeup-female-masseuse-giving-foot-massage-one-her-clients-health-beauty-spa.jpg",
-      "type": "FootMassage",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    },
-    {
-      "id": 9,
-      "name": "Massage body",
-      "price": "20$",
-      "Time": "(30-60 minutes)",
-      "img": "../../asserts/img/body/two-cute-young-women-enjoy-relaxing-during-massage-spa.jpg",
-      "type": "BodyMassage",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    },
-    {
-      "id": 10,
-      "name": "Massage Full body",
-      "price": "20$",
-      "Time": "(30-60 minutes)",
-      "img": "../../asserts/img/body/masseur-doing-massage-backbone-man-body-spa-salon-beauty-treatment-concept (1).jpg",
-      "type": "BodyMassage",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    },
-    {
-      "id": 11,
-      "name": "Massage new body",
-      "price": "2.5$",
-      "Time": "(10 minutes)",
-      "img": "../../asserts/img/body/istockphoto-1162187810-1024x1024.jpg",
-      "type": "BodyMassage",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    },
-    {
-      "id": 12,
-      "name": "Massage bodybody",
-      "price": "10$",
-      "Time": "(60 minute)",
-      "img": "../../asserts/img/body/woman-567021_640.jpg",
-      "type": "BodyMassage",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    },
-    {
-      "id": 13,
-      "name": "Apply lotion",
-      "price": "5$",
-      "Time": "(20 minutes)",
-      "img": "../../asserts/img/face/istockphoto-1125908113-1024x1024.jpg",
-      "type": "FacialCare",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    },
-    {
-      "id": 14,
-      "name": "Mask",
-      "price": "20$",
-      "Time": "(30-60 minutes)",
-      "img": "../../asserts/img/face/young-woman-spa-salon-with-cosmetic-mask-face-high-angle-photo.jpg",
-      "type": "FacialCare",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    },
-    {
-      "id": 15,
-      "name": "Head Massage",
-      "price": "20$",
-      "Time": "(30-60 minutes)",
-      "img": "../../asserts/img/face/beautiful-young-woman-having-spa-massage-head-beauty-salon-indoors.jpg",
-      "type": "FacialCare",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    },
-    {
-      "id": 16,
-      "name": "Peeling acne",
-      "price": "10$",
-      "Time": "(30-60 minute)",
-      "img": "../../asserts/img/face/cosmetologist-applying-mask-face-client-beauty-salon.jpg",
-      "type": "FacialCare",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    }
-  ],
-  "Message": [
-    {
-      "id": "1",
-      "nameUser": "thao1234",
-      "email": "thao.le25@student.passerellesnumriques.org",
-      "message ": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus vel fuga labore dicta rerum obcaecati libero tenetur facere error inventore in voluptatum voluptatibus, pariatur nesciunt modi vero laborum repellat eos?"
-    }
-  ],
-  "services": [
-    {
-      "id": 21,
-      "name": "Full back Massage",
-      "price": "20$",
-      "Time": "(30-60 minutes)",
-      "img": "../../asserts/img/back/back-massage-therapy-concept.jpg",
-      "more": "More",
-      "type": "MostMassage",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    },
-    {
-      "id": 22,
-      "name": "Back Massage with hot stones",
-      "price": "15$",
-      "Time": "(30-50 minutes)",
-      "img": "../../asserts/img/back/stones-3184610_640.jpg",
-      "more": "More",
-      "type": "MostMassage",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    },
-    {
-      "id": 23,
-      "name": "Massage and apply oil",
-      "price": "17$",
-      "Time": "(30-40 minutes)",
-      "img": "../../asserts/img/back/honey-pouring-woman-s-naked-back-spa-salon.jpg",
-      "more": "More",
-      "type": "MostMassage",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    },
-    {
-      "id": 1,
-      "name": "Full back Massage",
-      "price": "20$",
-      "Time": "(30-60 minutes)",
-      "img": "../../asserts/img/back/back-massage-therapy-concept.jpg",
-      "type": "BackMassage",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    },
-    {
-      "id": 2,
-      "name": "Back Massage with hot stones",
-      "price": "15$",
-      "Time": "(30-50 minutes)",
-      "img": "../../asserts/img/back/stones-3184610_640.jpg",
-      "type": "BackMassage",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    },
-    {
-      "id": 3,
-      "name": "Massage and apply oil",
-      "price": "17$",
-      "Time": "(30-40 minutes)",
-      "img": "../../asserts/img/back/honey-pouring-woman-s-naked-back-spa-salon.jpg",
-      "type": "BackMassage",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    },
-    {
-      "id": 4,
-      "name": "Back Massage",
-      "price": "15$",
-      "Time": "(30-60 minute)",
-      "img": "../../asserts/img/back/female-model-having-massage-spa.jpg",
-      "type": "BackMassage",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    },
-    {
-      "id": 5,
-      "name": "Calf Massage",
-      "price": "2.2$",
-      "Time": "(20 minutes)",
-      "img": "../../asserts/img/leg/close-up-hands-massaging-leg.jpg",
-      "type": "FootMassage",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    },
-    {
-      "id": 6,
-      "name": "Akle Massage",
-      "price": "2.2$",
-      "Time": "(10 minutes)",
-      "img": "../../asserts/img/leg/close-up-foot-massage-concept.jpg",
-      "type": "FootMassage",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    },
-    {
-      "id": 7,
-      "name": "Massage the soles of the feet",
-      "price": "2.5$",
-      "Time": "(10 minutes)",
-      "img": "../../asserts/img/leg/close-up-woman-doing-foot-massage-spa.jpg",
-      "type": "FootMassage",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    },
-    {
-      "id": 8,
-      "name": "Full foot Massage",
-      "price": "10$",
-      "Time": "(60 minute)",
-      "img": "../../asserts/img/leg/closeup-female-masseuse-giving-foot-massage-one-her-clients-health-beauty-spa.jpg",
-      "type": "FootMassage",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    },
-    {
-      "id": 9,
-      "name": "Massage body",
-      "price": "20$",
-      "Time": "(30-60 minutes)",
-      "img": "../../asserts/img/body/two-cute-young-women-enjoy-relaxing-during-massage-spa.jpg",
-      "type": "BodyMassage",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    },
-    {
-      "id": 10,
-      "name": "Massage Full body",
-      "price": "20$",
-      "Time": "(30-60 minutes)",
-      "img": "../../asserts/img/body/masseur-doing-massage-backbone-man-body-spa-salon-beauty-treatment-concept (1).jpg",
-      "type": "BodyMassage",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    },
-    {
-      "id": 11,
-      "name": "Massage new body",
-      "price": "2.5$",
-      "Time": "(10 minutes)",
-      "img": "../../asserts/img/body/istockphoto-1162187810-1024x1024.jpg",
-      "type": "BodyMassage",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    },
-    {
-      "id": 12,
-      "name": "Massage bodybody",
-      "price": "10$",
-      "Time": "(60 minute)",
-      "img": "../../asserts/img/body/woman-567021_640.jpg",
-      "type": "BodyMassage",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    },
-    {
-      "id": 13,
-      "name": "Apply lotion",
-      "price": "5$",
-      "Time": "(20 minutes)",
-      "img": "../../asserts/img/face/istockphoto-1125908113-1024x1024.jpg",
-      "type": "FacialCare",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    },
-    {
-      "id": 14,
-      "name": "Mask",
-      "price": "20$",
-      "Time": "(30-60 minutes)",
-      "img": "../../asserts/img/face/young-woman-spa-salon-with-cosmetic-mask-face-high-angle-photo.jpg",
-      "type": "FacialCare",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    },
-    {
-      "id": 15,
-      "name": "Head Massage",
-      "price": "20$",
-      "Time": "(30-60 minutes)",
-      "img": "../../asserts/img/face/beautiful-young-woman-having-spa-massage-head-beauty-salon-indoors.jpg",
-      "type": "FacialCare",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
-    },
-    {
-      "id": 16,
-      "name": "Peeling acne",
-      "price": "10$",
-      "Time": "(30-60 minute)",
-      "img": "../../asserts/img/face/cosmetologist-applying-mask-face-client-beauty-salon.jpg",
-      "type": "FacialCare",
-      "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
     }
   ],
   "booking": [
@@ -637,5 +279,232 @@
       "status": "booking",
       "id": 4
     }
-  ]
+  ],
+  "services":
+  [
+    {
+    "id": 21,
+    "name": "Full back Massage",
+    "price": "20$",
+    "Time": "(30-60 minutes)",
+    "img": "../../asserts/img/back/back-massage-therapy-concept.jpg",
+    "more": "More",
+    "type": "MostMassage",
+    "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
+    },
+    {
+    "id": 22,
+    "name": "Back Massage with hot stones",
+    "price": "15$",
+    "Time": "(30-50 minutes)",
+    "img": "../../asserts/img/back/stones-3184610_640.jpg",
+    "more": "More",
+    "type": "MostMassage",
+    "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
+    },
+    {
+    "id": 23,
+    "name": "Massage and apply oil",
+    "price": "17$",
+    "Time": "(30-40 minutes)",
+    "img": "../../asserts/img/back/honey-pouring-woman-s-naked-back-spa-salon.jpg",
+    "more": "More",
+    "type": "MostMassage",
+    "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
+    },
+    {
+    "id": 1,
+    "name": "Full back Massage",
+    "price": "20$",
+    "Time": "(30-60 minutes)",
+    "img": "../../asserts/img/back/back-massage-therapy-concept.jpg",
+    "type": "BackMassage",
+    "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
+    },
+    {
+    "id": 2,
+    "name": "Back Massage with hot stones",
+    "price": "15$",
+    "Time": "(30-50 minutes)",
+    "img": "../../asserts/img/back/stones-3184610_640.jpg",
+    "type": "BackMassage",
+    "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
+    },
+    {
+    "id": 3,
+    "name": "Massage and apply oil",
+    "price": "17$",
+    "Time": "(30-40 minutes)",
+    "img": "../../asserts/img/back/honey-pouring-woman-s-naked-back-spa-salon.jpg",
+    "type": "BackMassage",
+    "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
+    },
+    {
+    "id": 4,
+    "name": "Back Massage",
+    "price": "15$",
+    "Time": "(30-60 minute)",
+    "img": "../../asserts/img/back/female-model-having-massage-spa.jpg",
+    "type": "BackMassage",
+    "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
+    },
+    {
+    "id": 5,
+    "name": "Calf Massage",
+    "price": "2.2$",
+    "Time": "(20 minutes)",
+    "img": "../../asserts/img/leg/close-up-hands-massaging-leg.jpg",
+    "type": "FootMassage",
+    "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
+    },
+    {
+    "id": 6,
+    "name": "Akle Massage",
+    "price": "2.2$",
+    "Time": "(10 minutes)",
+    "img": "../../asserts/img/leg/close-up-foot-massage-concept.jpg",
+    "type": "FootMassage",
+    "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
+    },
+    {
+    "id": 7,
+    "name": "Massage the soles of the feet",
+    "price": "2.5$",
+    "Time": "(10 minutes)",
+    "img": "../../asserts/img/leg/close-up-woman-doing-foot-massage-spa.jpg",
+    "type": "FootMassage",
+    "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
+    },
+    {
+    "id": 8,
+    "name": "Full foot Massage",
+    "price": "10$",
+    "Time": "(60 minute)",
+    "img": "../../asserts/img/leg/closeup-female-masseuse-giving-foot-massage-one-her-clients-health-beauty-spa.jpg",
+    "type": "FootMassage",
+    "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
+    },
+    {
+    "id": 9,
+    "name": "Massage body",
+    "price": "20$",
+    "Time": "(30-60 minutes)",
+    "img": "../../asserts/img/body/two-cute-young-women-enjoy-relaxing-during-massage-spa.jpg",
+    "type": "BodyMassage",
+    "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
+    },
+    {
+    "id": 10,
+    "name": "Massage Full body",
+    "price": "20$",
+    "Time": "(30-60 minutes)",
+    "img": "../../asserts/img/body/masseur-doing-massage-backbone-man-body-spa-salon-beauty-treatment-concept (1).jpg",
+    "type": "BodyMassage",
+    "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
+    },
+    {
+    "id": 11,
+    "name": "Massage new body",
+    "price": "2.5$",
+    "Time": "(10 minutes)",
+    "img": "../../asserts/img/body/istockphoto-1162187810-1024x1024.jpg",
+    "type": "BodyMassage",
+    "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
+    },
+    {
+    "id": 12,
+    "name": "Massage bodybody",
+    "price": "10$",
+    "Time": "(60 minute)",
+    "img": "../../asserts/img/body/woman-567021_640.jpg",
+    "type": "BodyMassage",
+    "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
+    },
+    {
+    "id": 13,
+    "name": "Apply lotion",
+    "price": "5$",
+    "Time": "(20 minutes)",
+    "img": "../../asserts/img/face/istockphoto-1125908113-1024x1024.jpg",
+    "type": "FacialCare",
+    "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
+    },
+    {
+    "id": 14,
+    "name": "Mask",
+    "price": "20$",
+    "Time": "(30-60 minutes)",
+    "img": "../../asserts/img/face/young-woman-spa-salon-with-cosmetic-mask-face-high-angle-photo.jpg",
+    "type": "FacialCare",
+    "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
+    },
+    {
+    "id": 15,
+    "name": "Head Massage",
+    "price": "20$",
+    "Time": "(30-60 minutes)",
+    "img": "../../asserts/img/face/beautiful-young-woman-having-spa-massage-head-beauty-salon-indoors.jpg",
+    "type": "FacialCare",
+    "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
+    },
+    {
+    "id": 16,
+    "name": "Peeling acne",
+    "price": "10$",
+    "Time": "(30-60 minute)",
+    "img": "../../asserts/img/face/cosmetologist-applying-mask-face-client-beauty-salon.jpg",
+    "type": "FacialCare",
+    "infor": "Widen joint spaces, and release pressure on roots and nerves. At the same time, back massage reduces fatigue, gradually increases movement of the restricted spinal segment, and increases circulation to nourish the painful area."
+    }
+    ],
+    "products": [
+      {
+      "nameCombo": "Traditional Massage",
+      "img": "https://jthemes.net/themes/html/spamagic/files/images/serv-13.jpg",
+      "infor": "Massage, Spa Services",
+      "details": "details 1",
+      "price": "86.00",
+      "id": "1"
+      },
+      {
+      "nameCombo": "Aromatherapy Facial",
+      "img": "https://jthemes.net/themes/html/spamagic/files/images/serv-14.jpg",
+      "infor": "Herbal Care, Aromatherapy",
+      "details": "details 2",
+      "price": "95.00",
+      "id": "2"
+      },
+      {
+      "nameCombo": "Deep Tissue Massage",
+      "img": "https://jthemes.net/themes/html/spamagic/files/images/serv-15.jpg",
+      "infor": "Massage, Spa Services",
+      "details": "details 3",
+      "price": "120.00",
+      "id": "3"
+      },
+      {
+      "nameCombo": "Oils & Aromatherapy",
+      "img": "https://jthemes.net/themes/html/spamagic/files/images/serv-18.jpg",
+      "infor": "Wellness, Aromatherapy",
+      "details": "details 4",
+      "price": "72.00",
+      "id": "4"
+      },
+      {
+      "nameCombo": "Hydrotherapy",
+      "img": "https://jthemes.net/themes/html/spamagic/files/images/serv-16.jpg",
+      "infor": "Treatments, Spa Services",
+      "details": "details 5",
+      "price": "68.00",
+      "id": "5"
+      },
+      {
+      "nameCombo": "Supreme Skicare",
+      "img": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/604.jpg",
+      "infor": "Massage, Herbal Care",
+      "details": "details 6",
+      "price": "90.00",
+      "id": "6"
+      }
+      ]
 }
