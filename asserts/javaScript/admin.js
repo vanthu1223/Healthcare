@@ -54,9 +54,9 @@ function displayData12(dataBooking) {
 fetch("https://healthcare-ujzv.onrender.com/User")
   .then((response) => response.json())
   .then((data) => {
-    // console.log(data);
-    data?.forEach((user) => {
-      const html1 = `
+    console.log(data);
+    document.getElementById("dataUser").innerHTML = data.map((user)=> {
+      return `
       <tr>
         <td>${user.id}</td>
         <td>${user.nameUser}</td>
@@ -67,9 +67,23 @@ fetch("https://healthcare-ujzv.onrender.com/User")
           <button class="btn btn-outline-danger" onclick="deleteProduct(${user.id})">Delete</button>
         </td>
       </tr>
-      `;
-      displayData(html1);
-    });
+      `
+    })
+    // data?.forEach((user) => {
+    //   const html1 = `
+    //   <tr>
+    //     <td>${user.id}</td>
+    //     <td>${user.nameUser}</td>
+    //     <td>${user.email}</td>
+    //     <td>${user.role}</td>
+    //     <td>
+    //       <button class="btn btn-outline-warning" onclick="update(${user.id})">update</button>
+    //       <button class="btn btn-outline-danger" onclick="deleteProduct(${user.id})">Delete</button>
+    //     </td>
+    //   </tr>
+    //   `;
+    //   displayData(html1);
+    // });
   })
   .catch((error) => {
     console.error(error);

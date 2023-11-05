@@ -1,15 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../asserts/css/admin.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../asserts/css/admin.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <title>Admin</title>
-</head>
-<body>
-    <ul class="nav nav-tabs">
+  </head>
+  <body>
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button
+          class="nav-link active"
+          id="nav-home-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-home"
+          type="button"
+          role="tab"
+          aria-controls="nav-home"
+          aria-selected="true"
+        >
+          Service
+        </button>
+        <button
+          class="nav-link"
+          id="nav-profile-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-profile"
+          type="button"
+          role="tab"
+          aria-controls="nav-profile"
+          aria-selected="false"
+        >
+          User
+        </button>
+        <button
+          class="nav-link"
+          id="nav-contact-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-contact"
+          type="button"
+          role="tab"
+          aria-controls="nav-contact"
+          aria-selected="false"
+        >
+          Message
+        </button>
+        <button
+          class="nav-link"
+          id="nav-admin-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-admin"
+          type="button"
+          role="tab"
+          aria-controls="nav-admin"
+          aria-selected="false"
+        >
+          Admin
+        </button>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <div
+        class="tab-pane fade show active"
+        id="nav-home"
+        role="tabpanel"
+        aria-labelledby="nav-home-tab"
+      >
+        <div class="container-fluid">
+          <h1 class="animate-charcter">Service</h1>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            style="margin-bottom: 10px"
+          >
+            Create
+          </button>
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    New Servieces
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label class="form-label">New Service</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="nameService"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label"
+                        >Price</label
+                      >
+                      <input type="number" class="form-control" id="price" />
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label"
+                        >Image</label
+                      >
+                      <input type="text" class="form-control" id="image" />
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label"
+                        >Details</label
+                      >
+                      <input type="text" class="form-control" id="details" />
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button class="btn btn-primary" onclick="newService()">
+                    Create
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="modal" tabindex="-1">
+            <div class="modal_overlay"></div>
+            <div class="modal_body">
+              <form>
+                <h6>Edit service</h6>
+                <div class="mb-3">
+                  <label class="form-label">New Service</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="updateNameService"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label"
+                    >ID</label
+                  >
+                  <input type="number" class="form-control" id="id" />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label"
+                    >Price</label
+                  >
+                  <input type="number" class="form-control" id="updatePrice" />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label"
+                    >Image</label
+                  >
+                  <input type="text" class="form-control" id="updateImage" />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label"
+                    >Details</label
+                  >
+                  <input type="text" class="form-control" id="updateDetails" />
+                </div>
+                <button type="button" class="btn btn-primary" id="saveUpdate">
+                  Save
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  id="cancelButton"
+                  onclick="cancelUpdate()"
+                >
+                  Cancel
+                </button>
+              </form>
+            </div>
+          </div>
+          <table id="custom-table" class="table table-bordered">
+            <thead>
+              <tr>
+                <td>ID</td>
+                <td>Name</td>
+                <td>Price</td>
+                <td>Image</td>
+                <td>Details</td>
+              </tr>
+            </thead>
+            <tbody id="dataProduct"></tbody>
+          </table>
+        </div>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="nav-profile"
+        role="tabpanel"
+        aria-labelledby="nav-profile-tab"
+      >
+        <div class="container-fluid">
+          <h1 class="animate-charcter">User</h1>
+        </div>
+        <table id="custom-table1" class="table table-bordered">
+          <thead>
+            <tr>
+              <td>ID</td>
+              <td>Name Customer</td>
+              <td>Email</td>
+              <td>Role</td>
+            </tr>
+          </thead>
+          <tbody id="dataUser"></tbody>
+        </table>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="nav-contact"
+        role="tabpanel"
+        aria-labelledby="nav-contact-tab"
+      >
+        <div class="container-fluid">
+          <h1 class="animate-charcter">message</h1>
+        </div>
+        <table id="contactTable" class="table table-bordered">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Full Name</th>
+              <th>Email</th>
+              <th>Message</th>
+              <th>Hành động</th>
+            </tr>
+          </thead>
+          <tbody id="dataContact"></tbody>
+        </table>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="nav-admin"
+        role="tabpanel"
+        aria-labelledby="nav-admin-tab"
+      >
+        <div class="container-fluid">
+          <h1 class="animate-charcter">Booking</h1>
+        </div>
+        <table id="bookingTable" class="table table-bordered">
+          <thead>
+            <tr>
+              <th>UserId</th>
+              <th>Name Service</th>
+              <th>Time</th>
+              <th>Status</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody id="dataBooking"></tbody>
+        </table>
+        <button onclick="myLogout1()" type="submit">Đăng xuất</button>
+      </div>
+    </div>
+    <!-- <ul class="nav nav-tabs">
         <li class="nav-item">
           <a class="nav-link active" data-bs-toggle="tab" href="#home">Service</a>
         </li>
@@ -22,8 +292,8 @@
         <li class=" nav-item">
           <div class="nav-link" data-bs-toggle="tab" href = "#menu3">Admin</div>
         </li>
-      </ul>
-      <div class="tab-content">
+      </ul>  -->
+    <!-- <div class="tab-content">
         <div class="tab-pane container-fluid active" id="home">
             <div class="container-fluid">
                 <h1 class = "animate-charcter">Service</h1>
@@ -123,6 +393,16 @@
                   </tr>
                 </thead>
                 <tbody id="dataUser">
+                  <tr>
+                    <td>${user.id}</td>
+                    <td>${user.nameUser}</td>
+                    <td>${user.email}</td>
+                    <td>${user.role}</td>
+                    <td>
+                      <button class="btn btn-outline-warning">update</button>
+                      <button class="btn btn-outline-danger" >Delete</button>
+                    </td>
+                  </tr>
                 </tbody>
               </table> 
         </div>
@@ -164,9 +444,8 @@
           <button onclick="myLogout1()" type="submit">Đăng xuất</button>
         </div>
         
-      </div>
-      <script src="../asserts/javaScript/admin.js"></script>
-      <script src="../asserts/javaScript/logout.js"></script>
-</body>
+      </div> -->
+    <script src="../asserts/javaScript/admin.js"></script>
+    <script src="../asserts/javaScript/logout.js"></script>
+  </body>
 </html>
-
