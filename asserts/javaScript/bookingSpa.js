@@ -13,7 +13,7 @@ function myBooking() {
   const id = window.location.search.split("=")?.[1];
   const nameUser = document.querySelector("#username");
   const email = document.querySelector("#email");
-  document.getElementById("bookingnow").disabled = true;
+  document.getElementById("bookingnow").style.display = "inline-block";
   fetch("https://healthcare-ujzv.onrender.com/User" + "/" + userCurrent.id)
     .then((respone) => respone.json())
     .then((data) => {
