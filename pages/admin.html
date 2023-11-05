@@ -64,6 +64,35 @@
                     </div>
                   </div>
                 </div>
+                <div id="modal" tabindex="-1">
+                  <div class="modal_overlay"></div>
+                  <div class="modal_body">
+                    <form>
+                      <h6>Edit service</h6>
+                      <div class="mb-3">
+                        <label class="form-label">New Service</label>
+                        <input type="text" class="form-control" id="updateNameService">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">ID</label>
+                        <input type="number" class="form-control" id="id">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Price</label>
+                        <input type="number" class="form-control" id="updatePrice">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Image</label>
+                        <input type="text" class="form-control" id="updateImage">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Details</label>
+                        <input type="text" class="form-control" id="updateDetails">
+                      </div>
+                      <button type="button" class="btn btn-primary" id="saveUpdate" >Save</button>
+                      <button type="button" class="btn btn-secondary" id="cancelButton" onclick="cancelUpdate()" >Cancel</button>
+                    </form>
+                    </div>
             </div>
             <table id="custom-table" class="table table-bordered ">
                 <thead>
@@ -134,6 +163,7 @@
         </table>
           <button onclick="myLogout1()" type="submit">Đăng xuất</button>
         </div>
+        
       </div>
       <script src="../asserts/javaScript/admin.js"></script>
       <script src="../asserts/javaScript/logout.js"></script>

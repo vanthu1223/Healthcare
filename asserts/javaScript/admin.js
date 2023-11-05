@@ -177,3 +177,149 @@ function displayData1(html) {
   const element = document.getElementById("dataProduct");
   element.innerHTML += html;
 }
+
+function update(id) {
+  // Hiển thị form
+  const modal = document.getElementById("modal");
+  modal.style.display = "block";
+  console.log(id);
+  // Lấy thông tin dịch vụ từ db.json
+  fetch(`https://healthcare-ujzv.onrender.com/Sevicese`)
+    .then(res=>res.json())
+    .then(data => {
+      let idFind = "";
+      // Tìm thông tin dịch vụ từ dữ liệu đã lấy
+      for (const item of data) {
+
+
+        if (id==item.id) {
+          // Điền thông tin dịch vụ vào các trường
+          idFind=item.id
+          document.getElementById("updateNameService").value = item.nameService;
+          document.getElementById("id").value = item.id;
+          document.getElementById("updatePrice").value = item.price;
+          document.getElementById("updateImage").value = item.image;
+          document.getElementById("updateDetails").value = item.details;
+          const saveUpdateBtn = document.getElementById("saveUpdate");
+          saveUpdateBtn.dataset.id = id;
+
+          // Thêm sự kiện click cho nút "Save"
+          saveUpdateBtn.addEventListener("click", () => {
+            handleUpdate(id);
+          });
+          break;
+          // Lưu ID vào thuộc tính data của nút "Save"
+
+        }
+
+        
+        
+      }
+
+      
+    });
+  
+}
+
+// Gọi hàm update khi bấm vào nút "update" với ID tương ứng
+
+function cancelUpdate() {
+  // Ẩn form
+  const modal = document.getElementById("modal");
+  modal.style.display = "none";
+}
+
+  
+
+function handleUpdate(id) {
+  
+  // Lấy thông tin dịch vụ đã chỉnh sửa
+  const newName = document.getElementById("updateNameService").value;
+  const newPrice = document.getElementById("updatePrice").value;
+  const newImage = document.getElementById("updateImage").value;
+  const newDetails = document.getElementById("updateDetails").value;
+
+  // Gửi yêu cầu PUT để cập nhật thông tin dịch vụ với ID tương ứng
+  fetch(`https://healthcare-ujzv.onrender.com/Sevicese/${id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      nameService: newName,
+      price: newPrice,
+      image: newImage,
+      details: newDetails,
+    }),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      alert("Service updated successfully:", data);
+      // Thực hiện hành động cập nhật giao diện người dùng tại đây (nếu cần)
+
+      // Ẩn form
+      const modal = document.getElementById("modal");
+      modal.style.display = "none";
+      window.location.reload();
+    })
+    .catch((error) => {
+      console.error("Error updating service:", error);
+    });
+}
+
+function cancelUpdate() {
+  // Ẩn form
+  const modal = document.getElementById("modal");
+  modal.style.display = "none";
+}
+
+
+function deleteService(id) {
+  // Gửi yêu cầu DELETE để xóa sản phẩm từ API hoặc tệp JSON
+  fetch(`https://healthcare-ujzv.onrender.com/Sevicese/${id}`, {
+    method: 'DELETE'
+  })
+    .then(response => {
+      if (response.ok) {
+        console.log('Service deleted successfully');
+        // Xóa thành công, thực hiện các hành động phụ thuộc vào trang web của bạn
+        // Ví dụ: làm mới danh sách sản phẩm, cập nhật giao diện, vv.
+        window.location.reload;
+      } else {
+        console.error('Failed to delete service');
+      }
+    })
+    .catch(error => {
+      console.error('Error deleting service:', error);
+    });
+}
+
+function deleteService(id) {
+  fetch(url + "Sevicese/" + id  , {
+    method: "DELETE"
+  })
+    .then(response => {
+      if (response.ok) {
+        console.log("Service deleted successfully");
+        // Xóa thành công, thực hiện các hành động phụ thuộc vào trang web của bạn
+        // Ví dụ: làm mới danh sách sản phẩm, cập nhật giao diện, vv.
+        window.location.reload();
+      } else {
+        console.error("Failed to delete service");
+      }
+    })
+    .catch(error => {
+      console.error("Error deleting service:", error);
+    });
+}
+
+function deleteProduct(id) {
+  if (confirm("Are you sure you want to delete this service?")) {
+    deleteService(id);
+  }
+}
+// Tạo mới một service
+function generateRandomTwoDigitNumber() {
+  // Sinh ngẫu nhiên một số từ 10 đến 99
+  const randomNumber = Math.floor(Math.random() * 90) + 10;
+  return randomNumber;}
