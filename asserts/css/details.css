@@ -48,9 +48,12 @@ button{
     height: 35px;
     border-radius: 20px;
     border: 1px solid hotpink;
-    color: white;
-    background-color: rgb(124, 169, 182);
+    color: rgb(193, 58, 58);
+    background-color: rgb(191, 203, 206);
     cursor: pointer;
+}
+.inputButton{
+  width: 100px;
 }
 
 
@@ -95,7 +98,7 @@ button{
     text-decoration: none;
   }
   nav{
-    background-color: white;
+    background-color: rgb(252, 252, 252);
     height: 80px;
     width: 100%;
   }
@@ -197,7 +200,7 @@ button{
   
   .comment {
     /* border: 1px solid pink; */
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     margin-top: 20px;
     padding: 10px;
     margin-bottom: 10px;
@@ -233,10 +236,10 @@ button{
     height: 100%;
     width: 100%;
     padding-top: 20px;
+    background-color: #d8d6d6;
   }
   .row{
-    background-color: #e3e0e0;
-  
+    margin-top: 50px;
   }
   .footer h4 {
     font-size: 20px;
